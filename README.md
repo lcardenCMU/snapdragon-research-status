@@ -4,32 +4,33 @@
 
 Bring up the existing four-engine profiler, establish safe local assistance, then begin precommitted research.
 
-Platform: **HDK8750 MP**. Updated: 2026-10-31T19:30:32.573494+00:00
+Platform: **HDK8750 MP**. Updated: 2026-10-31T19:54:56.264035+00:00
 
 | Engine | Readiness |
 | --- | --- |
 | CPU | Correctness smoke passed |
-| GPU | Pending |
+| GPU | Correctness smoke passed |
 | DSP | SDK setup needed |
 | NPU | SDK setup needed |
 
-Tests: 40. PDFs retrieved: 50/111 (unverified).
+Tests: 48. PDFs retrieved: 50/111 (unverified).
 
 ## Now
 
-- CPU cancellation and correctness verified
-- GPU and accelerator provisioning
-- Guarded local critic setup
+- CPU and GPU correctness smoke checks passed
+- Owned local runtime and Qwen3 1.7B installed; host calibration still gated
+- Independent private evidence archive verified; research workflow integration
 
 ## Next
 
-- Finish backend correctness admission
-- Calibrate one small local critic and verify unload
-- Read priority methods; freeze the first research question
+- Resolve practical headroom calibration without weakening the host guard
+- Verify Qualcomm DSP/NPU runtime and SDK compatibility
+- Read priority paper methods and freeze the research evaluation task bank
 
 ## Blockers
 
-- Qualcomm SDK/runtime installation not yet complete
-- Independent review and research-task bank still to establish
+- Conservative host guard currently refuses local inference
+- Available student DSP skeleton targets a different Hexagon ISA
+- Qualcomm SDK/runtime setup remains incomplete
 
 Architecture findings: 0. Controlled AI research tasks: 0. Setup is excluded from research-benefit metrics.

@@ -1,24 +1,24 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T19:30:32.573494+00:00",
+  "updated_at": "2026-10-31T19:54:56.264035+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
   "summary": "Bring up the existing four-engine profiler, establish safe local assistance, then begin precommitted research.",
-  "tests_passed": 40,
+  "tests_passed": 48,
   "literature_pdfs": 50,
   "literature_leads": 111,
   "hardware": {
     "cpu": "Correctness smoke passed",
-    "gpu": "Pending",
+    "gpu": "Correctness smoke passed",
     "dsp": "SDK setup needed",
     "npu": "SDK setup needed"
   },
-  "local_worker": "Not calibrated",
+  "local_worker": "Installed \u00b7 admission pending",
   "architecture_claims": 0,
   "controlled_ai_tasks": 0,
-  "event_count": 63,
-  "event_head": "312f64b535dc8cbe8397746117d496771db99850357f5986d28efbf1dbae20f6",
+  "event_count": 133,
+  "event_head": "01b64e1e9c4c6aa0a89e6e0392d68491e6a5437f189b566d1f167caa04ed0511",
   "tracks": [
     {
       "id": "architecture",
@@ -34,21 +34,48 @@
     }
   ],
   "now": [
-    "CPU cancellation and correctness verified",
-    "GPU and accelerator provisioning",
-    "Guarded local critic setup"
+    "CPU and GPU correctness smoke checks passed",
+    "Owned local runtime and Qwen3 1.7B installed; host calibration still gated",
+    "Independent private evidence archive verified; research workflow integration"
   ],
   "next": [
-    "Finish backend correctness admission",
-    "Calibrate one small local critic and verify unload",
-    "Read priority methods; freeze the first research question"
+    "Resolve practical headroom calibration without weakening the host guard",
+    "Verify Qualcomm DSP/NPU runtime and SDK compatibility",
+    "Read priority paper methods and freeze the research evaluation task bank"
   ],
   "blockers": [
-    "Qualcomm SDK/runtime installation not yet complete",
-    "Independent review and research-task bank still to establish"
+    "Conservative host guard currently refuses local inference",
+    "Available student DSP skeleton targets a different Hexagon ISA",
+    "Qualcomm SDK/runtime setup remains incomplete"
   ],
-  "issues": [],
-  "activity": [],
+  "issues": [
+    {
+      "title": "Setup tracker and owner conversation",
+      "url": "https://github.com/lcardenCMU/snapdragon-research/issues/1"
+    },
+    {
+      "title": "DSP/NPU SDK inputs needed",
+      "url": "https://github.com/lcardenCMU/snapdragon-research/issues/2"
+    }
+  ],
+  "activity": [
+    {
+      "date": "2026-10-31",
+      "detail": "CPU and GPU seeded correctness checks passed; device timeout and cleanup validated for bounded CPU work."
+    },
+    {
+      "date": "2026-10-31",
+      "detail": "Dashboard published; private source and issue communication established."
+    },
+    {
+      "date": "2026-10-31",
+      "detail": "50 PDFs retrieved from 111 leads; priority titles checked, full methods review next."
+    },
+    {
+      "date": "2026-10-31",
+      "detail": "Qwen3 1.7B downloaded and kept unloaded; no AI research-benefit result claimed."
+    }
+  ],
   "phases": [
     {
       "name": "Setup",
