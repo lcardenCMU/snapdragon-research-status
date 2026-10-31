@@ -4,33 +4,33 @@
 
 Bring up the existing four-engine profiler, establish safe local assistance, then begin precommitted research.
 
-Platform: **HDK8750 MP**. Updated: 2026-10-31T19:54:56.264035+00:00
+Platform: **HDK8750 MP**. Updated: 2026-10-31T20:23:30.868500+00:00
 
 | Engine | Readiness |
 | --- | --- |
 | CPU | Correctness smoke passed |
 | GPU | Correctness smoke passed |
-| DSP | SDK setup needed |
-| NPU | SDK setup needed |
+| DSP | Correctness smoke passed |
+| NPU | Correctness smoke passed |
 
-Tests: 48. PDFs retrieved: 50/111 (unverified).
+Tests: 51. PDFs retrieved: 50/111 (unverified).
 
 ## Now
 
-- CPU and GPU correctness smoke checks passed
-- Owned local runtime and Qwen3 1.7B installed; host calibration still gated
-- Independent private evidence archive verified; research workflow integration
+- CPU, GPU, DSP HVX and NPU FP16 seeded native correctness checks passed
+- QAIRT 2.44 and Hexagon SDK 6.6 installed in bounded Docker container
+- Detailed literature-agent assignment ready; both research tracks maintained
 
 ## Next
 
-- Resolve practical headroom calibration without weakening the host guard
-- Verify Qualcomm DSP/NPU runtime and SDK compatibility
-- Read priority paper methods and freeze the research evaluation task bank
+- Complete DSP/NPU Profiler API integration and stronger correctness checks
+- Resolve guarded local-model admission and owned-process cleanup
+- Review priority methods and precommit the first discriminating research question
 
 ## Blockers
 
-- Conservative host guard currently refuses local inference
-- Available student DSP skeleton targets a different Hexagon ISA
-- Qualcomm SDK/runtime setup remains incomplete
+- Local model installed; conservative host guard still refuses inference
+- MP-specific power calibration unavailable
+- Scientific experiment design and independent review still pending
 
 Architecture findings: 0. Controlled AI research tasks: 0. Setup is excluded from research-benefit metrics.

@@ -1,24 +1,24 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T19:54:56.264035+00:00",
+  "updated_at": "2026-10-31T20:23:30.868500+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
   "summary": "Bring up the existing four-engine profiler, establish safe local assistance, then begin precommitted research.",
-  "tests_passed": 48,
+  "tests_passed": 51,
   "literature_pdfs": 50,
   "literature_leads": 111,
   "hardware": {
     "cpu": "Correctness smoke passed",
     "gpu": "Correctness smoke passed",
-    "dsp": "SDK setup needed",
-    "npu": "SDK setup needed"
+    "dsp": "Correctness smoke passed",
+    "npu": "Correctness smoke passed"
   },
   "local_worker": "Installed \u00b7 admission pending",
   "architecture_claims": 0,
   "controlled_ai_tasks": 0,
-  "event_count": 133,
-  "event_head": "01b64e1e9c4c6aa0a89e6e0392d68491e6a5437f189b566d1f167caa04ed0511",
+  "event_count": 229,
+  "event_head": "4da85b7087951a935f5a2938b6865a1c43a160244c2a9fd9b725b6a7f599d4d8",
   "tracks": [
     {
       "id": "architecture",
@@ -34,19 +34,19 @@
     }
   ],
   "now": [
-    "CPU and GPU correctness smoke checks passed",
-    "Owned local runtime and Qwen3 1.7B installed; host calibration still gated",
-    "Independent private evidence archive verified; research workflow integration"
+    "CPU, GPU, DSP HVX and NPU FP16 seeded native correctness checks passed",
+    "QAIRT 2.44 and Hexagon SDK 6.6 installed in bounded Docker container",
+    "Detailed literature-agent assignment ready; both research tracks maintained"
   ],
   "next": [
-    "Resolve practical headroom calibration without weakening the host guard",
-    "Verify Qualcomm DSP/NPU runtime and SDK compatibility",
-    "Read priority paper methods and freeze the research evaluation task bank"
+    "Complete DSP/NPU Profiler API integration and stronger correctness checks",
+    "Resolve guarded local-model admission and owned-process cleanup",
+    "Review priority methods and precommit the first discriminating research question"
   ],
   "blockers": [
-    "Conservative host guard currently refuses local inference",
-    "Available student DSP skeleton targets a different Hexagon ISA",
-    "Qualcomm SDK/runtime setup remains incomplete"
+    "Local model installed; conservative host guard still refuses inference",
+    "MP-specific power calibration unavailable",
+    "Scientific experiment design and independent review still pending"
   ],
   "issues": [
     {
@@ -54,11 +54,15 @@
       "url": "https://github.com/lcardenCMU/snapdragon-research/issues/1"
     },
     {
-      "title": "DSP/NPU SDK inputs needed",
+      "title": "SDK setup resolved; compatibility evidence",
       "url": "https://github.com/lcardenCMU/snapdragon-research/issues/2"
     }
   ],
   "activity": [
+    {
+      "date": "2026-10-31",
+      "detail": "QAIRT and Hexagon installed; source-built v79 DSP and default-power NPU passed both tiny seeded checks. First DSP loader failure retained."
+    },
     {
       "date": "2026-10-31",
       "detail": "CPU and GPU seeded correctness checks passed; device timeout and cleanup validated for bounded CPU work."
