@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-31T19:30:32.573494+00:00",
+  "project": "Snapdragon Research",
+  "platform": "HDK8750 MP",
+  "phase": "P0 \u00b7 System setup",
+  "summary": "Bring up the existing four-engine profiler, establish safe local assistance, then begin precommitted research.",
+  "tests_passed": 40,
+  "literature_pdfs": 50,
+  "literature_leads": 111,
+  "hardware": {
+    "cpu": "Correctness smoke passed",
+    "gpu": "Pending",
+    "dsp": "SDK setup needed",
+    "npu": "SDK setup needed"
+  },
+  "local_worker": "Not calibrated",
+  "architecture_claims": 0,
+  "controlled_ai_tasks": 0,
+  "event_count": 63,
+  "event_head": "312f64b535dc8cbe8397746117d496771db99850357f5986d28efbf1dbae20f6",
+  "tracks": [
+    {
+      "id": "architecture",
+      "name": "Architecture papers / series",
+      "status": "Instrument validation",
+      "detail": "CPU, GPU, DSP and NPU characterization. Findings require controls, raw evidence and independent replication."
+    },
+    {
+      "id": "methodology",
+      "name": "AI research-methodology paper",
+      "status": "Protocol prepared",
+      "detail": "Evaluate substantive AI-assisted research decisions. Setup, tests and downloads are excluded from research-benefit endpoints."
+    }
+  ],
+  "now": [
+    "CPU cancellation and correctness verified",
+    "GPU and accelerator provisioning",
+    "Guarded local critic setup"
+  ],
+  "next": [
+    "Finish backend correctness admission",
+    "Calibrate one small local critic and verify unload",
+    "Read priority methods; freeze the first research question"
+  ],
+  "blockers": [
+    "Qualcomm SDK/runtime installation not yet complete",
+    "Independent review and research-task bank still to establish"
+  ],
+  "issues": [],
+  "activity": [],
+  "phases": [
+    {
+      "name": "Setup",
+      "state": "active"
+    },
+    {
+      "name": "Instrument validation",
+      "state": "active"
+    },
+    {
+      "name": "Research pilot",
+      "state": "pending"
+    },
+    {
+      "name": "Replicate",
+      "state": "pending"
+    },
+    {
+      "name": "Papers",
+      "state": "pending"
+    }
+  ]
+}
