@@ -2,8 +2,9 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-01T16:12:12.770179+00:00",
+    "updated_at": "2026-11-01T17:31:50.114054+00:00",
     "pipeline": {
+      "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
       "latest_attempt": "cancelled_resource_guard",
       "reason": "insufficient_conservative_free_reserve",
@@ -64,29 +65,29 @@
         "priority": "closest",
         "title_indexed": "Vellaisamy et al., TaxBreak: Unmasking the Hidden Costs of LLM Inference Through Overhead Decomposition, ISPASS 2026.",
         "title_verified": "TaxBreak: Unmasking the Hidden Costs of LLM Inference Through Overhead Decomposition",
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "authors": "Prabhu Vellaisamy et al.",
+        "year": 2026,
+        "venue": "arXiv preprint; indexed conference status not independently verified",
+        "identifier": "arXiv:2603.12465v1",
+        "version": "arXiv:2603.12465v1",
         "source_links": [
           "https://doi.org/10.1109/ISPASS69572.2026.00014",
           "https://arxiv.org/pdf/2603.12465"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "title_checked",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
-        "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
+        "page_count": 12,
+        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "host_memory_admission",
-        "next_action": "Complete guarded conversion and visual QA, then read methods, evaluation and limitations.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T16:19:17.910305+00:00",
+        "updated_at": "2026-11-01T17:27:46.608873+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840371+00:00",
@@ -102,10 +103,26 @@
             "at": "2026-11-01T16:19:17.910305+00:00",
             "actor": "Codex literature agent",
             "action": "Inherited title check from first two PDF pages (2026-10-31); methods and evaluation reading still pending."
+          },
+          {
+            "at": "2026-11-01T17:26:54.141788+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
+          },
+          {
+            "at": "2026-11-01T17:27:46.608873+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
           }
         ],
-        "checked_synopsis": null,
-        "public_citations": []
+        "checked_synopsis": "Methods separate host orchestration and device-active work on H100/H200. Key equations, protocol and selected result figures were checked against the original PDF.",
+        "public_citations": [
+          {
+            "url": "https://arxiv.org/pdf/2603.12465v1#page=3",
+            "label": "Original PDF / methods and evaluation",
+            "pdf_page": 3
+          }
+        ]
       },
       {
         "paper_id": "3",
@@ -115,29 +132,29 @@
         "priority": "closest",
         "title_indexed": "Chen et al., Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference, SOSP 2025.",
         "title_verified": "Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference",
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "authors": "Le Chen et al.",
+        "year": 2025,
+        "venue": "SOSP 2025 (printed in source)",
+        "identifier": "arXiv:2501.14794v2 / DOI10.1145/3731569.3764808",
+        "version": "arXiv:2501.14794v2 / DOI10.1145/3731569.3764808",
         "source_links": [
           "https://arxiv.org/abs/2501.14794",
           "https://arxiv.org/pdf/2501.14794"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "title_checked",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
-        "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
+        "page_count": 16,
+        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "host_memory_admission",
-        "next_action": "Complete guarded conversion and visual QA, then read methods, evaluation and limitations.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T16:19:17.910356+00:00",
+        "updated_at": "2026-11-01T17:27:46.609140+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840427+00:00",
@@ -153,10 +170,26 @@
             "at": "2026-11-01T16:19:17.910356+00:00",
             "actor": "Codex literature agent",
             "action": "Inherited title check from first two PDF pages (2026-10-31); methods and evaluation reading still pending."
+          },
+          {
+            "at": "2026-11-01T17:26:54.147060+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
+          },
+          {
+            "at": "2026-11-01T17:27:46.609140+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
           }
         ],
-        "checked_synopsis": null,
-        "public_citations": []
+        "checked_synopsis": "HeteroInfer studies GPU/NPU execution, shape-dependent partitioning and explicit synchronization on mobile SoCs. Methods, evaluation and selected figures/tables have been source-checked.",
+        "public_citations": [
+          {
+            "url": "https://arxiv.org/pdf/2501.14794v2#page=8",
+            "label": "Original PDF / methods and evaluation",
+            "pdf_page": 8
+          }
+        ]
       },
       {
         "paper_id": "4",
@@ -224,7 +257,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 15,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -232,8 +265,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:18.270560+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.151608+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840516+00:00",
@@ -244,6 +277,11 @@
             "at": "2026-10-31T19:08:18.270560+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.151608+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -270,7 +308,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 8,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -278,8 +316,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:18.539790+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.154574+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840558+00:00",
@@ -290,6 +328,11 @@
             "at": "2026-10-31T19:08:18.539790+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.154574+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -361,7 +404,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 13,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -369,8 +412,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:22.473789+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.166261+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840651+00:00",
@@ -381,6 +424,11 @@
             "at": "2026-10-31T19:08:22.473789+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.166261+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -407,7 +455,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 11,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -415,8 +463,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:23.997182+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.170127+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840688+00:00",
@@ -427,6 +475,11 @@
             "at": "2026-10-31T19:08:23.997182+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.170127+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -453,7 +506,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 20,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -461,8 +514,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:25.485196+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.175895+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840727+00:00",
@@ -473,6 +526,11 @@
             "at": "2026-10-31T19:08:25.485196+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.175895+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -499,7 +557,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 18,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -507,8 +565,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:27.211731+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.181991+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840766+00:00",
@@ -519,6 +577,11 @@
             "at": "2026-10-31T19:08:27.211731+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.181991+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -532,29 +595,29 @@
         "priority": "closest",
         "title_indexed": "Cai et al., Is Your NPU Ready for LLMs? Dissecting the Hidden Efficiency Bottlenecks in Mobile LLM Inference, arXiv 2026.",
         "title_verified": "Is Your NPU Ready for LLMs? Dissecting the Hidden Efficiency Bottlenecks in Mobile LLM Inference",
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "authors": "Guanyu Cai et al.",
+        "year": 2026,
+        "venue": "POMACS December2026 publication block printed in PDF; external status pending",
+        "identifier": "arXiv:2607.05475v2",
+        "version": "arXiv:2607.05475v2",
         "source_links": [
           "https://arxiv.org/abs/2607.05475",
           "https://arxiv.org/pdf/2607.05475"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "title_checked",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
-        "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
+        "page_count": 25,
+        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "host_memory_admission",
-        "next_action": "Complete guarded conversion and visual QA, then read methods, evaluation and limitations.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T16:19:17.910358+00:00",
+        "updated_at": "2026-11-01T17:27:46.609334+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840821+00:00",
@@ -570,10 +633,26 @@
             "at": "2026-11-01T16:19:17.910358+00:00",
             "actor": "Codex literature agent",
             "action": "Inherited title check from first two PDF pages (2026-10-31); methods and evaluation reading still pending."
+          },
+          {
+            "at": "2026-11-01T17:26:54.187292+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
+          },
+          {
+            "at": "2026-11-01T17:27:46.609334+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
           }
         ],
-        "checked_synopsis": null,
-        "public_citations": []
+        "checked_synopsis": "Cross-framework mobile LLM study covering CPU/GPU/NPU, output quality, memory probes and energy instrumentation. Methods and limitations were read; selected original pages were visually checked.",
+        "public_citations": [
+          {
+            "url": "https://arxiv.org/pdf/2607.05475v2#page=7",
+            "label": "Original PDF / methods and evaluation",
+            "pdf_page": 7
+          }
+        ]
       },
       {
         "paper_id": "13",
@@ -641,7 +720,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 7,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -649,8 +728,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:29.878893+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.221893+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840902+00:00",
@@ -661,6 +740,11 @@
             "at": "2026-10-31T19:08:29.878893+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.221893+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -777,7 +861,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 6,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -785,8 +869,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:32.832498+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.227083+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841026+00:00",
@@ -797,6 +881,11 @@
             "at": "2026-10-31T19:08:32.832498+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.227083+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -868,7 +957,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 15,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -876,8 +965,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:44.320925+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.234564+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841105+00:00",
@@ -888,6 +977,11 @@
             "at": "2026-10-31T19:08:44.320925+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.234564+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -1184,7 +1278,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 5,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -1192,8 +1286,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:49.162934+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.267963+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841379+00:00",
@@ -1204,6 +1298,11 @@
             "at": "2026-10-31T19:08:49.162934+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.267963+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -1230,7 +1329,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 12,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -1238,8 +1337,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:49.452263+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.270633+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841415+00:00",
@@ -1250,6 +1349,11 @@
             "at": "2026-10-31T19:08:49.452263+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.270633+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -1321,7 +1425,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 13,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -1329,8 +1433,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:52.922506+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.286748+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841502+00:00",
@@ -1341,6 +1445,11 @@
             "at": "2026-10-31T19:08:52.922506+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.286748+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -1367,7 +1476,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 6,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -1375,8 +1484,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:53.399098+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.311452+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841541+00:00",
@@ -1387,6 +1496,11 @@
             "at": "2026-10-31T19:08:53.399098+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.311452+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -1413,7 +1527,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 21,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -1421,8 +1535,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:54.132925+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.313832+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841579+00:00",
@@ -1433,6 +1547,11 @@
             "at": "2026-10-31T19:08:54.132925+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.313832+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -1504,7 +1623,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 15,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -1512,8 +1631,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:56.866723+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.318815+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841661+00:00",
@@ -1524,6 +1643,11 @@
             "at": "2026-10-31T19:08:56.866723+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.318815+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -1595,7 +1719,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 16,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -1603,8 +1727,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:57.917617+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.322828+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841738+00:00",
@@ -1615,6 +1739,11 @@
             "at": "2026-10-31T19:08:57.917617+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.322828+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -1627,30 +1756,30 @@
         "topic": "Mobile SoC / direct comparisons",
         "priority": "closest",
         "title_indexed": "Shared Memory-contention-aware Concurrent DNN Execution for Diversely Heterogeneous System-on-Chips (HaX-CoNN)",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Shared Memory-contention-aware Concurrent DNN Execution for Diversely Heterogeneous SoCs",
+        "authors": "Ismet Dagli; Mehmet E. Belviranli",
+        "year": 2024,
+        "venue": "PPoPP 2024 acceptance stated in source",
+        "identifier": "arXiv:2308.05869v2",
+        "version": "arXiv:2308.05869v2",
         "source_links": [
           "https://arxiv.org/abs/2308.05869",
           "https://arxiv.org/pdf/2308.05869"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
-        "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
+        "page_count": 14,
+        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "conversion_or_QA_pending",
-        "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:58.151728+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-01T17:27:46.609509+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841776+00:00",
@@ -1661,10 +1790,26 @@
             "at": "2026-10-31T19:08:58.151728+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.326545+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
+          },
+          {
+            "at": "2026-11-01T17:27:46.609509+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
           }
         ],
-        "checked_synopsis": null,
-        "public_citations": []
+        "checked_synopsis": "HaX-CoNN models layer execution, accelerator transitions and shared-memory contention for concurrent DNNs. Setup and evaluation include NVIDIA platforms and Snapdragon865; selected tables were checked.",
+        "public_citations": [
+          {
+            "url": "https://arxiv.org/pdf/2308.05869v2#page=4",
+            "label": "Original PDF / methods and evaluation",
+            "pdf_page": 4
+          }
+        ]
       },
       {
         "paper_id": "37",
@@ -2002,7 +2147,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 14,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2010,8 +2155,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:06.045640+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.331910+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842090+00:00",
@@ -2022,6 +2167,11 @@
             "at": "2026-10-31T19:09:06.045640+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.331910+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2048,7 +2198,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 14,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2056,8 +2206,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:06.386436+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.338286+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842137+00:00",
@@ -2068,6 +2218,11 @@
             "at": "2026-10-31T19:09:06.386436+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.338286+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2139,7 +2294,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 17,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2147,8 +2302,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:09.391459+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.344826+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842208+00:00",
@@ -2159,6 +2314,11 @@
             "at": "2026-10-31T19:09:09.391459+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.344826+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2185,7 +2345,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 15,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2193,8 +2353,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:12.713557+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.348523+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842243+00:00",
@@ -2205,6 +2365,11 @@
             "at": "2026-10-31T19:09:12.713557+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.348523+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2231,7 +2396,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 18,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2239,8 +2404,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:15.353942+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.352497+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842280+00:00",
@@ -2251,6 +2416,11 @@
             "at": "2026-10-31T19:09:15.353942+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.352497+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2277,7 +2447,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 15,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2285,8 +2455,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:15.988340+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.358164+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842317+00:00",
@@ -2297,6 +2467,11 @@
             "at": "2026-10-31T19:09:15.988340+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.358164+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2323,7 +2498,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 17,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2331,8 +2506,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:16.224237+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.363699+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842366+00:00",
@@ -2343,6 +2518,11 @@
             "at": "2026-10-31T19:09:16.224237+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.363699+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2459,7 +2639,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 15,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2467,8 +2647,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:18.047144+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.368362+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842482+00:00",
@@ -2479,6 +2659,11 @@
             "at": "2026-10-31T19:09:18.047144+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.368362+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2505,7 +2690,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 16,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2513,8 +2698,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:18.330727+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.374889+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842523+00:00",
@@ -2525,6 +2710,11 @@
             "at": "2026-10-31T19:09:18.330727+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.374889+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2551,7 +2741,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 13,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2559,8 +2749,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:18.639526+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.380343+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842560+00:00",
@@ -2571,6 +2761,11 @@
             "at": "2026-10-31T19:09:18.639526+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.380343+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2642,7 +2837,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 24,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2650,8 +2845,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:21.268331+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.395582+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842651+00:00",
@@ -2662,6 +2857,11 @@
             "at": "2026-10-31T19:09:21.268331+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.395582+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2823,7 +3023,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 34,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2831,8 +3031,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:24.778314+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.413278+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842814+00:00",
@@ -2843,6 +3043,11 @@
             "at": "2026-10-31T19:09:24.778314+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.413278+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2914,7 +3119,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 18,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2922,8 +3127,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:25.827676+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.418809+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842898+00:00",
@@ -2934,6 +3139,11 @@
             "at": "2026-10-31T19:09:25.827676+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.418809+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -2960,7 +3170,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 18,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -2968,8 +3178,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:27.939063+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.425613+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842937+00:00",
@@ -2980,6 +3190,11 @@
             "at": "2026-10-31T19:09:27.939063+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.425613+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -3051,7 +3266,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 13,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -3059,8 +3274,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:30.903613+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.429518+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843012+00:00",
@@ -3071,6 +3286,11 @@
             "at": "2026-10-31T19:09:30.903613+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.429518+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -3097,7 +3317,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 13,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -3105,8 +3325,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:31.077441+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.462574+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843050+00:00",
@@ -3117,6 +3337,11 @@
             "at": "2026-10-31T19:09:31.077441+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.462574+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -3458,7 +3683,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 24,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -3466,8 +3691,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:38.185687+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.471119+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843364+00:00",
@@ -3478,6 +3703,11 @@
             "at": "2026-10-31T19:09:38.185687+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.471119+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -3729,7 +3959,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 15,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -3737,8 +3967,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:42.078233+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.478752+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843627+00:00",
@@ -3749,6 +3979,11 @@
             "at": "2026-10-31T19:09:42.078233+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.478752+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -3775,7 +4010,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 11,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -3783,8 +4018,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:42.361824+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.483176+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843669+00:00",
@@ -3795,6 +4030,11 @@
             "at": "2026-10-31T19:09:42.361824+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.483176+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -3821,7 +4061,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 32,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -3829,8 +4069,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:44.055796+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.489818+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843710+00:00",
@@ -3841,6 +4081,11 @@
             "at": "2026-10-31T19:09:44.055796+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.489818+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -3867,7 +4112,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 11,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -3875,8 +4120,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:44.272803+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.509849+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843751+00:00",
@@ -3887,6 +4132,11 @@
             "at": "2026-10-31T19:09:44.272803+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.509849+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -4003,7 +4253,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 18,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -4011,8 +4261,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:47.161363+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.523988+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843877+00:00",
@@ -4023,6 +4273,11 @@
             "at": "2026-10-31T19:09:47.161363+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.523988+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -4184,7 +4439,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 16,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -4192,8 +4447,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:49.515140+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.531751+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844030+00:00",
@@ -4204,6 +4459,11 @@
             "at": "2026-10-31T19:09:49.515140+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.531751+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -4500,7 +4760,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 16,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -4508,8 +4768,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:54.199600+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.536569+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844301+00:00",
@@ -4520,6 +4780,11 @@
             "at": "2026-10-31T19:09:54.199600+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.536569+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -4681,7 +4946,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 14,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -4689,8 +4954,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:56.620850+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.540433+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844457+00:00",
@@ -4701,6 +4966,11 @@
             "at": "2026-10-31T19:09:56.620850+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.540433+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -4727,7 +4997,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 15,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -4735,8 +5005,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:56.784858+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.544335+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844494+00:00",
@@ -4747,6 +5017,11 @@
             "at": "2026-10-31T19:09:56.784858+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.544335+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -4773,7 +5048,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 15,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -4781,8 +5056,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:57.098144+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.562213+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844539+00:00",
@@ -4793,6 +5068,11 @@
             "at": "2026-10-31T19:09:57.098144+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.562213+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -4819,7 +5099,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 12,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -4827,8 +5107,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:57.701070+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.568826+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844582+00:00",
@@ -4839,6 +5119,11 @@
             "at": "2026-10-31T19:09:57.701070+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.568826+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -4865,7 +5150,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 18,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -4873,8 +5158,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:57.834433+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.579024+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844621+00:00",
@@ -4885,6 +5170,11 @@
             "at": "2026-10-31T19:09:57.834433+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.579024+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -5045,7 +5335,7 @@
         "identity": "unverified",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
+        "page_count": 121,
         "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
@@ -5053,8 +5343,8 @@
         "duplicate_leads": [],
         "blocker": "conversion_or_QA_pending",
         "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:10:01.987834+00:00",
+        "reviewer": "Codex literature agent / deterministic pypdf6.21.4",
+        "updated_at": "2026-11-01T17:26:54.586191+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844780+00:00",
@@ -5065,6 +5355,11 @@
             "at": "2026-10-31T19:10:01.987834+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.586191+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
           }
         ],
         "checked_synopsis": null,
@@ -5077,39 +5372,55 @@
         "topic": "AI research methodology; identity unverified",
         "priority": "closest",
         "title_indexed": "The AI Scientist",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+        "authors": "Chris Lu; Cong Lu; Robert Tjarko Lange; Jakob Foerster; Jeff Clune; David Ha",
+        "year": 2024,
+        "venue": "arXiv preprint",
+        "identifier": "arXiv:2408.06292v3",
+        "version": "arXiv:2408.06292v3",
         "source_links": [
           "https://arxiv.org/abs/2408.06292",
           "https://arxiv.org/pdf/2408.06292"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
-        "extraction_limitations": "Figures, columns, tables and equations require visual checking.",
+        "page_count": 186,
+        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "conversion_or_QA_pending",
-        "next_action": "Convert and visually validate extraction, then read methods.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T20:34:05.264502+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-01T17:27:46.609715+00:00",
         "history": [
           {
             "at": "2026-10-31T20:34:05.264502+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.645009+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
+          },
+          {
+            "at": "2026-11-01T17:27:46.609715+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
           }
         ],
-        "checked_synopsis": null,
-        "public_citations": []
+        "checked_synopsis": "Template-based ML research pipeline with automated reviewing. Main-text methods, evaluation and limitations were read, with selected tables and source passages visually checked; appendices remain incomplete.",
+        "public_citations": [
+          {
+            "url": "https://arxiv.org/pdf/2408.06292v3#page=6",
+            "label": "Original PDF / methods and evaluation",
+            "pdf_page": 6
+          }
+        ]
       },
       {
         "paper_id": "M002",
@@ -5118,32 +5429,55 @@
         "topic": "AI research methodology; identity unverified",
         "priority": "closest",
         "title_indexed": "The AI Scientist-v2",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search",
+        "authors": "Yutaro Yamada et al.",
+        "year": 2025,
+        "venue": "arXiv preprint",
+        "identifier": "arXiv:2504.08066v1",
+        "version": "arXiv:2504.08066v1",
         "source_links": [
-          "https://arxiv.org/abs/2504.08066"
+          "https://arxiv.org/abs/2504.08066",
+          "https://arxiv.org/pdf/2504.08066"
         ],
-        "acquisition": "not_attempted",
-        "identity": "unverified",
-        "conversion": "unavailable",
+        "acquisition": "downloaded_pdf_unverified",
+        "identity": "title_and_version_checked",
+        "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "page_count": 69,
+        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-11-01T16:12:12.770179+00:00",
-        "history": [],
-        "checked_synopsis": null,
-        "public_citations": []
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-01T17:27:46.610080+00:00",
+        "history": [
+          {
+            "at": "2026-11-01T16:26:03.814168+00:00",
+            "actor": "Codex acquisition agent",
+            "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.664007+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
+          },
+          {
+            "at": "2026-11-01T17:27:46.610080+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
+          }
+        ],
+        "checked_synopsis": "Research pipeline using experiment management, tree search and visual feedback. Workshop evaluation methodology, selection process and limitations were source-checked; full appendices remain incomplete.",
+        "public_citations": [
+          {
+            "url": "https://arxiv.org/pdf/2504.08066v1#page=9",
+            "label": "Original PDF / methods and evaluation",
+            "pdf_page": 9
+          }
+        ]
       },
       {
         "paper_id": "M003",
@@ -5152,32 +5486,55 @@
         "topic": "AI research methodology; identity unverified",
         "priority": "closest",
         "title_indexed": "Agent Laboratory",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Agent Laboratory: Using LLM Agents as Research Assistants",
+        "authors": "Samuel Schmidgall et al.",
+        "year": 2025,
+        "venue": "Findings of EMNLP 2025 publisher PDF",
+        "identifier": "2025.findings-emnlp.320",
+        "version": "2025.findings-emnlp.320",
         "source_links": [
-          "https://aclanthology.org/2025.findings-emnlp.320/"
+          "https://aclanthology.org/2025.findings-emnlp.320/",
+          "https://aclanthology.org/2025.findings-emnlp.320.pdf"
         ],
-        "acquisition": "not_attempted",
-        "identity": "unverified",
-        "conversion": "unavailable",
+        "acquisition": "downloaded_pdf_unverified",
+        "identity": "title_and_version_checked",
+        "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "page_count": 67,
+        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-11-01T16:12:12.770179+00:00",
-        "history": [],
-        "checked_synopsis": null,
-        "public_citations": []
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-01T17:27:46.610316+00:00",
+        "history": [
+          {
+            "at": "2026-11-01T16:26:05.355779+00:00",
+            "actor": "Codex acquisition agent",
+            "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.671853+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
+          },
+          {
+            "at": "2026-11-01T17:27:46.610316+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
+          }
+        ],
+        "checked_synopsis": "Human-idea research assistant with autonomous and co-pilot modes. Methods, human/automated evaluations, limitations and a survey instrument were read; full appendices remain incomplete.",
+        "public_citations": [
+          {
+            "url": "https://aclanthology.org/2025.findings-emnlp.320.pdf#page=6",
+            "label": "Original PDF / methods and evaluation",
+            "pdf_page": 6
+          }
+        ]
       },
       {
         "paper_id": "M004",
@@ -5186,32 +5543,55 @@
         "topic": "AI research methodology; identity unverified",
         "priority": "closest",
         "title_indexed": "RE-Bench",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents against Human Experts",
+        "authors": "Hjalmar Wijk et al.",
+        "year": 2025,
+        "venue": "ICML2025, PMLR267 publisher PDF",
+        "identifier": "PMLR267/wijk25a",
+        "version": "PMLR267/wijk25a",
         "source_links": [
-          "https://proceedings.mlr.press/v267/wijk25a.html"
+          "https://proceedings.mlr.press/v267/wijk25a.html",
+          "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wijk25a/wijk25a.pdf"
         ],
-        "acquisition": "not_attempted",
-        "identity": "unverified",
-        "conversion": "unavailable",
+        "acquisition": "downloaded_pdf_unverified",
+        "identity": "title_and_version_checked",
+        "conversion": "pending",
         "extraction_qa": "not_checked",
-        "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "page_count": 61,
+        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-11-01T16:12:12.770179+00:00",
-        "history": [],
-        "checked_synopsis": null,
-        "public_citations": []
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-01T17:27:46.610539+00:00",
+        "history": [
+          {
+            "at": "2026-11-01T16:26:08.252384+00:00",
+            "actor": "Codex acquisition agent",
+            "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-01T17:26:54.737914+00:00",
+            "actor": "Codex literature agent / deterministic pypdf6.21.4",
+            "action": "PDF page count computed from the hash-verified original; this metadata operation does not establish reading or extraction quality."
+          },
+          {
+            "at": "2026-11-01T17:27:46.610539+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
+          }
+        ],
+        "checked_synopsis": "Research-engineering benchmark with expert attempts, executable scores and explicit time budgets. Main methods/results/limitations and evaluation-procedure appendix were read and selected source pages checked.",
+        "public_citations": [
+          {
+            "url": "https://proceedings.mlr.press/v267/wijk25a/wijk25a.pdf#page=14",
+            "label": "Original PDF / methods and evaluation",
+            "pdf_page": 14
+          }
+        ]
       },
       {
         "paper_id": "M005",
@@ -5242,7 +5622,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T16:12:12.770179+00:00",
+        "updated_at": "2026-11-01T17:31:50.114054+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -5276,7 +5656,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T16:12:12.770179+00:00",
+        "updated_at": "2026-11-01T17:31:50.114054+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -5310,7 +5690,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T16:12:12.770179+00:00",
+        "updated_at": "2026-11-01T17:31:50.114054+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -5344,7 +5724,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T16:12:12.770179+00:00",
+        "updated_at": "2026-11-01T17:31:50.114054+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -5378,7 +5758,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T16:12:12.770179+00:00",
+        "updated_at": "2026-11-01T17:31:50.114054+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -5412,7 +5792,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T16:12:12.770179+00:00",
+        "updated_at": "2026-11-01T17:31:50.114054+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -5422,26 +5802,27 @@
       "original_leads": 111,
       "added_leads": 10,
       "original_pdfs": 50,
-      "added_pdfs": 1,
-      "unique_documents": 51,
+      "added_pdfs": 4,
+      "unique_documents": 54,
       "converted_documents": 0,
       "reading_depth": {
-        "metadata_only": 121
+        "metadata_only": 113,
+        "methods_evaluation_read": 8
       },
       "tracks": {
         "A": {
           "leads": 111,
-          "source_read": 0
+          "source_read": 4
         },
         "B": {
           "leads": 10,
-          "source_read": 0
+          "source_read": 4
         }
       }
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-01T16:19:17.975676+00:00",
+  "updated_at": "2026-11-01T17:33:52.194614+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
