@@ -2,7 +2,7 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-01T21:16:55.803823+00:00",
+    "updated_at": "2026-11-01T21:47:16.187405+00:00",
     "pipeline": {
       "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
@@ -387,9 +387,9 @@
         "synthesis": "not_started",
         "duplicate_leads": [],
         "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:21.178965+00:00",
+        "next_action": "Guarded legitimate-source acquisition, identity and version verification before methods reading.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-01T21:47:16.187405+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840611+00:00",
@@ -400,6 +400,11 @@
             "at": "2026-10-31T19:08:21.178965+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: landing_only_full_text_unresolved"
+          },
+          {
+            "at": "2026-11-01T21:47:16.187405+00:00",
+            "actor": "Codex literature agent",
+            "action": "Additional primary-source candidate recorded; metadata scope only. Full text remains unacquired and methods unread."
           }
         ],
         "checked_synopsis": null,
@@ -767,9 +772,9 @@
         "synthesis": "not_started",
         "duplicate_leads": [],
         "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:29.231046+00:00",
+        "next_action": "Guarded legitimate-source acquisition, identity and version verification before methods reading.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-01T21:47:16.187405+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840862+00:00",
@@ -780,6 +785,11 @@
             "at": "2026-10-31T19:08:29.231046+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: landing_only_full_text_unresolved"
+          },
+          {
+            "at": "2026-11-01T21:47:16.187405+00:00",
+            "actor": "Codex literature agent",
+            "action": "Additional primary-source candidate recorded; metadata scope only. Full text remains unacquired and methods unread."
           }
         ],
         "checked_synopsis": null,
@@ -792,30 +802,30 @@
         "topic": "Original curated 29",
         "priority": "corpus",
         "title_indexed": "Wang et al., Understanding and Tackling the Hidden Memory Latency for Edge-based Heterogeneous Platform, HotEdge 2020.",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Understanding and Tackling the Hidden Memory Latency for Edge-based Heterogeneous Platform",
+        "authors": "Zhendong Wang, Zhen Wang, Cong Liu, Yang Hu",
+        "year": 2020,
+        "venue": "HotEdge2020 archived7-page publisher PDF",
+        "identifier": "HotEdge2020 archived7-page publisher PDF",
+        "version": "HotEdge2020 archived7-page publisher PDF",
         "source_links": [
           "https://www.usenix.org/conference/hotedge20/presentation/wang",
           "https://www.usenix.org/system/files/hotedge20_paper_wang_0.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 7,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:45:13.427074+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840902+00:00",
@@ -841,14 +851,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:45:13.427074+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "GPU initialization and prefetch study with explicit small-input regressions and limits on transfer to real applications.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 2,
-            "url": "https://www.usenix.org/system/files/hotedge20_paper_wang_0.pdf#page=2"
+            "label": "Original source / methods",
+            "pdf_page": 4,
+            "url": "https://www.usenix.org/system/files/hotedge20_paper_wang_0.pdf#page=4"
           }
         ]
       },
@@ -879,9 +894,9 @@
         "synthesis": "not_started",
         "duplicate_leads": [],
         "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:31.245036+00:00",
+        "next_action": "Guarded legitimate-source acquisition, identity and version verification before methods reading.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-01T21:47:16.187405+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840941+00:00",
@@ -892,6 +907,11 @@
             "at": "2026-10-31T19:08:31.245036+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: landing_only_full_text_unresolved"
+          },
+          {
+            "at": "2026-11-01T21:47:16.187405+00:00",
+            "actor": "Codex literature agent",
+            "action": "Additional primary-source candidate recorded; metadata scope only. Full text remains unacquired and methods unread."
           }
         ],
         "checked_synopsis": null,
@@ -924,9 +944,9 @@
         "synthesis": "not_started",
         "duplicate_leads": [],
         "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:32.085439+00:00",
+        "next_action": "Guarded legitimate-source acquisition, identity and version verification before methods reading.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-01T21:47:16.187405+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840980+00:00",
@@ -937,6 +957,11 @@
             "at": "2026-10-31T19:08:32.085439+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: landing_only_full_text_unresolved"
+          },
+          {
+            "at": "2026-11-01T21:47:16.187405+00:00",
+            "actor": "Codex literature agent",
+            "action": "Additional primary-source candidate recorded; metadata scope only. Full text remains unacquired and methods unread."
           }
         ],
         "checked_synopsis": null,
@@ -949,30 +974,30 @@
         "topic": "Original curated 29",
         "priority": "corpus",
         "title_indexed": "Reuse distance-based shared LLC management mechanism for heterogeneous CPU-GPU systems, IEICE Electronics Express 2024.",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Reuse distance-based shared LLC management mechanism for heterogeneous CPU-GPU systems",
+        "authors": "Jiaheng Liu, Ryusuke Egawa, Keichi Takahashi, Yoichi Shimomura, Hiroyuki Takizawa",
+        "year": 2024,
+        "venue": "IEICEElectronicsExpress21(4), DOI10.1587/elex.21.20230520; copyedited25February2024 publisher6-page PDF",
+        "identifier": "IEICEElectronicsExpress21(4), DOI10.1587/elex.21.20230520; copyedited25February2024 publisher6-page PDF",
+        "version": "IEICEElectronicsExpress21(4), DOI10.1587/elex.21.20230520; copyedited25February2024 publisher6-page PDF",
         "source_links": [
           "https://www.jstage.jst.go.jp/article/elex/21/4/21_21.20230520/_article",
           "https://www.jstage.jst.go.jp/article/elex/21/4/21_21.20230520/_pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 6,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:45:13.427074+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841026+00:00",
@@ -998,12 +1023,17 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:45:13.427074+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Simulation-based LLC management study; performance windows, transformed workloads and modeled component energy remain explicit.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
+            "label": "Original source / methods",
             "pdf_page": 4,
             "url": "https://www.jstage.jst.go.jp/article/elex/21/4/21_21.20230520/_pdf#page=4"
           }
@@ -2369,30 +2399,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "Miriam: Exploiting Elastic Kernels for Real-time Multi-DNN Inference on Edge GPU",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Miriam: Exploiting Elastic Kernels for Real-time Multi-DNN Inference on Edge GPU",
+        "authors": "Zhihe Zhao, Neiwen Ling, Nan Guan, Guoliang Xing",
+        "year": 2023,
+        "venue": "Archived14-page arXiv2307.04339 PDF; exact revision unresolved",
+        "identifier": "Archived14-page arXiv2307.04339 PDF; exact revision unresolved",
+        "version": "Archived14-page arXiv2307.04339 PDF; exact revision unresolved",
         "source_links": [
           "https://arxiv.org/abs/2307.04339",
           "https://arxiv.org/pdf/2307.04339"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 14,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:39:49.156370+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842090+00:00",
@@ -2418,14 +2448,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:39:49.156370+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation source review expanded; scope, counterexamples and remaining validation recorded. Independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 9,
-            "url": "https://arxiv.org/pdf/2307.04339#page=9"
+            "label": "Original source / methods",
+            "pdf_page": 10,
+            "url": "https://arxiv.org/pdf/2307.04339#page=10"
           }
         ]
       },
@@ -2436,30 +2471,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "Decentralized Application-Level Adaptive Scheduling for Multi-Instance DNNs on Open Mobile Devices",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Decentralized Application-Level Adaptive Scheduling for Multi-Instance DNNs on Open Mobile Devices",
+        "authors": "Hsin-Hsuan Sung, Jou-An Chen, Wei Niu, Jiexiong Guan, Bin Ren, Xipeng Shen",
+        "year": 2023,
+        "venue": "USENIX ATC2023 publisher PDF,14pages including cover",
+        "identifier": "USENIX ATC2023 publisher PDF,14pages including cover",
+        "version": "USENIX ATC2023 publisher PDF,14pages including cover",
         "source_links": [
           "https://www.usenix.org/conference/atc23/presentation/sung",
           "https://www.usenix.org/system/files/atc23-sung.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 14,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:34:32.466410+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842137+00:00",
@@ -2485,14 +2520,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:34:32.466410+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation review expanded; convergence assumptions, baseline scope and per-task tradeoffs checked. Independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 8,
-            "url": "https://www.usenix.org/system/files/atc23-sung.pdf#page=8"
+            "label": "Original source / methods",
+            "pdf_page": 7,
+            "url": "https://www.usenix.org/system/files/atc23-sung.pdf#page=7"
           }
         ]
       },
@@ -2548,30 +2588,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "Unleash All Cores: Asymmetry-Aware Scalable DNN Inference on Mobile CPUs",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Unleash All Cores: Asymmetry-aware Scalable DNN Inference on Mobile CPUs",
+        "authors": "Qianlong Sang et al.",
+        "year": 2026,
+        "venue": "OSDI2026 publisher17-page PDF including cover",
+        "identifier": "OSDI2026 publisher17-page PDF including cover",
+        "version": "OSDI2026 publisher17-page PDF including cover",
         "source_links": [
           "https://www.usenix.org/conference/osdi26/presentation/sang",
           "https://www.usenix.org/system/files/osdi26-sang.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 17,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:39:49.156370+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842208+00:00",
@@ -2597,12 +2637,17 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:39:49.156370+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation source review expanded; scope, counterexamples and remaining validation recorded. Independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
+            "label": "Original source / methods",
             "pdf_page": 10,
             "url": "https://www.usenix.org/system/files/osdi26-sang.pdf#page=10"
           }
@@ -2615,30 +2660,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "Surviving the Impossible Trinity: Revisiting CPU Scheduling Problem on Modern COTS Mobile Devices",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Surviving the Impossible Trinity: Revisiting CPU Scheduling Problem on Modern COTS Mobile Devices (Operational Systems)",
+        "authors": "Jun Xiao et al.",
+        "year": 2026,
+        "venue": "OSDI2026 publisher15-page PDF including cover",
+        "identifier": "OSDI2026 publisher15-page PDF including cover",
+        "version": "OSDI2026 publisher15-page PDF including cover",
         "source_links": [
           "https://www.usenix.org/conference/osdi26/presentation/xiao",
           "https://www.usenix.org/system/files/osdi26-xiao.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 15,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:39:49.156370+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842243+00:00",
@@ -2664,14 +2709,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:39:49.156370+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation source review expanded; scope, counterexamples and remaining validation recorded. Independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 9,
-            "url": "https://www.usenix.org/system/files/osdi26-xiao.pdf#page=9"
+            "label": "Original source / methods",
+            "pdf_page": 11,
+            "url": "https://www.usenix.org/system/files/osdi26-xiao.pdf#page=11"
           }
         ]
       },
@@ -2682,30 +2732,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "Fast On-device LLM Inference with NPUs (llm.npu)",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Fast On-device LLM Inference with NPUs",
+        "authors": "Daliang Xu, Hao Zhang, Liming Yang, Ruiqi Liu, Gang Huang, Mengwei Xu, Xuanzhe Liu",
+        "year": 2025,
+        "venue": "ASPLOS2025 archived18-page arXiv2407.05858 source; exact revision unresolved",
+        "identifier": "ASPLOS2025 archived18-page arXiv2407.05858 source; exact revision unresolved",
+        "version": "ASPLOS2025 archived18-page arXiv2407.05858 source; exact revision unresolved",
         "source_links": [
           "https://arxiv.org/abs/2407.05858",
           "https://arxiv.org/pdf/2407.05858"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 18,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:34:32.466410+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842280+00:00",
@@ -2731,14 +2781,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:34:32.466410+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation expanded; implemented versus simulated execution, quality tradeoffs and artifact requirements checked. Independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 9,
-            "url": "https://arxiv.org/pdf/2407.05858#page=9"
+            "label": "Original source / methods",
+            "pdf_page": 12,
+            "url": "https://arxiv.org/pdf/2407.05858#page=12"
           }
         ]
       },
@@ -2749,30 +2804,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "PowerInfer-2: Fast Large Language Model Inference on a Smartphone",
-        "title_verified": null,
-        "authors": null,
+        "title_verified": "PowerInfer-2: Fast Large Language Model Inference on a Smartphone",
+        "authors": "Zhenliang Xue, Yixin Song, Zeyu Mi, Xinrui Zheng, Yubin Xia, Haibo Chen",
         "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "venue": "Archived15-page arXiv2406.06282 PDF; exact revision/date unresolved",
+        "identifier": "Archived15-page arXiv2406.06282 PDF; exact revision/date unresolved",
+        "version": "Archived15-page arXiv2406.06282 PDF; exact revision/date unresolved",
         "source_links": [
           "https://arxiv.org/abs/2406.06282",
           "https://arxiv.org/pdf/2406.06282"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 15,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:34:32.466410+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842317+00:00",
@@ -2798,14 +2853,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:34:32.466410+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation expanded; memory/sparsity controls, energy denominator and source consistency limits checked. Exact revision and independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 8,
-            "url": "https://arxiv.org/pdf/2406.06282#page=8"
+            "label": "Original source / methods",
+            "pdf_page": 6,
+            "url": "https://arxiv.org/pdf/2406.06282#page=6"
           }
         ]
       },
@@ -2978,30 +3038,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "MNN-AECS: Energy Optimization for LLM Decoding on Mobile Devices via Adaptive Core Selection",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "MNN-AECS: Energy Optimization for LLM Decoding on Mobile Devices via Adaptive Core Selection",
+        "authors": "Zhengxiang Huang et al.",
+        "year": 2025,
+        "venue": "arXiv2506.19884v1,24June2025; template footer is not publication identity",
+        "identifier": "arXiv2506.19884v1,24June2025; template footer is not publication identity",
+        "version": "arXiv2506.19884v1,24June2025; template footer is not publication identity",
         "source_links": [
           "https://arxiv.org/abs/2506.19884",
           "https://arxiv.org/pdf/2506.19884"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 15,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:34:32.466410+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842482+00:00",
@@ -3027,14 +3087,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:34:32.466410+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation expanded; core-selection constraint, modeled objective and platform-specific energy scope checked. Independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 9,
-            "url": "https://arxiv.org/pdf/2506.19884#page=9"
+            "label": "Original source / methods",
+            "pdf_page": 7,
+            "url": "https://arxiv.org/pdf/2506.19884#page=7"
           }
         ]
       },
@@ -3532,30 +3597,30 @@
         "topic": "Memory / cache / contention",
         "priority": "corpus",
         "title_indexed": "VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination",
+        "authors": "Muyan Hu et al.",
+        "year": 2026,
+        "venue": "OSDI2026 publisher18-page PDF including cover",
+        "identifier": "OSDI2026 publisher18-page PDF including cover",
+        "version": "OSDI2026 publisher18-page PDF including cover",
         "source_links": [
           "https://www.usenix.org/conference/osdi26/presentation/hu-muyan",
           "https://www.usenix.org/system/files/osdi26-hu-muyan.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 18,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:39:49.156370+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842898+00:00",
@@ -3581,14 +3646,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:39:49.156370+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation source review expanded; scope, counterexamples and remaining validation recorded. Independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 11,
-            "url": "https://www.usenix.org/system/files/osdi26-hu-muyan.pdf#page=11"
+            "label": "Original source / methods",
+            "pdf_page": 12,
+            "url": "https://www.usenix.org/system/files/osdi26-hu-muyan.pdf#page=12"
           }
         ]
       },
@@ -5551,30 +5621,30 @@
         "topic": "Tooling / reproducibility / workload methodology",
         "priority": "corpus",
         "title_indexed": "IntAttention: A Fully Integer Attention Pipeline for Efficient Edge Inference",
-        "title_verified": null,
-        "authors": null,
+        "title_verified": "IntAttention: A Fully Integer Attention Pipeline for Efficient Edge Inference",
+        "authors": "Wanli Zhong, Haibo Feng, Zirui Zhou, Hanyang Peng, Shiqi Yu",
         "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "venue": "Archived14-page arXiv2511.21513 PDF; exact revision unresolved",
+        "identifier": "Archived14-page arXiv2511.21513 PDF; exact revision unresolved",
+        "version": "Archived14-page arXiv2511.21513 PDF; exact revision unresolved",
         "source_links": [
           "https://arxiv.org/abs/2511.21513",
           "https://arxiv.org/pdf/2511.21513"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 14,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:39:49.156370+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844457+00:00",
@@ -5600,14 +5670,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:39:49.156370+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation source review expanded; scope, counterexamples and remaining validation recorded. Independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 7,
-            "url": "https://arxiv.org/pdf/2511.21513#page=7"
+            "label": "Original source / methods",
+            "pdf_page": 8,
+            "url": "https://arxiv.org/pdf/2511.21513#page=8"
           }
         ]
       },
@@ -5618,30 +5693,30 @@
         "topic": "Tooling / reproducibility / workload methodology",
         "priority": "corpus",
         "title_indexed": "MAS-Attention: Memory-Aware Stream Processing for Attention Acceleration on Resource-Constrained Edge Devices",
-        "title_verified": null,
-        "authors": null,
+        "title_verified": "MAS-Attention: Memory-Aware Stream Processing for Attention Acceleration on Resource-Constrained Edge Devices",
+        "authors": "Mohammadali Shakerdargah, Shan Lu, Chao Gao, Di Niu",
         "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "venue": "Archived15-page arXiv2411.17720 PDF; exact revision unresolved",
+        "identifier": "Archived15-page arXiv2411.17720 PDF; exact revision unresolved",
+        "version": "Archived15-page arXiv2411.17720 PDF; exact revision unresolved",
         "source_links": [
           "https://arxiv.org/abs/2411.17720",
           "https://arxiv.org/pdf/2411.17720"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 15,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:39:49.156370+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844494+00:00",
@@ -5667,14 +5742,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:39:49.156370+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation source review expanded; scope, counterexamples and remaining validation recorded. Independent review pending.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 7,
-            "url": "https://arxiv.org/pdf/2411.17720#page=7"
+            "label": "Original source / methods",
+            "pdf_page": 10,
+            "url": "https://arxiv.org/pdf/2411.17720#page=10"
           }
         ]
       },
@@ -6531,19 +6611,19 @@
       "added_pdfs": 4,
       "unique_documents": 54,
       "identity_mismatches": 2,
-      "methods_reviews": 21,
-      "targeted_skims": 31,
+      "methods_reviews": 33,
+      "targeted_skims": 19,
       "metadata_only": 69,
       "converted_documents": 0,
       "reading_depth": {
         "metadata_only": 69,
-        "methods_evaluation_read": 21,
-        "skimmed": 31
+        "methods_evaluation_read": 33,
+        "skimmed": 19
       },
       "tracks": {
         "A": {
           "leads": 111,
-          "source_read": 17
+          "source_read": 29
         },
         "B": {
           "leads": 10,
@@ -6553,7 +6633,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-01T21:22:44.891831+00:00",
+  "updated_at": "2026-11-01T21:47:24.063020+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
