@@ -2,7 +2,7 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-01T18:52:59.390197+00:00",
+    "updated_at": "2026-11-01T21:16:55.803823+00:00",
     "pipeline": {
       "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
@@ -118,9 +118,9 @@
         "checked_synopsis": "Methods separate host orchestration and device-active work on H100/H200. Key equations, protocol and selected result figures were checked against the original PDF.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2603.12465#page=3",
             "label": "Original PDF / methods and evaluation",
-            "pdf_page": 3
+            "pdf_page": 3,
+            "url": "https://arxiv.org/pdf/2603.12465#page=3"
           }
         ]
       },
@@ -185,9 +185,9 @@
         "checked_synopsis": "HeteroInfer studies GPU/NPU execution, shape-dependent partitioning and explicit synchronization on mobile SoCs. Methods, evaluation and selected figures/tables have been source-checked.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2501.14794#page=8",
             "label": "Original PDF / methods and evaluation",
-            "pdf_page": 8
+            "pdf_page": 8,
+            "url": "https://arxiv.org/pdf/2501.14794#page=8"
           }
         ]
       },
@@ -466,9 +466,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/HPCA_2016_Coherence.pdf#page=7",
             "label": "Original source / selected methods",
-            "pdf_page": 7
+            "pdf_page": 7,
+            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/HPCA_2016_Coherence.pdf#page=7"
           }
         ]
       },
@@ -533,9 +533,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/IISWC_2015_GPU_pipeline.pdf#page=3",
             "label": "Original source / selected methods",
-            "pdf_page": 3
+            "pdf_page": 3,
+            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/IISWC_2015_GPU_pipeline.pdf#page=3"
           }
         ]
       },
@@ -600,9 +600,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://proceedings.mlsys.org/paper_files/paper/2023/file/07b7c2f8a6978e376f9656d69619bfbb-Paper-mlsys2023.pdf#page=8",
             "label": "Original source / selected methods",
-            "pdf_page": 8
+            "pdf_page": 8,
+            "url": "https://proceedings.mlsys.org/paper_files/paper/2023/file/07b7c2f8a6978e376f9656d69619bfbb-Paper-mlsys2023.pdf#page=8"
           }
         ]
       },
@@ -734,9 +734,9 @@
         "checked_synopsis": "Cross-framework mobile LLM study covering CPU/GPU/NPU, output quality, memory probes and energy instrumentation. Methods and limitations were read; selected original pages were visually checked.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2607.05475#page=7",
             "label": "Original PDF / methods and evaluation",
-            "pdf_page": 7
+            "pdf_page": 7,
+            "url": "https://arxiv.org/pdf/2607.05475#page=7"
           }
         ]
       },
@@ -846,9 +846,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://www.usenix.org/system/files/hotedge20_paper_wang_0.pdf#page=2",
             "label": "Original source / selected methods",
-            "pdf_page": 2
+            "pdf_page": 2,
+            "url": "https://www.usenix.org/system/files/hotedge20_paper_wang_0.pdf#page=2"
           }
         ]
       },
@@ -1003,9 +1003,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://www.jstage.jst.go.jp/article/elex/21/4/21_21.20230520/_pdf#page=4",
             "label": "Original source / selected methods",
-            "pdf_page": 4
+            "pdf_page": 4,
+            "url": "https://www.jstage.jst.go.jp/article/elex/21/4/21_21.20230520/_pdf#page=4"
           }
         ]
       },
@@ -1115,9 +1115,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2608.09075#page=8",
             "label": "Original source / selected methods",
-            "pdf_page": 8
+            "pdf_page": 8,
+            "url": "https://arxiv.org/pdf/2608.09075#page=8"
           }
         ]
       },
@@ -1519,9 +1519,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/MICRO_2019_NVBit.pdf#page=8",
             "label": "Original source / selected methods",
-            "pdf_page": 8
+            "pdf_page": 8,
+            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/MICRO_2019_NVBit.pdf#page=8"
           }
         ]
       },
@@ -1813,30 +1813,30 @@
         "topic": "Mobile SoC / direct comparisons",
         "priority": "corpus",
         "title_indexed": "FlashMem: Supporting Modern DNN Workloads on Mobile with GPU Memory Hierarchy Optimizations",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "FlashMem: Supporting Modern DNN Workloads on Mobile with GPU Memory Hierarchy Optimizations",
+        "authors": "Zhihao Shu, Md Musfiqur Rahman Sanim, Hangyu Zheng, Kunxiong Zhu, Miao Yin, Gagan Agrawal, Wei Niu",
+        "year": 2026,
+        "venue": "ASPLOS2026 archived15-page source; March22\u201326,2026; exact PDF hash retained",
+        "identifier": "ASPLOS2026 archived15-page source; March22\u201326,2026; exact PDF hash retained",
+        "version": "ASPLOS2026 archived15-page source; March22\u201326,2026; exact PDF hash retained",
         "source_links": [
           "https://arxiv.org/abs/2602.15379",
           "https://arxiv.org/pdf/2602.15379"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 15,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:16:55.803823+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841661+00:00",
@@ -1862,14 +1862,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:16:55.803823+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation reading expanded; preparation/steady-state boundaries and memory/power scope checked. Independent review pending.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2602.15379#page=8",
-            "label": "Original source / selected methods",
-            "pdf_page": 8
+            "label": "Original source / methods",
+            "pdf_page": 9,
+            "url": "https://arxiv.org/pdf/2602.15379#page=9"
           }
         ]
       },
@@ -2036,9 +2041,9 @@
         "checked_synopsis": "HaX-CoNN models layer execution, accelerator transitions and shared-memory contention for concurrent DNNs. Setup and evaluation include NVIDIA platforms and Snapdragon865; selected tables were checked.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2308.05869#page=4",
             "label": "Original PDF / methods and evaluation",
-            "pdf_page": 4
+            "pdf_page": 4,
+            "url": "https://arxiv.org/pdf/2308.05869#page=4"
           }
         ]
       },
@@ -2418,9 +2423,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2307.04339#page=9",
             "label": "Original source / selected methods",
-            "pdf_page": 9
+            "pdf_page": 9,
+            "url": "https://arxiv.org/pdf/2307.04339#page=9"
           }
         ]
       },
@@ -2485,9 +2490,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://www.usenix.org/system/files/atc23-sung.pdf#page=8",
             "label": "Original source / selected methods",
-            "pdf_page": 8
+            "pdf_page": 8,
+            "url": "https://www.usenix.org/system/files/atc23-sung.pdf#page=8"
           }
         ]
       },
@@ -2597,9 +2602,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://www.usenix.org/system/files/osdi26-sang.pdf#page=10",
             "label": "Original source / selected methods",
-            "pdf_page": 10
+            "pdf_page": 10,
+            "url": "https://www.usenix.org/system/files/osdi26-sang.pdf#page=10"
           }
         ]
       },
@@ -2664,9 +2669,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://www.usenix.org/system/files/osdi26-xiao.pdf#page=9",
             "label": "Original source / selected methods",
-            "pdf_page": 9
+            "pdf_page": 9,
+            "url": "https://www.usenix.org/system/files/osdi26-xiao.pdf#page=9"
           }
         ]
       },
@@ -2731,9 +2736,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2407.05858#page=9",
             "label": "Original source / selected methods",
-            "pdf_page": 9
+            "pdf_page": 9,
+            "url": "https://arxiv.org/pdf/2407.05858#page=9"
           }
         ]
       },
@@ -2798,9 +2803,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2406.06282#page=8",
             "label": "Original source / selected methods",
-            "pdf_page": 8
+            "pdf_page": 8,
+            "url": "https://arxiv.org/pdf/2406.06282#page=8"
           }
         ]
       },
@@ -2811,30 +2816,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "Scaling LLM Test-Time Compute with Mobile NPU on Smartphones",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Scaling LLM Test-Time Compute with Mobile NPU on Smartphones",
+        "authors": "Zixu Hao, Jianyu Wei, Tuowei Wang, Minxing Huang, Huiqiang Jiang, Shiqi Jiang, Ting Cao, Ju Ren",
+        "year": 2026,
+        "venue": "EuroSys2026 archived17-page source; April27\u201330,2026; exact PDF hash retained",
+        "identifier": "EuroSys2026 archived17-page source; April27\u201330,2026; exact PDF hash retained",
+        "version": "EuroSys2026 archived17-page source; April27\u201330,2026; exact PDF hash retained",
         "source_links": [
           "https://arxiv.org/abs/2509.23324",
           "https://arxiv.org/pdf/2509.23324"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 17,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:16:55.803823+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842366+00:00",
@@ -2860,14 +2865,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:16:55.803823+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation expanded, including backend identity, shared-memory visibility, CPU fallback and quality/cost boundaries. Independent review pending.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2509.23324#page=9",
-            "label": "Original source / selected methods",
-            "pdf_page": 9
+            "label": "Original source / methods",
+            "pdf_page": 9,
+            "url": "https://arxiv.org/pdf/2509.23324#page=9"
           }
         ]
       },
@@ -3022,9 +3032,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2506.19884#page=9",
             "label": "Original source / selected methods",
-            "pdf_page": 9
+            "pdf_page": 9,
+            "url": "https://arxiv.org/pdf/2506.19884#page=9"
           }
         ]
       },
@@ -3035,30 +3045,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "Dissecting the Impact of Mobile DVFS Governors on LLM Inference Performance and Energy Efficiency",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Dissecting the Impact of Mobile DVFS Governors on LLM Inference Performance and Energy Efficiency",
+        "authors": "Zongpu Zhang, Pranab Dash, Y. Charlie Hu, Qiang Xu, Jian Li, Haibing Guan",
+        "year": 2025,
+        "venue": "arXiv:2507.02135v1,2July2025;16-page archived PDF",
+        "identifier": "arXiv:2507.02135v1,2July2025;16-page archived PDF",
+        "version": "arXiv:2507.02135v1,2July2025;16-page archived PDF",
         "source_links": [
           "https://arxiv.org/abs/2507.02135",
           "https://arxiv.org/pdf/2507.02135"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 16,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:16:55.803823+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842523+00:00",
@@ -3084,14 +3094,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:16:55.803823+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Methods/evaluation expanded with electrical scope, frequency-intervention design and offline tuning cost. Independent review pending.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2507.02135#page=4",
-            "label": "Original source / selected methods",
-            "pdf_page": 4
+            "label": "Original source / methods",
+            "pdf_page": 4,
+            "url": "https://arxiv.org/pdf/2507.02135#page=4"
           }
         ]
       },
@@ -3156,9 +3171,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://proceedings.mlsys.org/paper_files/paper/2020/file/bc19061f88f16e9ed4a18f0bbd47048a-Paper.pdf#page=8",
             "label": "Original source / selected methods",
-            "pdf_page": 8
+            "pdf_page": 8,
+            "url": "https://proceedings.mlsys.org/paper_files/paper/2020/file/bc19061f88f16e9ed4a18f0bbd47048a-Paper.pdf#page=8"
           }
         ]
       },
@@ -3459,9 +3474,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2205.14135#page=7",
             "label": "Original source / selected methods",
-            "pdf_page": 7
+            "pdf_page": 7,
+            "url": "https://arxiv.org/pdf/2205.14135#page=7"
           }
         ]
       },
@@ -3571,9 +3586,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://www.usenix.org/system/files/osdi26-hu-muyan.pdf#page=11",
             "label": "Original source / selected methods",
-            "pdf_page": 11
+            "pdf_page": 11,
+            "url": "https://www.usenix.org/system/files/osdi26-hu-muyan.pdf#page=11"
           }
         ]
       },
@@ -3638,9 +3653,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://www.usenix.org/system/files/osdi26-xu-yechen.pdf#page=9",
             "label": "Original source / selected methods",
-            "pdf_page": 9
+            "pdf_page": 9,
+            "url": "https://www.usenix.org/system/files/osdi26-xu-yechen.pdf#page=9"
           }
         ]
       },
@@ -3817,9 +3832,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2504.11750#page=5",
             "label": "Original source / selected methods",
-            "pdf_page": 5
+            "pdf_page": 5,
+            "url": "https://arxiv.org/pdf/2504.11750#page=5"
           }
         ]
       },
@@ -4199,9 +4214,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2504.03654#page=13",
             "label": "Original source / selected methods",
-            "pdf_page": 13
+            "pdf_page": 13,
+            "url": "https://arxiv.org/pdf/2504.03654#page=13"
           }
         ]
       },
@@ -4491,9 +4506,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/1409.3206#page=9",
             "label": "Original source / selected methods",
-            "pdf_page": 9
+            "pdf_page": 9,
+            "url": "https://arxiv.org/pdf/1409.3206#page=9"
           }
         ]
       },
@@ -4558,9 +4573,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf#page=7",
             "label": "Original source / selected methods",
-            "pdf_page": 7
+            "pdf_page": 7,
+            "url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf#page=7"
           }
         ]
       },
@@ -4625,9 +4640,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2404.10518#page=10",
             "label": "Original source / selected methods",
-            "pdf_page": 10
+            "pdf_page": 10,
+            "url": "https://arxiv.org/pdf/2404.10518#page=10"
           }
         ]
       },
@@ -4692,9 +4707,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://openaccess.thecvf.com/content_ICCV_2019/papers/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.pdf#page=6",
             "label": "Original source / selected methods",
-            "pdf_page": 6
+            "pdf_page": 6,
+            "url": "https://openaccess.thecvf.com/content_ICCV_2019/papers/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.pdf#page=6"
           }
         ]
       },
@@ -5051,9 +5066,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/1802.04799#page=7",
             "label": "Original source / selected methods",
-            "pdf_page": 7
+            "pdf_page": 7,
+            "url": "https://arxiv.org/pdf/1802.04799#page=7"
           }
         ]
       },
@@ -5388,9 +5403,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2303.07129#page=9",
             "label": "Original source / selected methods",
-            "pdf_page": 9
+            "pdf_page": 9,
+            "url": "https://arxiv.org/pdf/2303.07129#page=9"
           }
         ]
       },
@@ -5590,9 +5605,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2511.21513#page=7",
             "label": "Original source / selected methods",
-            "pdf_page": 7
+            "pdf_page": 7,
+            "url": "https://arxiv.org/pdf/2511.21513#page=7"
           }
         ]
       },
@@ -5657,9 +5672,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2411.17720#page=7",
             "label": "Original source / selected methods",
-            "pdf_page": 7
+            "pdf_page": 7,
+            "url": "https://arxiv.org/pdf/2411.17720#page=7"
           }
         ]
       },
@@ -5724,9 +5739,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2306.00978#page=6",
             "label": "Original source / selected methods",
-            "pdf_page": 6
+            "pdf_page": 6,
+            "url": "https://arxiv.org/pdf/2306.00978#page=6"
           }
         ]
       },
@@ -5847,9 +5862,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://www.usenix.org/system/files/osdi25-park-yeonhong.pdf#page=6",
             "label": "Original source / selected methods",
-            "pdf_page": 6
+            "pdf_page": 6,
+            "url": "https://www.usenix.org/system/files/osdi25-park-yeonhong.pdf#page=6"
           }
         ]
       },
@@ -6048,9 +6063,9 @@
         "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
         "public_citations": [
           {
-            "url": "https://www.eecg.toronto.edu/~jayar/pubs/theses/Andargie/FitsumAndargie.pdf#page=47",
             "label": "Original source / selected methods",
-            "pdf_page": 47
+            "pdf_page": 47,
+            "url": "https://www.eecg.toronto.edu/~jayar/pubs/theses/Andargie/FitsumAndargie.pdf#page=47"
           }
         ]
       },
@@ -6105,9 +6120,9 @@
         "checked_synopsis": "Template-based ML research pipeline with automated reviewing. Main-text methods, evaluation and limitations were read, with selected tables and source passages visually checked; appendices remain incomplete.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2408.06292#page=6",
             "label": "Original PDF / methods and evaluation",
-            "pdf_page": 6
+            "pdf_page": 6,
+            "url": "https://arxiv.org/pdf/2408.06292#page=6"
           }
         ]
       },
@@ -6162,9 +6177,9 @@
         "checked_synopsis": "Research pipeline using experiment management, tree search and visual feedback. Workshop evaluation methodology, selection process and limitations were source-checked; full appendices remain incomplete.",
         "public_citations": [
           {
-            "url": "https://arxiv.org/pdf/2504.08066#page=9",
             "label": "Original PDF / methods and evaluation",
-            "pdf_page": 9
+            "pdf_page": 9,
+            "url": "https://arxiv.org/pdf/2504.08066#page=9"
           }
         ]
       },
@@ -6219,9 +6234,9 @@
         "checked_synopsis": "Human-idea research assistant with autonomous and co-pilot modes. Methods, human/automated evaluations, limitations and a survey instrument were read; full appendices remain incomplete.",
         "public_citations": [
           {
-            "url": "https://aclanthology.org/2025.findings-emnlp.320.pdf#page=6",
             "label": "Original PDF / methods and evaluation",
-            "pdf_page": 6
+            "pdf_page": 6,
+            "url": "https://aclanthology.org/2025.findings-emnlp.320.pdf#page=6"
           }
         ]
       },
@@ -6276,9 +6291,9 @@
         "checked_synopsis": "Research-engineering benchmark with expert attempts, executable scores and explicit time budgets. Main methods/results/limitations and evaluation-procedure appendix were read and selected source pages checked.",
         "public_citations": [
           {
-            "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wijk25a/wijk25a.pdf#page=14",
             "label": "Original PDF / methods and evaluation",
-            "pdf_page": 14
+            "pdf_page": 14,
+            "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wijk25a/wijk25a.pdf#page=14"
           }
         ]
       },
@@ -6487,6 +6502,28 @@
         "public_citations": []
       }
     ],
+    "design_progress": [
+      {
+        "label": "Closest-work methods and source checks",
+        "status": "in_progress"
+      },
+      {
+        "label": "Offline instrument contract audit",
+        "status": "completed_pending_live_validation"
+      },
+      {
+        "label": "Bounded experiment specifications",
+        "status": "drafted_pending_primary_implementation"
+      },
+      {
+        "label": "Separate AI-study tasks and controls",
+        "status": "draft_unassigned"
+      },
+      {
+        "label": "Instrument admission and independent review",
+        "status": "pending"
+      }
+    ],
     "counts": {
       "original_leads": 111,
       "added_leads": 10,
@@ -6494,19 +6531,19 @@
       "added_pdfs": 4,
       "unique_documents": 54,
       "identity_mismatches": 2,
-      "methods_reviews": 18,
-      "targeted_skims": 34,
+      "methods_reviews": 21,
+      "targeted_skims": 31,
       "metadata_only": 69,
       "converted_documents": 0,
       "reading_depth": {
         "metadata_only": 69,
-        "methods_evaluation_read": 18,
-        "skimmed": 34
+        "methods_evaluation_read": 21,
+        "skimmed": 31
       },
       "tracks": {
         "A": {
           "leads": 111,
-          "source_read": 14
+          "source_read": 17
         },
         "B": {
           "leads": 10,
@@ -6516,7 +6553,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-01T18:56:06.103791+00:00",
+  "updated_at": "2026-11-01T21:22:44.891831+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
