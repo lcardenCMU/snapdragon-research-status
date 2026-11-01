@@ -2,7 +2,7 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-01T21:47:16.187405+00:00",
+    "updated_at": "2026-11-01T21:52:19.398563+00:00",
     "pipeline": {
       "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
@@ -417,30 +417,30 @@
         "topic": "Original curated 29",
         "priority": "corpus",
         "title_indexed": "Agarwal et al., Selective GPU Caches to Eliminate CPU-GPU HW Cache Coherence, HPCA 2016.",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Selective GPU Caches to Eliminate CPU\u2013GPU HW Cache Coherence",
+        "authors": "Neha Agarwal, David Nellans, Eiman Ebrahimi, Thomas F. Wenisch, John Danskin, Stephen W. Keckler",
+        "year": 2016,
+        "venue": "HPCA2016 author-hosted13-page proceedings PDF",
+        "identifier": "HPCA2016 author-hosted13-page proceedings PDF",
+        "version": "HPCA2016 author-hosted13-page proceedings PDF",
         "source_links": [
           "https://research.nvidia.com/index.php/publication/2016-03_selective-gpu-caches-eliminate-cpu-gpu-hw-cache-coherence",
           "https://d1qx31qr3h6wln.cloudfront.net/publications/HPCA_2016_Coherence.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 13,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:49:18.851982+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840651+00:00",
@@ -466,12 +466,17 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:49:18.851982+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Simulation-based selective caching study; page protection, excluded workloads and fine-grained-sharing limits are explicit.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
+            "label": "Original source / methods",
             "pdf_page": 7,
             "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/HPCA_2016_Coherence.pdf#page=7"
           }
@@ -484,30 +489,30 @@
         "topic": "Original curated 29",
         "priority": "corpus",
         "title_indexed": "Hestness, Keckler, Wood, GPU Computing Pipeline Inefficiencies and Optimization Opportunities in Heterogeneous CPU-GPU Processors, IISWC 2015.",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "GPU Computing Pipeline Inefficiencies and Optimization Opportunities in Heterogeneous CPU-GPU Processors",
+        "authors": "Joel Hestness, Stephen W. Keckler, David A. Wood",
+        "year": 2015,
+        "venue": "IISWC2015 author-hosted11-page proceedings PDF",
+        "identifier": "IISWC2015 author-hosted11-page proceedings PDF",
+        "version": "IISWC2015 author-hosted11-page proceedings PDF",
         "source_links": [
           "https://research.nvidia.com/publication/2015-10_gpu-computing-pipeline-inefficiencies-and-optimization-opportunities",
           "https://d1qx31qr3h6wln.cloudfront.net/publications/IISWC_2015_GPU_pipeline.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 11,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:49:18.851982+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840688+00:00",
@@ -533,14 +538,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:49:18.851982+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Simulation and analytical pipeline study with explicit ROI, limited-copy exceptions and bounds on overlap estimates.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 3,
-            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/IISWC_2015_GPU_pipeline.pdf#page=3"
+            "label": "Original source / methods",
+            "pdf_page": 4,
+            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/IISWC_2015_GPU_pipeline.pdf#page=4"
           }
         ]
       },
@@ -3182,30 +3192,30 @@
         "topic": "Heterogeneous inference / systems",
         "priority": "corpus",
         "title_indexed": "MNN: A Universal and Efficient Inference Engine",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "MNN: A Universal and Efficient Inference Engine",
+        "authors": "Xiaotang Jiang et al.",
+        "year": 2020,
+        "venue": "MLSys2020 publisher13-page PDF",
+        "identifier": "MLSys2020 publisher13-page PDF",
+        "version": "MLSys2020 publisher13-page PDF",
         "source_links": [
           "https://proceedings.mlsys.org/paper_files/paper/2020/hash/bc19061f88f16e9ed4a18f0bbd47048a-Abstract.html",
           "https://proceedings.mlsys.org/paper_files/paper/2020/file/bc19061f88f16e9ed4a18f0bbd47048a-Paper.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 13,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:52:19.398563+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842560+00:00",
@@ -3231,12 +3241,17 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:52:19.398563+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Mobile runtime study with explicit preparation boundaries, heuristic cost modeling and baseline-data provenance.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
+            "label": "Original source / methods",
             "pdf_page": 8,
             "url": "https://proceedings.mlsys.org/paper_files/paper/2020/file/bc19061f88f16e9ed4a18f0bbd47048a-Paper.pdf#page=8"
           }
@@ -3848,30 +3863,30 @@
         "topic": "Energy / thermal / OS",
         "priority": "corpus",
         "title_indexed": "Characterizing and Optimizing LLM Inference Workloads on CPU-GPU Coupled Architectures (SKIP)",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Characterizing and Optimizing LLM Inference Workloads on CPU-GPU Coupled Architectures",
+        "authors": "Prabhu Vellaisamy, Thomas Labonte, Sourav Chakraborty, Matt Turner, Samantika Sury, John Paul Shen",
+        "year": 2025,
+        "venue": "arXiv2504.11750v1,16April2025 archived13-page PDF",
+        "identifier": "arXiv2504.11750v1,16April2025 archived13-page PDF",
+        "version": "arXiv2504.11750v1,16April2025 archived13-page PDF",
         "source_links": [
           "https://arxiv.org/abs/2504.11750",
           "https://arxiv.org/pdf/2504.11750"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 13,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:52:19.398563+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843050+00:00",
@@ -3897,12 +3912,17 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:52:19.398563+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Trace-based inference study distinguishing launch/queue interval sums, measured platforms and idealized unimplemented fusion opportunities.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
+            "label": "Original source / methods",
             "pdf_page": 5,
             "url": "https://arxiv.org/pdf/2504.11750#page=5"
           }
@@ -4589,30 +4609,30 @@
         "topic": "Applications / multimedia / sensing",
         "priority": "corpus",
         "title_indexed": "MobileNetV2: Inverted Residuals and Linear Bottlenecks",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "MobileNetV2: Inverted Residuals and Linear Bottlenecks",
+        "authors": "Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, Liang-Chieh Chen",
+        "year": 2018,
+        "venue": "CVPR2018 publisher11-page PDF, proceedings4510\u20134520",
+        "identifier": "CVPR2018 publisher11-page PDF, proceedings4510\u20134520",
+        "version": "CVPR2018 publisher11-page PDF, proceedings4510\u20134520",
         "source_links": [
           "https://openaccess.thecvf.com/content_cvpr_2018/html/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.html",
           "https://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 11,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:50:42.304826+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843669+00:00",
@@ -4638,14 +4658,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:50:42.304826+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Mobile model study separating MAdds, activation-memory assumptions, operator support and task-quality/latency tradeoffs.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 7,
-            "url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf#page=7"
+            "label": "Original source / methods",
+            "pdf_page": 6,
+            "url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf#page=6"
           }
         ]
       },
@@ -4723,30 +4748,30 @@
         "topic": "Applications / multimedia / sensing",
         "priority": "corpus",
         "title_indexed": "Searching for MobileNetV3",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Searching for MobileNetV3",
+        "authors": "Andrew Howard et al.",
+        "year": 2019,
+        "venue": "ICCV2019 publisher11-page PDF, proceedings1314\u20131324",
+        "identifier": "ICCV2019 publisher11-page PDF, proceedings1314\u20131324",
+        "version": "ICCV2019 publisher11-page PDF, proceedings1314\u20131324",
         "source_links": [
           "https://openaccess.thecvf.com/content_ICCV_2019/html/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.html",
           "https://openaccess.thecvf.com/content_ICCV_2019/papers/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 11,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:50:42.304826+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843751+00:00",
@@ -4772,12 +4797,17 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:50:42.304826+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Hardware-aware model/search study with explicit single-core implementation, resolution constraints and complexity-versus-timing scope.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
+            "label": "Original source / methods",
             "pdf_page": 6,
             "url": "https://openaccess.thecvf.com/content_ICCV_2019/papers/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.pdf#page=6"
           }
@@ -6611,19 +6641,19 @@
       "added_pdfs": 4,
       "unique_documents": 54,
       "identity_mismatches": 2,
-      "methods_reviews": 33,
-      "targeted_skims": 19,
+      "methods_reviews": 39,
+      "targeted_skims": 13,
       "metadata_only": 69,
       "converted_documents": 0,
       "reading_depth": {
         "metadata_only": 69,
-        "methods_evaluation_read": 33,
-        "skimmed": 19
+        "methods_evaluation_read": 39,
+        "skimmed": 13
       },
       "tracks": {
         "A": {
           "leads": 111,
-          "source_read": 29
+          "source_read": 35
         },
         "B": {
           "leads": 10,
@@ -6633,7 +6663,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-01T21:47:24.063020+00:00",
+  "updated_at": "2026-11-01T21:53:02.077827+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
