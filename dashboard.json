@@ -2,7 +2,7 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-01T21:52:19.398563+00:00",
+    "updated_at": "2026-11-01T21:58:40.085638+00:00",
     "pipeline": {
       "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
@@ -3500,30 +3500,30 @@
         "topic": "Memory / cache / contention",
         "priority": "corpus",
         "title_indexed": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+        "authors": "Tri Dao, Daniel Y. Fu, Stefano Ermon, Atri Rudra, Christopher Re",
+        "year": 2022,
+        "venue": "arXiv2205.14135v2,23June2022 stamp; titlepage24June2022; archived34pages",
+        "identifier": "arXiv2205.14135v2,23June2022 stamp; titlepage24June2022; archived34pages",
+        "version": "arXiv2205.14135v2,23June2022 stamp; titlepage24June2022; archived34pages",
         "source_links": [
           "https://arxiv.org/abs/2205.14135",
           "https://arxiv.org/pdf/2205.14135"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 34,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:55:37.265185+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842814+00:00",
@@ -3549,14 +3549,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:55:37.265185+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "IO-aware attention study with explicit exact-versus-sparse scope, benchmark boundaries and strong-baseline regressions.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 7,
-            "url": "https://arxiv.org/pdf/2205.14135#page=7"
+            "label": "Original source / methods",
+            "pdf_page": 6,
+            "url": "https://arxiv.org/pdf/2205.14135#page=6"
           }
         ]
       },
@@ -4542,30 +4547,30 @@
         "topic": "Applications / multimedia / sensing",
         "priority": "corpus",
         "title_indexed": "DSP.Ear: Leveraging Co-Processor Support for Continuous Audio Sensing on Smartphones",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "DSP.Ear: Leveraging Co-Processor Support for Continuous Audio Sensing on Smartphones",
+        "authors": "Petko Georgiev, Nicholas D. Lane, Kiran K. Rachuri, Cecilia Mascolo",
+        "year": 2014,
+        "venue": "arXiv1409.3206v1,10September2014; SenSys2014 titlepage; archived15pages",
+        "identifier": "arXiv1409.3206v1,10September2014; SenSys2014 titlepage; archived15pages",
+        "version": "arXiv1409.3206v1,10September2014; SenSys2014 titlepage; archived15pages",
         "source_links": [
           "https://arxiv.org/abs/1409.3206",
           "https://arxiv.org/pdf/1409.3206"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 15,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:57:51.838455+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843627+00:00",
@@ -4591,12 +4596,17 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:57:51.838455+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Historical DSP sensing study separating measured component power, workload/quality assumptions and trace-derived battery projections.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
+            "label": "Original source / methods",
             "pdf_page": 9,
             "url": "https://arxiv.org/pdf/1409.3206#page=9"
           }
@@ -5795,30 +5805,30 @@
         "topic": "Tooling / reproducibility / workload methodology",
         "priority": "corpus",
         "title_indexed": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+        "authors": "Ji Lin, Jiaming Tang, Haotian Tang, Shang Yang, Wei-Ming Chen, Wei-Chen Wang, Guangxuan Xiao, Xingyu Dang, Chuang Gan, Song Han",
+        "year": 2024,
+        "venue": "arXiv2306.00978v6,25April2026 stamp; titlepage citesMLSys2024; archived15pages",
+        "identifier": "arXiv2306.00978v6,25April2026 stamp; titlepage citesMLSys2024; archived15pages",
+        "version": "arXiv2306.00978v6,25April2026 stamp; titlepage citesMLSys2024; archived15pages",
         "source_links": [
           "https://arxiv.org/abs/2306.00978",
           "https://arxiv.org/pdf/2306.00978"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 15,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-01T21:55:37.265185+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844539+00:00",
@@ -5844,14 +5854,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-01T21:55:37.265185+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Weight-only quantization/runtime study with explicit revision identity, quality deltas, optimizedFP16 baseline and short-prompt generation scope.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 6,
-            "url": "https://arxiv.org/pdf/2306.00978#page=6"
+            "label": "Original source / methods",
+            "pdf_page": 8,
+            "url": "https://arxiv.org/pdf/2306.00978#page=8"
           }
         ]
       },
@@ -6436,7 +6451,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T17:31:50.114054+00:00",
+        "updated_at": "2026-11-01T21:58:40.085638+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6470,7 +6485,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T17:31:50.114054+00:00",
+        "updated_at": "2026-11-01T21:58:40.085638+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6504,7 +6519,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T17:31:50.114054+00:00",
+        "updated_at": "2026-11-01T21:58:40.085638+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6538,7 +6553,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T17:31:50.114054+00:00",
+        "updated_at": "2026-11-01T21:58:40.085638+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6572,7 +6587,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T17:31:50.114054+00:00",
+        "updated_at": "2026-11-01T21:58:40.085638+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6606,7 +6621,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T17:31:50.114054+00:00",
+        "updated_at": "2026-11-01T21:58:40.085638+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6641,19 +6656,19 @@
       "added_pdfs": 4,
       "unique_documents": 54,
       "identity_mismatches": 2,
-      "methods_reviews": 39,
-      "targeted_skims": 13,
+      "methods_reviews": 42,
+      "targeted_skims": 10,
       "metadata_only": 69,
       "converted_documents": 0,
       "reading_depth": {
         "metadata_only": 69,
-        "methods_evaluation_read": 39,
-        "skimmed": 13
+        "methods_evaluation_read": 42,
+        "skimmed": 10
       },
       "tracks": {
         "A": {
           "leads": 111,
-          "source_read": 35
+          "source_read": 38
         },
         "B": {
           "leads": 10,
@@ -6663,7 +6678,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-01T21:53:02.077827+00:00",
+  "updated_at": "2026-11-01T22:00:25.366772+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
