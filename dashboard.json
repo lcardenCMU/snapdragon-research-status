@@ -2,7 +2,7 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-01T21:58:40.085638+00:00",
+    "updated_at": "2026-11-02T20:48:25.951128+00:00",
     "pipeline": {
       "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
@@ -561,30 +561,30 @@
         "topic": "Original curated 29",
         "priority": "corpus",
         "title_indexed": "Kwon et al., XRBench: An Extended Reality (XR) Machine Learning Benchmark Suite for the Metaverse, MLSys 2023.",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "XRBench: An Extended Reality (XR) Machine Learning Benchmark Suite for the Metaverse",
+        "authors": "Hyoukjun Kwon et al.",
+        "year": 2023,
+        "venue": "MLSys2023 publisher20-page PDF",
+        "identifier": "MLSys2023 publisher20-page PDF",
+        "version": "MLSys2023 publisher20-page PDF",
         "source_links": [
           "https://proceedings.mlsys.org/paper_files/paper/2023/hash/07b7c2f8a6978e376f9656d69619bfbb-Abstract-mlsys2023.html",
           "https://proceedings.mlsys.org/paper_files/paper/2023/file/07b7c2f8a6978e376f9656d69619bfbb-Paper-mlsys2023.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 20,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-02T20:40:08.310611+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840727+00:00",
@@ -610,12 +610,17 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:40:08.310611+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Scenario benchmark study with explicit modeled scope, frame-drop denominators and hardware-occupancy assumptions.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
+            "label": "Original source / methods",
             "pdf_page": 8,
             "url": "https://proceedings.mlsys.org/paper_files/paper/2023/file/07b7c2f8a6978e376f9656d69619bfbb-Paper-mlsys2023.pdf#page=8"
           }
@@ -1101,30 +1106,30 @@
         "topic": "Original curated 29",
         "priority": "corpus",
         "title_indexed": "Xu et al., SLAC: Access-Driven CPU-to-GPU Side-channel Attacks via System-Level Cache on Apple Silicon, arXiv 2026.",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "SLAC: Access-Driven CPU-to-GPU Side-channel Attacks via System-Level Cache on Apple Silicon",
+        "authors": "Tianhong Xu, Saion K. Roy, Ruyi Ding, Aidong Adam Ding, Yunsi Fei",
+        "year": 2026,
+        "venue": "arXiv2608.09075v2,14August2026; archived15-page preprint",
+        "identifier": "arXiv2608.09075v2,14August2026; archived15-page preprint",
+        "version": "arXiv2608.09075v2,14August2026; archived15-page preprint",
         "source_links": [
           "https://arxiv.org/abs/2608.09075",
           "https://arxiv.org/pdf/2608.09075"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 15,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-02T20:40:08.310611+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841105+00:00",
@@ -1150,14 +1155,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:40:08.310611+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Platform-specific shared-cache measurement study preserving inferred residency, repetition/resolution tradeoffs and generalization limits.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 8,
-            "url": "https://arxiv.org/pdf/2608.09075#page=8"
+            "label": "Original source / methods",
+            "pdf_page": 4,
+            "url": "https://arxiv.org/pdf/2608.09075#page=4"
           }
         ]
       },
@@ -1505,30 +1515,30 @@
         "topic": "Original curated 29",
         "priority": "corpus",
         "title_indexed": "Villa et al., NVBit: A Dynamic Binary Instrumentation Framework for NVIDIA GPUs, MICRO 2019.",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "NVBit: A Dynamic Binary Instrumentation Framework for NVIDIA GPUs",
+        "authors": "Oreste Villa, Mark Stephenson, David Nellans, Stephen W. Keckler",
+        "year": 2019,
+        "venue": "MICRO2019 author-hosted12-page proceedings PDF; DOI10.1145/3352460.3358307",
+        "identifier": "MICRO2019 author-hosted12-page proceedings PDF; DOI10.1145/3352460.3358307",
+        "version": "MICRO2019 author-hosted12-page proceedings PDF; DOI10.1145/3352460.3358307",
         "source_links": [
           "https://research.nvidia.com/publication/2019-10_nvbit-dynamic-binary-instrumentation-framework-nvidia-gpus",
           "https://d1qx31qr3h6wln.cloudfront.net/publications/MICRO_2019_NVBit.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 12,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-02T20:40:08.310611+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841415+00:00",
@@ -1554,14 +1564,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:40:08.310611+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Dynamic instrumentation study distinguishing coverage, JIT cost, injected execution cost and sampling/observer effects.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 8,
-            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/MICRO_2019_NVBit.pdf#page=8"
+            "label": "Original source / methods",
+            "pdf_page": 7,
+            "url": "https://d1qx31qr3h6wln.cloudfront.net/publications/MICRO_2019_NVBit.pdf#page=7"
           }
         ]
       },
@@ -3689,30 +3704,30 @@
         "topic": "Memory / cache / contention",
         "priority": "corpus",
         "title_indexed": "Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs",
+        "authors": "Yechen Xu, Yifei Wang, Nathanael Ren, Yiran Chen, Danyang Zhuo",
+        "year": 2026,
+        "venue": "OSDI2026 publisher PDF,18pages including cover; July13\u201315,2026 proceedings. No independent artifact/version audit.",
+        "identifier": "OSDI2026 publisher PDF,18pages including cover; July13\u201315,2026 proceedings. No independent artifact/version audit.",
+        "version": "OSDI2026 publisher PDF,18pages including cover; July13\u201315,2026 proceedings. No independent artifact/version audit.",
         "source_links": [
           "https://www.usenix.org/conference/osdi26/presentation/xu-yechen",
           "https://www.usenix.org/system/files/osdi26-xu-yechen.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 18,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex systems_readings; primary Codex literature agent page verification",
+        "updated_at": "2026-11-02T20:45:20.010932+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842937+00:00",
@@ -3738,12 +3753,17 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:45:20.010932+00:00",
+            "actor": "Codex systems_readings; primary Codex literature agent page verification",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Source-scoped methods review records objective, numerical/runtime conditions, measurement boundaries and limitations; selected original pages visually checked.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
+            "label": "Original source / methods",
             "pdf_page": 9,
             "url": "https://www.usenix.org/system/files/osdi26-xu-yechen.pdf#page=9"
           }
@@ -4255,30 +4275,30 @@
         "topic": "Applications / multimedia / sensing",
         "priority": "corpus",
         "title_indexed": "PointSplit: Towards On-device 3D Object Detection with Heterogeneous Low-power Accelerators",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "PointSplit: Towards On-device 3D Object Detection with Heterogeneous Low-power Accelerators",
+        "authors": "Keondo Park, You Rim Choi, Inhoe Lee, Hyung-Sin Kim",
+        "year": 2025,
+        "venue": "Archived24-page arXiv2504.03654v1; p1 stamp4Mar2025 and copyright2025/Manuscript submitted, while body headers say IPSN2023. Relationship to final2023 publication remains unverified; preserve all observed labels.",
+        "identifier": "Archived24-page arXiv2504.03654v1; p1 stamp4Mar2025 and copyright2025/Manuscript submitted, while body headers say IPSN2023. Relationship to final2023 publication remains unverified; preserve all observed labels.",
+        "version": "Archived24-page arXiv2504.03654v1; p1 stamp4Mar2025 and copyright2025/Manuscript submitted, while body headers say IPSN2023. Relationship to final2023 publication remains unverified; preserve all observed labels.",
         "source_links": [
           "https://arxiv.org/abs/2504.03654",
           "https://arxiv.org/pdf/2504.03654"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 24,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex systems_readings; primary Codex literature agent page verification",
+        "updated_at": "2026-11-02T20:45:20.010932+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843364+00:00",
@@ -4304,14 +4324,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:45:20.010932+00:00",
+            "actor": "Codex systems_readings; primary Codex literature agent page verification",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Source-scoped methods review records objective, numerical/runtime conditions, measurement boundaries and limitations; selected original pages visually checked.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 13,
-            "url": "https://arxiv.org/pdf/2504.03654#page=13"
+            "label": "Original source / methods",
+            "pdf_page": 14,
+            "url": "https://arxiv.org/pdf/2504.03654#page=14"
           }
         ]
       },
@@ -4691,30 +4716,30 @@
         "topic": "Applications / multimedia / sensing",
         "priority": "corpus",
         "title_indexed": "MobileNetV4: Universal Models for the Mobile Ecosystem",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "MobileNetV4: Universal Models for the Mobile Ecosystem",
+        "authors": "Danfeng Qin, Chas Leichner, Manolis Delakis, Marco Fornoni, Shixin Luo, Fan Yang, Weijun Wang, Colby Banbury, Chengxi Ye, Berkin Akin, Vaibhav Aggarwal, Tenghui Zhu, Daniele Moro, Andrew Howard",
+        "year": 2024,
+        "venue": "arXiv2404.10518v2,29September2024; archived32pages",
+        "identifier": "arXiv2404.10518v2,29September2024; archived32pages",
+        "version": "arXiv2404.10518v2,29September2024; archived32pages",
         "source_links": [
           "https://arxiv.org/abs/2404.10518",
           "https://arxiv.org/pdf/2404.10518"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 32,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex models_readings; primary Codex literature agent page verification",
+        "updated_at": "2026-11-02T20:45:20.010932+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843710+00:00",
@@ -4740,14 +4765,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:45:20.010932+00:00",
+            "actor": "Codex models_readings; primary Codex literature agent page verification",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Source-scoped methods review records objective, numerical/runtime conditions, measurement boundaries and limitations; selected original pages visually checked.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 10,
-            "url": "https://arxiv.org/pdf/2404.10518#page=10"
+            "label": "Original source / methods",
+            "pdf_page": 8,
+            "url": "https://arxiv.org/pdf/2404.10518#page=8"
           }
         ]
       },
@@ -5122,30 +5152,30 @@
         "topic": "Tooling / reproducibility / workload methodology",
         "priority": "corpus",
         "title_indexed": "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning",
+        "authors": "Tianqi Chen et al.",
+        "year": 2018,
+        "venue": "arXiv1802.04799v3,5October2018;16-page archived paper",
+        "identifier": "arXiv1802.04799v3,5October2018;16-page archived paper",
+        "version": "arXiv1802.04799v3,5October2018;16-page archived paper",
         "source_links": [
           "https://arxiv.org/abs/1802.04799",
           "https://arxiv.org/pdf/1802.04799"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 16,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "updated_at": "2026-11-02T20:40:08.310611+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844030+00:00",
@@ -5171,14 +5201,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:40:08.310611+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Compiler study separating learned candidate ranking, tuning costs, unsupported baselines and operator-versus-model acceleration.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 7,
-            "url": "https://arxiv.org/pdf/1802.04799#page=7"
+            "label": "Original source / methods",
+            "pdf_page": 9,
+            "url": "https://arxiv.org/pdf/1802.04799#page=9"
           }
         ]
       },
@@ -5459,30 +5494,30 @@
         "topic": "Tooling / reproducibility / workload methodology",
         "priority": "corpus",
         "title_indexed": "AdaptiveNet: Post-deployment Neural Architecture Adaptation for Diverse Edge Environments",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "AdaptiveNet: Post-deployment Neural Architecture Adaptation for Diverse Edge Environments",
+        "authors": "Hao Wen, Yuanchun Li, Zunshuai Zhang, Shiqi Jiang, Xiaozhou Ye, Ye Ouyang, Ya-Qin Zhang, Yunxin Liu",
+        "year": 2023,
+        "venue": "arXiv2303.07129v1 stamp13Mar2023; body MobiCom2023 proceedings template,16pages. Final published-version equivalence not independently checked.",
+        "identifier": "arXiv2303.07129v1 stamp13Mar2023; body MobiCom2023 proceedings template,16pages. Final published-version equivalence not independently checked.",
+        "version": "arXiv2303.07129v1 stamp13Mar2023; body MobiCom2023 proceedings template,16pages. Final published-version equivalence not independently checked.",
         "source_links": [
           "https://arxiv.org/abs/2303.07129",
           "https://arxiv.org/pdf/2303.07129"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 16,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex systems_readings; primary Codex literature agent page verification",
+        "updated_at": "2026-11-02T20:45:20.010932+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844301+00:00",
@@ -5508,14 +5543,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:45:20.010932+00:00",
+            "actor": "Codex systems_readings; primary Codex literature agent page verification",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Source-scoped methods review records objective, numerical/runtime conditions, measurement boundaries and limitations; selected original pages visually checked.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 9,
-            "url": "https://arxiv.org/pdf/2303.07129#page=9"
+            "label": "Original source / methods",
+            "pdf_page": 7,
+            "url": "https://arxiv.org/pdf/2303.07129#page=7"
           }
         ]
       },
@@ -5933,30 +5973,30 @@
         "topic": "Tooling / reproducibility / workload methodology",
         "priority": "corpus",
         "title_indexed": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization",
+        "authors": "Yeonhong Park, Jake Hyun, Hojoon Kim, Jae W. Lee",
+        "year": 2025,
+        "venue": "OSDI2025 publisher18-page PDF including proceedings cover; paper printed803\u2013815",
+        "identifier": "OSDI2025 publisher18-page PDF including proceedings cover; paper printed803\u2013815",
+        "version": "OSDI2025 publisher18-page PDF including proceedings cover; paper printed803\u2013815",
         "source_links": [
           "https://www.usenix.org/conference/osdi25/presentation/park-yeonhong",
           "https://www.usenix.org/system/files/osdi25-park-yeonhong.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 18,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex models_readings; primary Codex literature agent page verification",
+        "updated_at": "2026-11-02T20:45:20.010932+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844621+00:00",
@@ -5982,14 +6022,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:45:20.010932+00:00",
+            "actor": "Codex models_readings; primary Codex literature agent page verification",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Source-scoped methods review records objective, numerical/runtime conditions, measurement boundaries and limitations; selected original pages visually checked.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 6,
-            "url": "https://www.usenix.org/system/files/osdi25-park-yeonhong.pdf#page=6"
+            "label": "Original source / methods",
+            "pdf_page": 10,
+            "url": "https://www.usenix.org/system/files/osdi25-park-yeonhong.pdf#page=10"
           }
         ]
       },
@@ -6135,29 +6180,29 @@
         "topic": "Tooling / reproducibility / workload methodology",
         "priority": "corpus",
         "title_indexed": "A Quantitative Study of Mobile GPU vs. CPU Execution (mobile thesis chapter)",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "Acceleration and Energy Reduction of Object Detection on Mobile Graphics Processing Unit",
+        "authors": "Fitsum Assamnew Andargie",
+        "year": 2019,
+        "venue": "June2019 PhD dissertation, Addis Ababa University/AAiT;121-page archived PDF; indexed lead refers informally to its chapter3",
+        "identifier": "June2019 PhD dissertation, Addis Ababa University/AAiT;121-page archived PDF; indexed lead refers informally to its chapter3",
+        "version": "June2019 PhD dissertation, Addis Ababa University/AAiT;121-page archived PDF; indexed lead refers informally to its chapter3",
         "source_links": [
           "https://www.eecg.toronto.edu/~jayar/pubs/theses/Andargie/FitsumAndargie.pdf"
         ],
         "acquisition": "downloaded_pdf_unverified",
-        "identity": "unverified",
+        "identity": "title_and_version_checked",
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 121,
-        "extraction_limitations": "Direct PDF text reading; no accepted conversion, numeric table acceptance or local inference.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "skimmed",
-        "synthesis": "abstract_triage_only",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "remaining_source_and_visual_review",
-        "next_action": "Read remaining methods/results/limitations and visually verify important evidence.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:52:59.390197+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex models_readings; primary Codex literature agent page verification",
+        "updated_at": "2026-11-02T20:45:20.010932+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844780+00:00",
@@ -6183,14 +6228,19 @@
             "at": "2026-11-01T18:52:59.390197+00:00",
             "actor": "Codex literature agent",
             "action": "Targeted original methods passages read; remaining methods/evaluation and visual checking pending."
+          },
+          {
+            "at": "2026-11-02T20:45:20.010932+00:00",
+            "actor": "Codex models_readings; primary Codex literature agent page verification",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": "Original-source methods skim completed. Findings remain provisional pending wider source and visual review.",
+        "checked_synopsis": "Source-scoped methods review records objective, numerical/runtime conditions, measurement boundaries and limitations; selected original pages visually checked.",
         "public_citations": [
           {
-            "label": "Original source / selected methods",
-            "pdf_page": 47,
-            "url": "https://www.eecg.toronto.edu/~jayar/pubs/theses/Andargie/FitsumAndargie.pdf#page=47"
+            "label": "Original source / methods",
+            "pdf_page": 53,
+            "url": "https://www.eecg.toronto.edu/~jayar/pubs/theses/Andargie/FitsumAndargie.pdf#page=53"
           }
         ]
       },
@@ -6451,7 +6501,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T21:58:40.085638+00:00",
+        "updated_at": "2026-11-02T20:48:25.951128+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6485,7 +6535,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T21:58:40.085638+00:00",
+        "updated_at": "2026-11-02T20:48:25.951128+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6519,7 +6569,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T21:58:40.085638+00:00",
+        "updated_at": "2026-11-02T20:48:25.951128+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6553,7 +6603,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T21:58:40.085638+00:00",
+        "updated_at": "2026-11-02T20:48:25.951128+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6587,7 +6637,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T21:58:40.085638+00:00",
+        "updated_at": "2026-11-02T20:48:25.951128+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6621,7 +6671,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-01T21:58:40.085638+00:00",
+        "updated_at": "2026-11-02T20:48:25.951128+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6656,19 +6706,18 @@
       "added_pdfs": 4,
       "unique_documents": 54,
       "identity_mismatches": 2,
-      "methods_reviews": 42,
-      "targeted_skims": 10,
+      "methods_reviews": 52,
+      "targeted_skims": 0,
       "metadata_only": 69,
       "converted_documents": 0,
       "reading_depth": {
         "metadata_only": 69,
-        "methods_evaluation_read": 42,
-        "skimmed": 10
+        "methods_evaluation_read": 52
       },
       "tracks": {
         "A": {
           "leads": 111,
-          "source_read": 38
+          "source_read": 48
         },
         "B": {
           "leads": 10,
@@ -6678,7 +6727,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-01T22:00:25.366772+00:00",
+  "updated_at": "2026-11-02T20:49:32.114504+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
