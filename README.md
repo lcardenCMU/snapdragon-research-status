@@ -4,7 +4,7 @@
 
 Bring up the existing four-engine profiler, establish safe local assistance, then begin precommitted research.
 
-Platform: **HDK8750 MP**. Updated: 2026-11-02T20:49:32.114504+00:00
+Platform: **HDK8750 MP**. Updated: 2026-11-04T23:16:56.329313+00:00
 
 | Engine | Readiness |
 | --- | --- |
@@ -13,7 +13,7 @@ Platform: **HDK8750 MP**. Updated: 2026-11-02T20:49:32.114504+00:00
 | DSP | Correctness smoke passed |
 | NPU | Correctness smoke passed |
 
-Tests: 51. PDFs retrieved: 54 across original and added leads (retrieved, not conversion-accepted).
+Tests: 51. PDFs retrieved: 58 across original and added leads (retrieved, not conversion-accepted).
 
 ## Now
 

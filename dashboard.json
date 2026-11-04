@@ -2,7 +2,7 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-02T20:48:25.951128+00:00",
+    "updated_at": "2026-11-04T23:12:34.940846+00:00",
     "pipeline": {
       "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
@@ -198,29 +198,30 @@
         "topic": "Original curated 29",
         "priority": "corpus",
         "title_indexed": "Jia et al., CoDL: Efficient CPU-GPU Co-execution for Deep Learning Inference on Mobile Devices, MobiSys 2022.",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "CoDL: Efficient CPU-GPU Co-execution for Deep Learning Inference on Mobile Devices",
+        "authors": "Fucheng Jia, Deyu Zhang, Ting Cao, Shiqi Jiang, Yunxin Liu, Ju Ren, Yaoxue Zhang",
+        "year": 2022,
+        "venue": "MobiSys2022 author-hosted13-page proceedings-layout PDF; DOI10.1145/3498361.3538932",
+        "identifier": "MobiSys2022 author-hosted13-page proceedings-layout PDF; DOI10.1145/3498361.3538932",
+        "version": "MobiSys2022 author-hosted13-page proceedings-layout PDF; DOI10.1145/3498361.3538932",
         "source_links": [
-          "https://doi.org/10.1145/3498361.3538932"
+          "https://doi.org/10.1145/3498361.3538932",
+          "https://chrisplus.me/assets/pdf/mobisys22-CoDL.pdf"
         ],
-        "acquisition": "access_denied_or_paywall_unresolved",
-        "identity": "unverified",
-        "conversion": "unavailable",
+        "acquisition": "downloaded_pdf_unverified",
+        "identity": "title_and_version_checked",
+        "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:17.493891+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex missing_architecture_sources subagent; primary Codex literature agent page verification",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840473+00:00",
@@ -231,10 +232,26 @@
             "at": "2026-10-31T19:08:17.493891+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: access_denied_or_paywall_unresolved"
+          },
+          {
+            "at": "2026-11-04T23:05:45.213019+00:00",
+            "actor": "Codex acquisition agent",
+            "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex missing_architecture_sources subagent; primary Codex literature agent page verification",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": null,
-        "public_citations": []
+        "checked_synopsis": "Source-scoped methods/evaluation review with selected original-page visual checks; implementation, measurement and generalization limits retained.",
+        "public_citations": [
+          {
+            "label": "Original source / methods",
+            "pdf_page": 6,
+            "url": "https://chrisplus.me/assets/pdf/mobisys22-CoDL.pdf#page=6"
+          }
+        ]
       },
       {
         "paper_id": "5",
@@ -381,15 +398,15 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote text or metadata notes are provisional; no accepted local PDF conversion or evidence inferred.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Guarded legitimate-source acquisition, identity and version verification before methods reading.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T21:47:16.187405+00:00",
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Archive a legitimate exact source version when admitted, then inspect key original pages.",
+        "reviewer": "Codex literature agent; delegated source review where applicable",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840611+00:00",
@@ -405,6 +422,11 @@
             "at": "2026-11-01T21:47:16.187405+00:00",
             "actor": "Codex literature agent",
             "action": "Additional primary-source candidate recorded; metadata scope only. Full text remains unacquired and methods unread."
+          },
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex literature agent; delegated source review where applicable",
+            "action": "Primary-source follow-up notes added; archival and visual checking remain pending. Credited local reading depth is unchanged."
           }
         ],
         "checked_synopsis": null,
@@ -781,15 +803,15 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote text or metadata notes are provisional; no accepted local PDF conversion or evidence inferred.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Guarded legitimate-source acquisition, identity and version verification before methods reading.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T21:47:16.187405+00:00",
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Archive a legitimate exact source version when admitted, then inspect key original pages.",
+        "reviewer": "Codex literature agent; delegated source review where applicable",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840862+00:00",
@@ -805,6 +827,11 @@
             "at": "2026-11-01T21:47:16.187405+00:00",
             "actor": "Codex literature agent",
             "action": "Additional primary-source candidate recorded; metadata scope only. Full text remains unacquired and methods unread."
+          },
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex literature agent; delegated source review where applicable",
+            "action": "Primary-source follow-up notes added; archival and visual checking remain pending. Credited local reading depth is unchanged."
           }
         ],
         "checked_synopsis": null,
@@ -903,15 +930,15 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote text or metadata notes are provisional; no accepted local PDF conversion or evidence inferred.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Guarded legitimate-source acquisition, identity and version verification before methods reading.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T21:47:16.187405+00:00",
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Archive a legitimate exact source version when admitted, then inspect key original pages.",
+        "reviewer": "Codex literature agent; delegated source review where applicable",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840941+00:00",
@@ -927,6 +954,11 @@
             "at": "2026-11-01T21:47:16.187405+00:00",
             "actor": "Codex literature agent",
             "action": "Additional primary-source candidate recorded; metadata scope only. Full text remains unacquired and methods unread."
+          },
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex literature agent; delegated source review where applicable",
+            "action": "Primary-source follow-up notes added; archival and visual checking remain pending. Credited local reading depth is unchanged."
           }
         ],
         "checked_synopsis": null,
@@ -953,15 +985,15 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote text or metadata notes are provisional; no accepted local PDF conversion or evidence inferred.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Guarded legitimate-source acquisition, identity and version verification before methods reading.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T21:47:16.187405+00:00",
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Archive a legitimate exact source version when admitted, then inspect key original pages.",
+        "reviewer": "Codex literature agent; delegated source review where applicable",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840980+00:00",
@@ -977,6 +1009,11 @@
             "at": "2026-11-01T21:47:16.187405+00:00",
             "actor": "Codex literature agent",
             "action": "Additional primary-source candidate recorded; metadata scope only. Full text remains unacquired and methods unread."
+          },
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex literature agent; delegated source review where applicable",
+            "action": "Primary-source follow-up notes added; archival and visual checking remain pending. Credited local reading depth is unchanged."
           }
         ],
         "checked_synopsis": null,
@@ -1823,29 +1860,30 @@
         "topic": "Mobile SoC / direct comparisons",
         "priority": "closest",
         "title_indexed": "TMModel: Modeling Texture Memory and Mobile GPU Performance to Accelerate DNN Computations",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "TMModel: Modeling Texture Memory and Mobile GPU Performance to Accelerate DNN Computations",
+        "authors": "Jiexiong Guan, Zhenqing Hu, Christos D. Antonopoulos, Nikolaos Bellas, Spyros Lalis, Evgenia Smirni, Gang Zhou, Gagan Agrawal, Bin Ren",
+        "year": 2025,
+        "venue": "ICS2025 conference-hosted16-page proceedings PDF; printed205\u2013220; DOI10.1145/3721145.3725774; CC BY4.0",
+        "identifier": "ICS2025 conference-hosted16-page proceedings PDF; printed205\u2013220; DOI10.1145/3721145.3725774; CC BY4.0",
+        "version": "ICS2025 conference-hosted16-page proceedings PDF; printed205\u2013220; DOI10.1145/3721145.3725774; CC BY4.0",
         "source_links": [
-          "https://doi.org/10.1145/3721145.3725774"
+          "https://doi.org/10.1145/3721145.3725774",
+          "https://hpcrl.github.io/ICS2025-webpage/program/Proceedings_ICS25/ics25-35.pdf"
         ],
-        "acquisition": "access_denied_or_paywall_unresolved",
-        "identity": "unverified",
-        "conversion": "unavailable",
+        "acquisition": "downloaded_pdf_unverified",
+        "identity": "title_and_version_checked",
+        "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:56.069328+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex missing_architecture_sources subagent; primary Codex literature agent page verification",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841617+00:00",
@@ -1856,10 +1894,26 @@
             "at": "2026-10-31T19:08:56.069328+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: access_denied_or_paywall_unresolved"
+          },
+          {
+            "at": "2026-11-04T23:05:46.548910+00:00",
+            "actor": "Codex acquisition agent",
+            "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex missing_architecture_sources subagent; primary Codex literature agent page verification",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": null,
-        "public_citations": []
+        "checked_synopsis": "Source-scoped methods/evaluation review with selected original-page visual checks; implementation, measurement and generalization limits retained.",
+        "public_citations": [
+          {
+            "label": "Original source / methods",
+            "pdf_page": 5,
+            "url": "https://hpcrl.github.io/ICS2025-webpage/program/Proceedings_ICS25/ics25-35.pdf#page=5"
+          }
+        ]
       },
       {
         "paper_id": "33",
@@ -1890,8 +1944,8 @@
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
         "next_action": "Audit released artifacts and remaining source details; independent source review.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T21:16:55.803823+00:00",
+        "reviewer": "Codex local_validity_audit; primary Codex literature agent page verification",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841661+00:00",
@@ -1922,6 +1976,11 @@
             "at": "2026-11-01T21:16:55.803823+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
+          },
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex local_validity_audit; primary Codex literature agent page verification",
+            "action": "Original-source audit integrated; measurement boundaries clarified and an attributable review-record correction retained. Reading depth unchanged."
           }
         ],
         "checked_synopsis": "Methods/evaluation reading expanded; preparation/steady-state boundaries and memory/power scope checked. Independent review pending.",
@@ -3654,8 +3713,8 @@
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
         "next_action": "Audit released artifacts and remaining source details; independent source review.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T21:39:49.156370+00:00",
+        "reviewer": "Codex local_validity_audit; primary Codex literature agent page verification",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842898+00:00",
@@ -3686,6 +3745,11 @@
             "at": "2026-11-01T21:39:49.156370+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
+          },
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex local_validity_audit; primary Codex literature agent page verification",
+            "action": "Original-source audit integrated; measurement boundaries clarified and an attributable review-record correction retained. Reading depth unchanged."
           }
         ],
         "checked_synopsis": "Methods/evaluation source review expanded; scope, counterexamples and remaining validation recorded. Independent review pending.",
@@ -4905,29 +4969,30 @@
         "topic": "Tooling / reproducibility / workload methodology",
         "priority": "closest",
         "title_indexed": "nnPerf: Demystifying DNN Runtime Inference Latency on Mobile Platforms",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "nnPerf: Demystifying DNN Runtime Inference Latency on Mobile Platforms",
+        "authors": "Haolin Chu, Xiaolong Zheng, Liang Liu, Huadong Ma",
+        "year": 2023,
+        "venue": "SenSys2023 official-project13-page PDF; November12\u201317,2023; DOI10.1145/3625687.3625797",
+        "identifier": "SenSys2023 official-project13-page PDF; November12\u201317,2023; DOI10.1145/3625687.3625797",
+        "version": "SenSys2023 official-project13-page PDF; November12\u201317,2023; DOI10.1145/3625687.3625797",
         "source_links": [
-          "https://doi.org/10.1145/3625687.3625797"
+          "https://doi.org/10.1145/3625687.3625797",
+          "https://nnperfwins.github.io/nnPerf.pdf"
         ],
-        "acquisition": "access_denied_or_paywall_unresolved",
-        "identity": "unverified",
-        "conversion": "unavailable",
+        "acquisition": "downloaded_pdf_unverified",
+        "identity": "title_and_version_checked",
+        "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:46.398887+00:00",
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex nnPerf literature subagent; primary Codex literature agent page verification",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843839+00:00",
@@ -4938,10 +5003,26 @@
             "at": "2026-10-31T19:09:46.398887+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: access_denied_or_paywall_unresolved"
+          },
+          {
+            "at": "2026-11-04T23:05:47.873091+00:00",
+            "actor": "Codex acquisition agent",
+            "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex nnPerf literature subagent; primary Codex literature agent page verification",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
           }
         ],
-        "checked_synopsis": null,
-        "public_citations": []
+        "checked_synopsis": "Source-scoped methods/evaluation review with selected original-page visual checks; implementation, measurement and generalization limits retained.",
+        "public_citations": [
+          {
+            "label": "Original source / methods",
+            "pdf_page": 5,
+            "url": "https://nnperfwins.github.io/nnPerf.pdf#page=5"
+          }
+        ]
       },
       {
         "paper_id": "88",
@@ -6479,32 +6560,50 @@
         "topic": "AI research methodology; identity unverified",
         "priority": "closest",
         "title_indexed": "PaperBench",
-        "title_verified": null,
-        "authors": null,
-        "year": null,
-        "venue": null,
-        "identifier": null,
-        "version": null,
+        "title_verified": "PaperBench: Evaluating AI\u2019s Ability to Replicate AI Research",
+        "authors": "Giulio Starace, Oliver Jaffe, Dane Sherburn, James Aung, Chan Jun Shern, Leon Maksin, Rachel Dias, Evan Mays, Benjamin Kinsella, Wyatt Thompson, Johannes Heidecke, Amelia Glaese, Tejal Patwardhan",
+        "year": 2025,
+        "venue": "arXiv2504.01848v3; archived preprint, publisher equivalence pending",
+        "identifier": "arXiv2504.01848v3,7April2025; archived30-pagepreprint; publisher-versionequivalencepending",
+        "version": "arXiv2504.01848v3; archived preprint, publisher equivalence pending",
         "source_links": [
-          "https://proceedings.mlr.press/v267/starace25a.html"
+          "https://proceedings.mlr.press/v267/starace25a.html",
+          "https://arxiv.org/pdf/2504.01848v3"
         ],
-        "acquisition": "not_attempted",
-        "identity": "unverified",
-        "conversion": "unavailable",
+        "acquisition": "downloaded_pdf_unverified",
+        "identity": "title_and_version_checked",
+        "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
-        "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "reading_depth": "methods_evaluation_read",
+        "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-11-02T20:48:25.951128+00:00",
-        "history": [],
-        "checked_synopsis": null,
-        "public_citations": []
+        "blocker": "independent_review_and_remaining_artifacts",
+        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-04T23:09:33.590033+00:00",
+        "history": [
+          {
+            "at": "2026-11-04T23:05:49.135020+00:00",
+            "actor": "Codex acquisition agent",
+            "action": "Acquisition: downloaded_pdf_unverified"
+          },
+          {
+            "at": "2026-11-04T23:09:33.590033+00:00",
+            "actor": "Codex literature agent",
+            "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
+          }
+        ],
+        "checked_synopsis": "Research-replication benchmark distinguishing code development, execution and result matching; source-reviewed with explicit evaluator and comparison limits.",
+        "public_citations": [
+          {
+            "label": "Original source / methods",
+            "pdf_page": 3,
+            "url": "https://proceedings.mlr.press/v267/starace25a.html#page=3"
+          }
+        ]
       },
       {
         "paper_id": "M006",
@@ -6535,7 +6634,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-02T20:48:25.951128+00:00",
+        "updated_at": "2026-11-04T23:05:50.343581+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6561,16 +6660,22 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote text or metadata notes are provisional; no accepted local PDF conversion or evidence inferred.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-11-02T20:48:25.951128+00:00",
-        "history": [],
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Archive a legitimate exact source version when admitted, then inspect key original pages.",
+        "reviewer": "Codex literature agent; delegated source review where applicable",
+        "updated_at": "2026-11-04T23:12:34.940846+00:00",
+        "history": [
+          {
+            "at": "2026-11-04T23:12:34.940846+00:00",
+            "actor": "Codex literature agent; delegated source review where applicable",
+            "action": "Primary-source follow-up notes added; archival and visual checking remain pending. Credited local reading depth is unchanged."
+          }
+        ],
         "checked_synopsis": null,
         "public_citations": []
       },
@@ -6603,7 +6708,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-02T20:48:25.951128+00:00",
+        "updated_at": "2026-11-04T23:05:50.343581+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6637,7 +6742,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-02T20:48:25.951128+00:00",
+        "updated_at": "2026-11-04T23:05:50.343581+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6671,7 +6776,7 @@
         "blocker": "full_text_access_unresolved",
         "next_action": "Find a legitimate open full-text source; retain access history.",
         "reviewer": null,
-        "updated_at": "2026-11-02T20:48:25.951128+00:00",
+        "updated_at": "2026-11-04T23:05:50.343581+00:00",
         "history": [],
         "checked_synopsis": null,
         "public_citations": []
@@ -6702,32 +6807,32 @@
     "counts": {
       "original_leads": 111,
       "added_leads": 10,
-      "original_pdfs": 50,
-      "added_pdfs": 4,
-      "unique_documents": 54,
+      "original_pdfs": 53,
+      "added_pdfs": 5,
+      "unique_documents": 58,
       "identity_mismatches": 2,
-      "methods_reviews": 52,
+      "methods_reviews": 56,
       "targeted_skims": 0,
-      "metadata_only": 69,
+      "metadata_only": 65,
       "converted_documents": 0,
       "reading_depth": {
-        "metadata_only": 69,
-        "methods_evaluation_read": 52
+        "metadata_only": 65,
+        "methods_evaluation_read": 56
       },
       "tracks": {
         "A": {
           "leads": 111,
-          "source_read": 48
+          "source_read": 51
         },
         "B": {
           "leads": 10,
-          "source_read": 4
+          "source_read": 5
         }
       }
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-02T20:49:32.114504+00:00",
+  "updated_at": "2026-11-04T23:16:56.329313+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
