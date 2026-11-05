@@ -4,7 +4,7 @@
 
 Bring up the existing four-engine profiler, establish safe local assistance, then begin precommitted research.
 
-Platform: **HDK8750 MP**. Updated: 2026-11-05T19:37:51.512023+00:00
+Platform: **HDK8750 MP**. Updated: 2026-11-05T19:50:26.134437+00:00
 
 | Engine | Readiness |
 | --- | --- |

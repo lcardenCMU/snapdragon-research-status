@@ -2,7 +2,7 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-05T19:35:23.266869+00:00",
+    "updated_at": "2026-11-05T19:50:25.482452+00:00",
     "pipeline": {
       "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
@@ -701,9 +701,9 @@
         "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Audit released artifacts and remaining source details; independent source review.",
+        "next_action": "Continue exact configuration/version checks and outstanding original-source/artifact verification.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T18:40:27.479092+00:00",
+        "updated_at": "2026-11-05T19:47:46.524448+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840766+00:00",
@@ -729,6 +729,11 @@
             "at": "2026-11-01T18:40:27.479092+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
+          },
+          {
+            "at": "2026-11-05T19:47:46.524448+00:00",
+            "actor": "Codex literature agent",
+            "action": "Additional original methods/appendix pages visually checked; execution/evaluator configuration and remaining artifact limits documented. Full-paper and replication depth unchanged."
           }
         ],
         "checked_synopsis": "System benchmarking precedent with quality gates, distinct latency/throughput scenarios and independent submission auditing. Historical measurement scope is retained.",
@@ -3935,9 +3940,9 @@
         "synthesis": "not_started",
         "duplicate_leads": [],
         "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:30.170738+00:00",
+        "next_action": "Resume only after owner direction; continue exact-source and version checks.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-05T19:50:25.482452+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842974+00:00",
@@ -3948,6 +3953,11 @@
             "at": "2026-10-31T19:09:30.170738+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: access_denied_or_paywall_unresolved"
+          },
+          {
+            "at": "2026-11-05T19:50:25.482452+00:00",
+            "actor": "Codex literature agent",
+            "action": "Scoped source/artifact follow-up saved with explicit access/version limits. Original body remains unread where recorded; no automatic local-depth promotion."
           }
         ],
         "checked_synopsis": null,
@@ -5555,9 +5565,9 @@
         "synthesis": "not_started",
         "duplicate_leads": [],
         "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:52.036439+00:00",
+        "next_action": "Resume only after owner direction; continue exact-source and version checks.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-05T19:50:25.482452+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.844183+00:00",
@@ -5568,6 +5578,11 @@
             "at": "2026-10-31T19:09:52.036439+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: access_denied_or_paywall_unresolved"
+          },
+          {
+            "at": "2026-11-05T19:50:25.482452+00:00",
+            "actor": "Codex literature agent",
+            "action": "Scoped source/artifact follow-up saved with explicit access/version limits. Original body remains unread where recorded; no automatic local-depth promotion."
           }
         ],
         "checked_synopsis": null,
@@ -6639,9 +6654,9 @@
         "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Inspect remaining scorer/artifact correspondence and raw-attempt provenance; full-paper depth unchanged.",
-        "reviewer": "Codex literature agent integrating checked delegated reading",
-        "updated_at": "2026-11-05T19:33:34.804635+00:00",
+        "next_action": "Resume only after owner direction; continue exact-source and version checks.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-05T19:50:25.482452+00:00",
         "history": [
           {
             "at": "2026-11-01T16:26:08.252384+00:00",
@@ -6667,6 +6682,11 @@
             "at": "2026-11-05T19:33:34.804635+00:00",
             "actor": "Codex literature agent integrating checked delegated reading",
             "action": "Task/scoring and validation appendix review expanded; seven selected original pages visually checked. Source-specific feedback, validity and accounting scopes documented."
+          },
+          {
+            "at": "2026-11-05T19:50:25.482452+00:00",
+            "actor": "Codex literature agent",
+            "action": "Scoped source/artifact follow-up saved with explicit access/version limits. Original body remains unread where recorded; no automatic local-depth promotion."
           }
         ],
         "checked_synopsis": "Research-engineering benchmark with expert attempts, executable scores and explicit time budgets. Main methods/results/limitations and evaluation-procedure appendix were read and selected source pages checked.",
@@ -6706,9 +6726,9 @@
         "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
-        "reviewer": "Codex literature agent integrating delegated synthesis",
-        "updated_at": "2026-11-05T19:12:58.991382+00:00",
+        "next_action": "Continue exact configuration/version checks and outstanding original-source/artifact verification.",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-05T19:47:46.524448+00:00",
         "history": [
           {
             "at": "2026-11-04T23:05:49.135020+00:00",
@@ -6734,6 +6754,11 @@
             "at": "2026-11-05T19:12:58.991382+00:00",
             "actor": "Codex literature agent integrating delegated synthesis",
             "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
+          },
+          {
+            "at": "2026-11-05T19:47:46.524448+00:00",
+            "actor": "Codex literature agent",
+            "action": "Additional original methods/appendix pages visually checked; execution/evaluator configuration and remaining artifact limits documented. Full-paper and replication depth unchanged."
           }
         ],
         "checked_synopsis": "Research-replication benchmark distinguishing code development, execution and result matching; source-reviewed with explicit evaluator and comparison limits.",
@@ -7006,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-05T19:37:51.512023+00:00",
+  "updated_at": "2026-11-05T19:50:26.134437+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
