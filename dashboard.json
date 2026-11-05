@@ -2,7 +2,7 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-04T23:12:34.940846+00:00",
+    "updated_at": "2026-11-05T19:00:24.167565+00:00",
     "pipeline": {
       "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
@@ -33,15 +33,15 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote source notes are provisional; no accepted local conversion or source-card promotion.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:16.221332+00:00",
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Continue legitimate-source archival when admitted, verify versions and inspect important original pages.",
+        "reviewer": "Codex missing_architecture_sources subagent",
+        "updated_at": "2026-11-04T23:30:01.242354+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.833079+00:00",
@@ -52,6 +52,11 @@
             "at": "2026-10-31T19:08:16.221332+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: access_denied_or_paywall_unresolved"
+          },
+          {
+            "at": "2026-11-04T23:30:01.242354+00:00",
+            "actor": "Codex missing_architecture_sources subagent",
+            "action": "Primary-source discovery or remote methods notes added; exact-version archival and original-page checks remain pending. Local reading depth unchanged."
           }
         ],
         "checked_synopsis": null,
@@ -606,7 +611,7 @@
         "blocker": "independent_review_and_remaining_artifacts",
         "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-02T20:40:08.310611+00:00",
+        "updated_at": "2026-11-05T19:00:24.167565+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840727+00:00",
@@ -637,6 +642,11 @@
             "at": "2026-11-02T20:40:08.310611+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
+          },
+          {
+            "at": "2026-11-05T19:00:24.167565+00:00",
+            "actor": "Codex literature agent",
+            "action": "Pinned official artifact audit documented with scope and version limits. No execution, replication or reading-depth promotion."
           }
         ],
         "checked_synopsis": "Scenario benchmark study with explicit modeled scope, frame-drop denominators and hardware-occupancy assumptions.",
@@ -1112,15 +1122,15 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote source notes are provisional; no accepted local conversion or source-card promotion.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:08:43.674105+00:00",
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Continue legitimate-source archival when admitted, verify versions and inspect important original pages.",
+        "reviewer": "Codex missing_architecture_sources subagent",
+        "updated_at": "2026-11-04T23:30:01.242354+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841066+00:00",
@@ -1131,6 +1141,11 @@
             "at": "2026-10-31T19:08:43.674105+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: landing_only_full_text_unresolved"
+          },
+          {
+            "at": "2026-11-04T23:30:01.242354+00:00",
+            "actor": "Codex missing_architecture_sources subagent",
+            "action": "Primary-source discovery or remote methods notes added; exact-version archival and original-page checks remain pending. Local reading depth unchanged."
           }
         ],
         "checked_synopsis": null,
@@ -2407,15 +2422,15 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote source notes are provisional; no accepted local conversion or source-card promotion.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:04.684505+00:00",
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Continue legitimate-source archival when admitted, verify versions and inspect important original pages.",
+        "reviewer": "Codex missing_architecture_sources subagent",
+        "updated_at": "2026-11-04T23:30:01.242354+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842013+00:00",
@@ -2426,6 +2441,11 @@
             "at": "2026-10-31T19:09:04.684505+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: access_denied_or_paywall_unresolved"
+          },
+          {
+            "at": "2026-11-04T23:30:01.242354+00:00",
+            "actor": "Codex missing_architecture_sources subagent",
+            "action": "Primary-source discovery or remote methods notes added; exact-version archival and original-page checks remain pending. Local reading depth unchanged."
           }
         ],
         "checked_synopsis": null,
@@ -2455,12 +2475,12 @@
         "extraction_limitations": "Full text unavailable.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_local_verification",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:05.352084+00:00",
+        "blocker": "archival_and_original_page_verification_pending",
+        "next_action": "Continue legitimate acquisition under host guards, then check original methods and important pages.",
+        "reviewer": "Codex literature agent integrating delegated source notes",
+        "updated_at": "2026-11-05T19:00:24.167565+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842052+00:00",
@@ -2471,6 +2491,11 @@
             "at": "2026-10-31T19:09:05.352084+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: access_denied_or_paywall_unresolved"
+          },
+          {
+            "at": "2026-11-05T19:00:24.167565+00:00",
+            "actor": "Codex literature agent integrating delegated source notes",
+            "action": "Version-scoped remote source notes added; local source verification remains pending. Main-body access is limited where recorded."
           }
         ],
         "checked_synopsis": null,
@@ -2644,12 +2669,12 @@
         "extraction_limitations": "Full text unavailable.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_local_verification",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:08.524052+00:00",
+        "blocker": "archival_and_original_page_verification_pending",
+        "next_action": "Continue legitimate acquisition under host guards, then check original methods and important pages.",
+        "reviewer": "Codex literature agent integrating delegated source notes",
+        "updated_at": "2026-11-05T19:00:24.167565+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842172+00:00",
@@ -2660,6 +2685,11 @@
             "at": "2026-10-31T19:09:08.524052+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: access_denied_or_paywall_unresolved"
+          },
+          {
+            "at": "2026-11-05T19:00:24.167565+00:00",
+            "actor": "Codex literature agent integrating delegated source notes",
+            "action": "Version-scoped remote source notes added; local source verification remains pending. Main-body access is limited where recorded."
           }
         ],
         "checked_synopsis": null,
@@ -3453,15 +3483,15 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote source notes are provisional; no accepted local conversion or source-card promotion.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:22.517889+00:00",
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Continue legitimate-source archival when admitted, verify versions and inspect important original pages.",
+        "reviewer": "Codex missing_architecture_sources subagent",
+        "updated_at": "2026-11-04T23:30:01.242354+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842694+00:00",
@@ -3472,6 +3502,11 @@
             "at": "2026-10-31T19:09:22.517889+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: landing_only_full_text_unresolved"
+          },
+          {
+            "at": "2026-11-04T23:30:01.242354+00:00",
+            "actor": "Codex missing_architecture_sources subagent",
+            "action": "Primary-source discovery or remote methods notes added; exact-version archival and original-page checks remain pending. Local reading depth unchanged."
           }
         ],
         "checked_synopsis": null,
@@ -4038,15 +4073,15 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote source notes are provisional; no accepted local conversion or source-card promotion.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-10-31T19:09:31.347952+00:00",
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Continue legitimate-source archival when admitted, verify versions and inspect important original pages.",
+        "reviewer": "Codex missing_architecture_sources subagent",
+        "updated_at": "2026-11-04T23:30:01.242354+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843099+00:00",
@@ -4057,6 +4092,11 @@
             "at": "2026-10-31T19:09:31.347952+00:00",
             "actor": "Codex acquisition agent",
             "action": "Acquisition: landing_only_full_text_unresolved"
+          },
+          {
+            "at": "2026-11-04T23:30:01.242354+00:00",
+            "actor": "Codex missing_architecture_sources subagent",
+            "action": "Primary-source discovery or remote methods notes added; exact-version archival and original-page checks remain pending. Local reading depth unchanged."
           }
         ],
         "checked_synopsis": null,
@@ -6583,7 +6623,7 @@
         "blocker": "independent_review_and_remaining_artifacts",
         "next_action": "Audit released artifacts and remaining source details; independent source review.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-04T23:09:33.590033+00:00",
+        "updated_at": "2026-11-05T19:00:24.167565+00:00",
         "history": [
           {
             "at": "2026-11-04T23:05:49.135020+00:00",
@@ -6594,6 +6634,16 @@
             "at": "2026-11-04T23:09:33.590033+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
+          },
+          {
+            "at": "2026-11-04T23:30:01.242354+00:00",
+            "actor": "Codex literature agent",
+            "action": "Pinned official artifact spot checks added separately from the original-PDF review; historical version correspondence and execution remain pending."
+          },
+          {
+            "at": "2026-11-05T19:00:24.167565+00:00",
+            "actor": "Codex literature agent",
+            "action": "Pinned official artifact audit documented with scope and version limits. No execution, replication or reading-depth promotion."
           }
         ],
         "checked_synopsis": "Research-replication benchmark distinguishing code development, execution and result matching; source-reviewed with explicit evaluator and comparison limits.",
@@ -6626,16 +6676,22 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote source notes are provisional; no accepted local conversion or source-card promotion.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-11-04T23:05:50.343581+00:00",
-        "history": [],
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Continue legitimate-source archival when admitted, verify versions and inspect important original pages.",
+        "reviewer": "Codex methodology_synthesis subagent; primary integration",
+        "updated_at": "2026-11-04T23:30:01.242354+00:00",
+        "history": [
+          {
+            "at": "2026-11-04T23:30:01.242354+00:00",
+            "actor": "Codex methodology_synthesis subagent; primary integration",
+            "action": "Primary-source discovery or remote methods notes added; exact-version archival and original-page checks remain pending. Local reading depth unchanged."
+          }
+        ],
         "checked_synopsis": null,
         "public_citations": []
       },
@@ -6663,17 +6719,27 @@
         "extraction_limitations": "Remote text or metadata notes are provisional; no accepted local PDF conversion or evidence inferred.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "remote_notes_pending_archival_and_visual_QA",
+        "synthesis": "remote_notes_and_static_artifact_review_pending_archival",
         "duplicate_leads": [],
         "blocker": "archival_identity_and_visual_QA_pending",
         "next_action": "Archive a legitimate exact source version when admitted, then inspect key original pages.",
-        "reviewer": "Codex literature agent; delegated source review where applicable",
-        "updated_at": "2026-11-04T23:12:34.940846+00:00",
+        "reviewer": "Codex literature agent",
+        "updated_at": "2026-11-05T19:00:24.167565+00:00",
         "history": [
           {
             "at": "2026-11-04T23:12:34.940846+00:00",
             "actor": "Codex literature agent; delegated source review where applicable",
             "action": "Primary-source follow-up notes added; archival and visual checking remain pending. Credited local reading depth is unchanged."
+          },
+          {
+            "at": "2026-11-04T23:30:01.242354+00:00",
+            "actor": "Codex local_validity_audit; primary Codex literature agent integration",
+            "action": "Pinned official artifact paths statically checked; scope and version limits documented. No benchmark execution or local PDF depth promotion."
+          },
+          {
+            "at": "2026-11-05T19:00:24.167565+00:00",
+            "actor": "Codex literature agent",
+            "action": "Pinned official artifact audit documented with scope and version limits. No execution, replication or reading-depth promotion."
           }
         ],
         "checked_synopsis": null,
@@ -6700,16 +6766,22 @@
         "conversion": "unavailable",
         "extraction_qa": "not_checked",
         "page_count": null,
-        "extraction_limitations": "Full text unavailable.",
+        "extraction_limitations": "Remote source notes are provisional; no accepted local conversion or source-card promotion.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_archival_and_visual_QA",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-11-04T23:05:50.343581+00:00",
-        "history": [],
+        "blocker": "archival_identity_and_visual_QA_pending",
+        "next_action": "Continue legitimate-source archival when admitted, verify versions and inspect important original pages.",
+        "reviewer": "Codex methodology_synthesis subagent; primary integration",
+        "updated_at": "2026-11-04T23:30:01.242354+00:00",
+        "history": [
+          {
+            "at": "2026-11-04T23:30:01.242354+00:00",
+            "actor": "Codex methodology_synthesis subagent; primary integration",
+            "action": "Primary-source discovery or remote methods notes added; exact-version archival and original-page checks remain pending. Local reading depth unchanged."
+          }
+        ],
         "checked_synopsis": null,
         "public_citations": []
       },
@@ -6737,13 +6809,19 @@
         "extraction_limitations": "Full text unavailable.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_local_verification",
         "duplicate_leads": [],
-        "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-11-04T23:05:50.343581+00:00",
-        "history": [],
+        "blocker": "archival_and_original_page_verification_pending",
+        "next_action": "Continue legitimate acquisition under host guards, then check original methods and important pages.",
+        "reviewer": "Codex literature agent integrating delegated source notes",
+        "updated_at": "2026-11-05T19:00:24.167565+00:00",
+        "history": [
+          {
+            "at": "2026-11-05T19:00:24.167565+00:00",
+            "actor": "Codex literature agent integrating delegated source notes",
+            "action": "Version-scoped remote source notes added; local source verification remains pending. Main-body access is limited where recorded."
+          }
+        ],
         "checked_synopsis": null,
         "public_citations": []
       },
@@ -6771,13 +6849,19 @@
         "extraction_limitations": "Full text unavailable.",
         "local_draft": "not_queued",
         "reading_depth": "metadata_only",
-        "synthesis": "not_started",
+        "synthesis": "remote_notes_pending_local_verification",
         "duplicate_leads": [],
         "blocker": "full_text_access_unresolved",
-        "next_action": "Find a legitimate open full-text source; retain access history.",
-        "reviewer": null,
-        "updated_at": "2026-11-04T23:05:50.343581+00:00",
-        "history": [],
+        "next_action": "Continue legitimate acquisition under host guards, then check original methods and important pages.",
+        "reviewer": "Codex literature agent integrating delegated source notes",
+        "updated_at": "2026-11-05T19:00:24.167565+00:00",
+        "history": [
+          {
+            "at": "2026-11-05T19:00:24.167565+00:00",
+            "actor": "Codex literature agent integrating delegated source notes",
+            "action": "Version-scoped remote source notes added; local source verification remains pending. Main-body access is limited where recorded."
+          }
+        ],
         "checked_synopsis": null,
         "public_citations": []
       }
@@ -6832,7 +6916,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-04T23:16:56.329313+00:00",
+  "updated_at": "2026-11-05T19:00:58.839081+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
