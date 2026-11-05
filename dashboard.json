@@ -2,13 +2,13 @@
   "literature": {
     "schema_version": 1,
     "state": "available",
-    "updated_at": "2026-11-05T19:00:24.167565+00:00",
+    "updated_at": "2026-11-05T19:15:11.290983+00:00",
     "pipeline": {
       "alternative_converter": "native PyMuPDF4LLM pilot: host admission deferred; not installed",
       "environment": "bootstrap_pending",
-      "latest_attempt": "cancelled_resource_guard",
+      "latest_attempt": "deferred_host_guard",
       "reason": "insufficient_conservative_free_reserve",
-      "cleanup_verified": true,
+      "cleanup_verified": null,
       "local_worker": "Calibration and owned-cleanup validation pending; inference deferred."
     },
     "papers": [
@@ -84,15 +84,15 @@
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 12,
-        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
+        "extraction_limitations": "Four selected page sidecars across two papers are private reading aids; bulk conversion remains host-deferred.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
         "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
+        "next_action": "Continue original-source methods checks and artifact/version verification; complete guarded conversion QA when admitted.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T17:27:46.608873+00:00",
+        "updated_at": "2026-11-05T19:08:32.706555+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840371+00:00",
@@ -118,6 +118,11 @@
             "at": "2026-11-01T17:27:46.608873+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
+          },
+          {
+            "at": "2026-11-05T19:08:32.706555+00:00",
+            "actor": "Codex literature agent",
+            "action": "Targeted original-page extraction and visual checks added; timing/measurement scope and unresolved artifact checks documented. Reading depth unchanged."
           }
         ],
         "checked_synopsis": "Methods separate host orchestration and device-active work on H100/H200. Key equations, protocol and selected result figures were checked against the original PDF.",
@@ -221,12 +226,12 @@
         "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Audit released artifacts and remaining source details; independent source review.",
-        "reviewer": "Codex missing_architecture_sources subagent; primary Codex literature agent page verification",
-        "updated_at": "2026-11-04T23:12:34.940846+00:00",
+        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
+        "reviewer": "Codex literature agent integrating delegated synthesis",
+        "updated_at": "2026-11-05T19:12:58.991382+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840473+00:00",
@@ -247,6 +252,11 @@
             "at": "2026-11-04T23:12:34.940846+00:00",
             "actor": "Codex missing_architecture_sources subagent; primary Codex literature agent page verification",
             "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
           }
         ],
         "checked_synopsis": "Source-scoped methods/evaluation review with selected original-page visual checks; implementation, measurement and generalization limits retained.",
@@ -747,15 +757,15 @@
         "conversion": "pending",
         "extraction_qa": "not_checked",
         "page_count": 25,
-        "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
+        "extraction_limitations": "Four selected page sidecars across two papers are private reading aids; bulk conversion remains host-deferred.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
         "synthesis": "source_checked_by_codex_independent_review_pending",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
+        "next_action": "Continue original-source methods checks and artifact/version verification; complete guarded conversion QA when admitted.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T17:27:46.609334+00:00",
+        "updated_at": "2026-11-05T19:08:32.706555+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.840821+00:00",
@@ -781,6 +791,11 @@
             "at": "2026-11-01T17:27:46.609334+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
+          },
+          {
+            "at": "2026-11-05T19:08:32.706555+00:00",
+            "actor": "Codex literature agent",
+            "action": "Targeted original-page extraction and visual checks added; timing/measurement scope and unresolved artifact checks documented. Reading depth unchanged."
           }
         ],
         "checked_synopsis": "Cross-framework mobile LLM study covering CPU/GPU/NPU, output quality, memory probes and energy instrumentation. Methods and limitations were read; selected original pages were visually checked.",
@@ -1893,12 +1908,12 @@
         "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Audit released artifacts and remaining source details; independent source review.",
-        "reviewer": "Codex missing_architecture_sources subagent; primary Codex literature agent page verification",
-        "updated_at": "2026-11-04T23:12:34.940846+00:00",
+        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
+        "reviewer": "Codex literature agent integrating delegated synthesis",
+        "updated_at": "2026-11-05T19:12:58.991382+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841617+00:00",
@@ -1919,6 +1934,11 @@
             "at": "2026-11-04T23:12:34.940846+00:00",
             "actor": "Codex missing_architecture_sources subagent; primary Codex literature agent page verification",
             "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
           }
         ],
         "checked_synopsis": "Source-scoped methods/evaluation review with selected original-page visual checks; implementation, measurement and generalization limits retained.",
@@ -1955,12 +1975,12 @@
         "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Audit released artifacts and remaining source details; independent source review.",
-        "reviewer": "Codex local_validity_audit; primary Codex literature agent page verification",
-        "updated_at": "2026-11-04T23:12:34.940846+00:00",
+        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
+        "reviewer": "Codex literature agent integrating delegated synthesis",
+        "updated_at": "2026-11-05T19:12:58.991382+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.841661+00:00",
@@ -1996,6 +2016,11 @@
             "at": "2026-11-04T23:12:34.940846+00:00",
             "actor": "Codex local_validity_audit; primary Codex literature agent page verification",
             "action": "Original-source audit integrated; measurement boundaries clarified and an attributable review-record correction retained. Reading depth unchanged."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
           }
         ],
         "checked_synopsis": "Methods/evaluation reading expanded; preparation/steady-state boundaries and memory/power scope checked. Independent review pending.",
@@ -3744,12 +3769,12 @@
         "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Audit released artifacts and remaining source details; independent source review.",
-        "reviewer": "Codex local_validity_audit; primary Codex literature agent page verification",
-        "updated_at": "2026-11-04T23:12:34.940846+00:00",
+        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
+        "reviewer": "Codex literature agent integrating delegated synthesis",
+        "updated_at": "2026-11-05T19:12:58.991382+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.842898+00:00",
@@ -3785,6 +3810,11 @@
             "at": "2026-11-04T23:12:34.940846+00:00",
             "actor": "Codex local_validity_audit; primary Codex literature agent page verification",
             "action": "Original-source audit integrated; measurement boundaries clarified and an attributable review-record correction retained. Reading depth unchanged."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
           }
         ],
         "checked_synopsis": "Methods/evaluation source review expanded; scope, counterexamples and remaining validation recorded. Independent review pending.",
@@ -5027,12 +5057,12 @@
         "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Audit released artifacts and remaining source details; independent source review.",
-        "reviewer": "Codex nnPerf literature subagent; primary Codex literature agent page verification",
-        "updated_at": "2026-11-04T23:12:34.940846+00:00",
+        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
+        "reviewer": "Codex literature agent integrating delegated synthesis",
+        "updated_at": "2026-11-05T19:12:58.991382+00:00",
         "history": [
           {
             "at": "2026-10-30T19:54:49.843839+00:00",
@@ -5053,6 +5083,11 @@
             "at": "2026-11-04T23:12:34.940846+00:00",
             "actor": "Codex nnPerf literature subagent; primary Codex literature agent page verification",
             "action": "Methods/evaluation source review added; selected original pages visually checked. Independent review pending."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
           }
         ],
         "checked_synopsis": "Source-scoped methods/evaluation review with selected original-page visual checks; implementation, measurement and generalization limits retained.",
@@ -6390,12 +6425,12 @@
         "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T17:27:46.609715+00:00",
+        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
+        "reviewer": "Codex literature agent integrating delegated synthesis",
+        "updated_at": "2026-11-05T19:12:58.991382+00:00",
         "history": [
           {
             "at": "2026-10-31T20:34:05.264502+00:00",
@@ -6411,6 +6446,11 @@
             "at": "2026-11-01T17:27:46.609715+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
           }
         ],
         "checked_synopsis": "Template-based ML research pipeline with automated reviewing. Main-text methods, evaluation and limitations were read, with selected tables and source passages visually checked; appendices remain incomplete.",
@@ -6447,12 +6487,12 @@
         "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T17:27:46.610080+00:00",
+        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
+        "reviewer": "Codex literature agent integrating delegated synthesis",
+        "updated_at": "2026-11-05T19:12:58.991382+00:00",
         "history": [
           {
             "at": "2026-11-01T16:26:03.814168+00:00",
@@ -6468,6 +6508,11 @@
             "at": "2026-11-01T17:27:46.610080+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
           }
         ],
         "checked_synopsis": "Research pipeline using experiment management, tree search and visual feedback. Workshop evaluation methodology, selection process and limitations were source-checked; full appendices remain incomplete.",
@@ -6504,12 +6549,12 @@
         "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
+        "next_action": "Verify raw evaluation/attempt provenance and remaining source gaps.",
         "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T17:27:46.610316+00:00",
+        "updated_at": "2026-11-05T19:15:11.290983+00:00",
         "history": [
           {
             "at": "2026-11-01T16:26:05.355779+00:00",
@@ -6525,6 +6570,16 @@
             "at": "2026-11-01T17:27:46.610316+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
+          },
+          {
+            "at": "2026-11-05T19:15:11.290983+00:00",
+            "actor": "Codex literature agent",
+            "action": "Selected original appendix pages and visual tables checked; evaluation-unit and failure-accounting notes expanded. Full-paper and artifact replication remain incomplete."
           }
         ],
         "checked_synopsis": "Human-idea research assistant with autonomous and co-pilot modes. Methods, human/automated evaluations, limitations and a survey instrument were read; full appendices remain incomplete.",
@@ -6561,12 +6616,12 @@
         "extraction_limitations": "Direct original-PDF reading and visual checking completed for selected pages. Converter output QA is still pending; figures/tables/equations require original sources.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Inspect remaining appendices and released artifacts; obtain independent source/validity review.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-01T17:27:46.610539+00:00",
+        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
+        "reviewer": "Codex literature agent integrating delegated synthesis",
+        "updated_at": "2026-11-05T19:12:58.991382+00:00",
         "history": [
           {
             "at": "2026-11-01T16:26:08.252384+00:00",
@@ -6582,6 +6637,11 @@
             "at": "2026-11-01T17:27:46.610539+00:00",
             "actor": "Codex literature agent",
             "action": "Methods/evaluation/limitations read and important source pages visually checked by Codex. Independent review remains pending; full-paper/appendix reading is not claimed."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
           }
         ],
         "checked_synopsis": "Research-engineering benchmark with expert attempts, executable scores and explicit time budgets. Main methods/results/limitations and evaluation-procedure appendix were read and selected source pages checked.",
@@ -6618,12 +6678,12 @@
         "extraction_limitations": "Direct original PDF reading; converter QA remains pending.",
         "local_draft": "not_queued",
         "reading_depth": "methods_evaluation_read",
-        "synthesis": "source_checked_by_codex_independent_review_pending",
+        "synthesis": "cross_paper_comparison_updated",
         "duplicate_leads": [],
         "blocker": "independent_review_and_remaining_artifacts",
-        "next_action": "Audit released artifacts and remaining source details; independent source review.",
-        "reviewer": "Codex literature agent",
-        "updated_at": "2026-11-05T19:00:24.167565+00:00",
+        "next_action": "Continue targeted source verification and review scoped design prerequisites.",
+        "reviewer": "Codex literature agent integrating delegated synthesis",
+        "updated_at": "2026-11-05T19:12:58.991382+00:00",
         "history": [
           {
             "at": "2026-11-04T23:05:49.135020+00:00",
@@ -6644,6 +6704,11 @@
             "at": "2026-11-05T19:00:24.167565+00:00",
             "actor": "Codex literature agent",
             "action": "Pinned official artifact audit documented with scope and version limits. No execution, replication or reading-depth promotion."
+          },
+          {
+            "at": "2026-11-05T19:12:58.991382+00:00",
+            "actor": "Codex literature agent integrating delegated synthesis",
+            "action": "Source-linked comparative methods review expanded using existing accepted cards. Remaining original-page/artifact checks are explicit; no new full-paper or replication claim."
           }
         ],
         "checked_synopsis": "Research-replication benchmark distinguishing code development, execution and result matching; source-reviewed with explicit evaluator and comparison limits.",
@@ -6916,7 +6981,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-05T19:00:58.839081+00:00",
+  "updated_at": "2026-11-05T19:16:42.877441+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "P0 \u00b7 System setup",
