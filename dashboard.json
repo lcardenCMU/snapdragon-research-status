@@ -7031,12 +7031,12 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-05T19:50:26.134437+00:00",
+  "updated_at": "2026-11-06T20:13:35.392436+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
-  "phase": "P0 \u00b7 System setup",
-  "summary": "Bring up the existing four-engine profiler, establish safe local assistance, then begin precommitted research.",
-  "tests_passed": 51,
+  "phase": "Phase 1 \u00b7 initial plan frozen",
+  "summary": "Independent scientific exploration planning is frozen for both research tracks. Instrument admission precedes future experiments.",
+  "tests_passed": 59,
   "literature_pdfs": 50,
   "literature_leads": 111,
   "hardware": {
@@ -7045,39 +7045,39 @@
     "dsp": "Correctness smoke passed",
     "npu": "Correctness smoke passed"
   },
-  "local_worker": "Installed \u00b7 admission pending",
+  "local_worker": "Installed; safety admission refused; no generation",
   "architecture_claims": 0,
   "controlled_ai_tasks": 0,
-  "event_count": 232,
-  "event_head": "f4b3c96661bfa0e14be768b1055cc8571f68dd261119a3cbe2aa1a8a56626341",
+  "event_count": 233,
+  "event_head": "e2a4e37b09e96bce91d72ddf277adcd2e7496f0b618e6cc0f481a9f2fe8deb6d",
   "tracks": [
     {
       "id": "architecture",
       "name": "Architecture papers / series",
-      "status": "Instrument validation",
+      "status": "Plan frozen; admission pending",
       "detail": "CPU, GPU, DSP and NPU characterization. Findings require controls, raw evidence and independent replication."
     },
     {
       "id": "methodology",
       "name": "AI research-methodology paper",
-      "status": "Protocol prepared",
+      "status": "Prospective process specification",
       "detail": "Evaluate substantive AI-assisted research decisions. Setup, tests and downloads are excluded from research-benefit endpoints."
     }
   ],
   "now": [
-    "CPU, GPU, DSP HVX and NPU FP16 seeded native correctness checks passed",
-    "QAIRT 2.44 and Hexagon SDK 6.6 installed in bounded Docker container",
-    "Detailed literature-agent assignment ready; both research tracks maintained"
+    "Versioned initial exploration plan and prospective protocols frozen",
+    "Ten initial questions retained with explicit prior-evidence attribution",
+    "Planning-only boundary preserved; no new architectural experiments"
   ],
   "next": [
-    "Complete DSP/NPU Profiler API integration and stronger correctness checks",
-    "Resolve guarded local-model admission and owned-process cleanup",
-    "Review priority methods and precommit the first discriminating research question"
+    "Complete correctness, timing and bounded execution admission",
+    "Begin bounded scouting only in the autonomous execution phase",
+    "Maintain prospective decisions, failures and revisions for both papers"
   ],
   "blockers": [
-    "Local model installed; conservative host guard still refuses inference",
-    "MP-specific power calibration unavailable",
-    "Scientific experiment design and independent review still pending"
+    "Local-model calibration/admission unavailable under current host guard",
+    "Full-output and timing validation plus DSP/NPU API admission remain incomplete",
+    "MP power calibration and independent scientific review remain unavailable"
   ],
   "issues": [
     {
@@ -7090,6 +7090,10 @@
     }
   ],
   "activity": [
+    {
+      "date": "2026-11-06",
+      "detail": "Phase 1 planning freeze completed. Both research tracks retained; no architecture claim or controlled AI-benefit result."
+    },
     {
       "date": "2026-10-31",
       "detail": "QAIRT and Hexagon installed; source-built v79 DSP and default-power NPU passed both tiny seeded checks. First DSP loader failure retained."
@@ -7117,15 +7121,15 @@
       "state": "active"
     },
     {
-      "name": "Instrument validation",
+      "name": "Plan frozen",
       "state": "active"
     },
     {
-      "name": "Research pilot",
-      "state": "pending"
+      "name": "Instrument admission",
+      "state": "active"
     },
     {
-      "name": "Replicate",
+      "name": "Research scouting",
       "state": "pending"
     },
     {
