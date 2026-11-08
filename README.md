@@ -2,6 +2,6 @@
 
 [Dashboard](https://lcardencmu.github.io/snapdragon-research-status/)
 
-Independent scientific exploration planning is frozen for both research tracks. Instrument admission precedes future experiments.
+Scientific instrument admission has passed for a bounded GPU path. A precommitted scout has collected its first session; replication and interpretation remain in progress.
 
-No new architectural experiments or controlled AI-benefit results. Both research tracks remain required.
+Both research tracks remain active. Raw scientific evidence remains private. No accepted architectural claim or controlled AI-benefit result.
