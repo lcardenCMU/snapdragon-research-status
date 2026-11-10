@@ -7031,53 +7031,53 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-08T19:43:00+00:00",
+  "updated_at": "2026-11-10T17:41:25+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
-  "phase": "Phase 2 · bounded scientific scouting",
-  "summary": "Scientific instrument admission has passed for a bounded GPU path. A precommitted scout has collected its first session; replication and interpretation remain in progress.",
+  "phase": "Phase 2 · two-session scout completed",
+  "summary": "A bounded scientific scout completed two sessions on one board with full-output checks. Mechanism analysis and the next discriminating measurement are prepared; further dispatch awaits resource admission.",
   "tests_passed": 66,
   "literature_pdfs": 50,
   "literature_leads": 111,
   "hardware": {
     "cpu": "Correctness smoke passed",
-    "gpu": "Scoped full-output and timing admission passed",
+    "gpu": "Scoped full-output and timing validation completed",
     "dsp": "Correctness smoke passed",
     "npu": "Correctness smoke passed"
   },
-  "local_worker": "Rechecked after owner freed RAM; guard still refused generation",
+  "local_worker": "Rechecked; calibration and reserve gates refused generation",
   "architecture_claims": 0,
   "controlled_ai_tasks": 0,
-  "event_count": 233,
-  "event_head": "e2a4e37b09e96bce91d72ddf277adcd2e7496f0b618e6cc0f481a9f2fe8deb6d",
+  "event_count": 309,
+  "event_head": "e1993a5c0e5daf952586802229e27e65f6aa7025ef4606cc77a74df32b3b8436",
   "tracks": [
     {
       "id": "architecture",
       "name": "Architecture papers / series",
-      "status": "Scouting; first session collected",
-      "detail": "CPU, GPU, DSP and NPU characterization. Findings require controls, raw evidence and independent replication."
+      "status": "Two-session scout; mechanism unresolved",
+      "detail": "Two sessions on one board; private raw evidence and competing explanations retained. No accepted novelty claim."
     },
     {
       "id": "methodology",
       "name": "AI research-methodology paper",
-      "status": "Prospective descriptive case study",
+      "status": "Descriptive case study; no controlled benefit result",
       "detail": "Evaluate substantive AI-assisted research decisions. Setup, tests and downloads are excluded from research-benefit endpoints."
     }
   ],
   "now": [
-    "Frozen plan integrity verified; instrument lifecycle and full-output checks passed for a bounded path",
-    "First randomized scouting session completed with private raw evidence",
-    "Failures, thermal refusals and human interventions retained"
+    "Two bounded scouting sessions completed with full-output validation",
+    "Phase 2 raw evidence independently archived and verified privately",
+    "Failures, anomalies and changing interpretations retained"
   ],
   "next": [
-    "Repeat the frozen scout after its required idle interval",
-    "Test competing explanations before any mechanism claim",
-    "Continue per-path admission and guarded optional local collaboration"
+    "Admit the next measurement refinement when host resources allow",
+    "Continue path-specific validation for the remaining portfolio",
+    "Obtain independent scientific review and maintain both paper tracks"
   ],
   "blockers": [
-    "Local-model calibration and conservative reserve gate remain unresolved",
-    "Other engine paths still require full scientific admission",
-    "Independent scientific review and board-specific power calibration remain unavailable"
+    "Resource admission for the next bounded build and optional local critic",
+    "Other engine paths and board-specific power calibration remain incomplete",
+    "Independent review and controlled AI comparison remain unavailable"
   ],
   "issues": [
     {
@@ -7090,6 +7090,10 @@
     }
   ],
   "activity": [
+    {
+      "date": "2026-11-10",
+      "detail": "Two-session scientific scout completed; private evidence archive verified. Alternative explanations remain unresolved; next discriminator prepared."
+    },
     {
       "date": "2026-11-08",
       "detail": "Phase 2 began: scoped GPU admission and first bounded scientific scout session completed. No accepted architecture claim or controlled AI-benefit result."
@@ -7121,10 +7125,6 @@
   ],
   "phases": [
     {
-      "name": "Setup",
-      "state": "active"
-    },
-    {
       "name": "Plan frozen",
       "state": "active"
     },
@@ -7133,12 +7133,12 @@
       "state": "active"
     },
     {
-      "name": "Research scouting",
+      "name": "Scout repeated",
       "state": "active"
     },
     {
-      "name": "Replicate",
-      "state": "active"
+      "name": "Mechanism tests",
+      "state": "pending"
     },
     {
       "name": "Papers",
