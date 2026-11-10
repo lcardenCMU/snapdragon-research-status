@@ -7031,11 +7031,11 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-10T20:01:19.508796+00:00",
+  "updated_at": "2026-11-10T23:26:54.418661+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
-  "phase": "Phase 2 \u00b7 bounded follow-up studies completed",
-  "summary": "Two additional bounded GPU studies completed both sessions with full-output checks. Competing timing descriptions were tested; mechanisms and novelty remain under review.",
+  "phase": "Phase2 \u00b7 Mechanism experiments",
+  "summary": "Serial exploratory experiments are testing accelerator completion latency and shared-resource behavior. Raw evidence remains private.",
   "tests_passed": 76,
   "literature_pdfs": 50,
   "literature_leads": 111,
@@ -7045,7 +7045,7 @@
     "dsp": "Correctness smoke passed",
     "npu": "Correctness smoke passed"
   },
-  "local_worker": "Resource/calibration gates refused generation; no local advice",
+  "local_worker": "Abandoned by owner; model files retained",
   "architecture_claims": 0,
   "controlled_ai_tasks": 0,
   "event_count": 561,
@@ -7059,25 +7059,21 @@
     },
     {
       "id": "methodology",
-      "name": "AI research-methodology paper",
-      "status": "Descriptive case study; no controlled benefit result",
-      "detail": "Evaluate substantive AI-assisted research decisions. Setup, tests and downloads are excluded from research-benefit endpoints."
+      "name": "AI-led research perspective",
+      "status": "Append-only process journal",
+      "detail": "Candid decisions, failures and owner/external interventions; no controlled AI-benefit claim."
     }
   ],
   "now": [
-    "120 scientific requests and18 admissions completed with full-output checks",
-    "Complete Phase 2 evidence independently archived and readback verified privately",
-    "Negative results, observer effects and unresolved interpretations retained"
+    "Serial board queue with finite deadlines and cooling-state checks",
+    "In-process completion-latency experiments; exploratory, no mechanism claim"
   ],
   "next": [
-    "Prepare the next scoped measurement refinement within an explicit allocation",
-    "Continue path-specific validation when resource admission permits",
-    "Obtain independent scientific review; maintain both paper tracks"
+    "Distinguish initialization, waiting policy and operating-state effects",
+    "Validate shared-Hexagon configurations before timing comparisons"
   ],
   "blockers": [
-    "Build and optional local-model resource/calibration admission",
-    "DSP/NPU scientific measurement admission remains incomplete",
-    "Independent review and controlled AI comparison remain unavailable"
+    "No owner action currently needed; thermal and cleanup guards remain active"
   ],
   "issues": [
     {
@@ -7148,5 +7144,15 @@
       "name": "Papers",
       "state": "pending"
     }
-  ]
+  ],
+  "board_queue": {
+    "state": "running",
+    "queue_depth": 0,
+    "completed": 121,
+    "failed": 1,
+    "utilization": 0.43918121834247525,
+    "window_seconds": 186.293400833,
+    "updated_at": "2026-11-10T23:26:52.694730+00:00",
+    "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
+  }
 }
