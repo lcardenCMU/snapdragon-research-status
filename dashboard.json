@@ -459,7 +459,7 @@
         "topic": "Original curated 29",
         "priority": "corpus",
         "title_indexed": "Agarwal et al., Selective GPU Caches to Eliminate CPU-GPU HW Cache Coherence, HPCA 2016.",
-        "title_verified": "Selective GPU Caches to Eliminate CPU–GPU HW Cache Coherence",
+        "title_verified": "Selective GPU Caches to Eliminate CPU\u2013GPU HW Cache Coherence",
         "authors": "Neha Agarwal, David Nellans, Eiman Ebrahimi, Thomas F. Wenisch, John Danskin, Stephen W. Keckler",
         "year": 2016,
         "venue": "HPCA2016 author-hosted13-page proceedings PDF",
@@ -1846,9 +1846,9 @@
         "title_verified": "Inference in the Shadows: Taming Memory Bandwidth Contention in Mobile LLM Inference with SERENO",
         "authors": "Tong Xin, Xinrui Shi, Mingkai Dong, Zeyu Mi",
         "year": 2026,
-        "venue": "OSDI2026 publisher PDF,pp2299–2318; archived21-page object",
-        "identifier": "OSDI2026 publisher PDF,pp2299–2318; archived21-page object",
-        "version": "OSDI2026 publisher PDF,pp2299–2318; archived21-page object",
+        "venue": "OSDI2026 publisher PDF,pp2299\u20132318; archived21-page object",
+        "identifier": "OSDI2026 publisher PDF,pp2299\u20132318; archived21-page object",
+        "version": "OSDI2026 publisher PDF,pp2299\u20132318; archived21-page object",
         "source_links": [
           "https://www.usenix.org/conference/osdi26/presentation/xin",
           "https://www.usenix.org/system/files/osdi26-xin.pdf"
@@ -1908,9 +1908,9 @@
         "title_verified": "TMModel: Modeling Texture Memory and Mobile GPU Performance to Accelerate DNN Computations",
         "authors": "Jiexiong Guan, Zhenqing Hu, Christos D. Antonopoulos, Nikolaos Bellas, Spyros Lalis, Evgenia Smirni, Gang Zhou, Gagan Agrawal, Bin Ren",
         "year": 2025,
-        "venue": "ICS2025 conference-hosted16-page proceedings PDF; printed205–220; DOI10.1145/3721145.3725774; CC BY4.0",
-        "identifier": "ICS2025 conference-hosted16-page proceedings PDF; printed205–220; DOI10.1145/3721145.3725774; CC BY4.0",
-        "version": "ICS2025 conference-hosted16-page proceedings PDF; printed205–220; DOI10.1145/3721145.3725774; CC BY4.0",
+        "venue": "ICS2025 conference-hosted16-page proceedings PDF; printed205\u2013220; DOI10.1145/3721145.3725774; CC BY4.0",
+        "identifier": "ICS2025 conference-hosted16-page proceedings PDF; printed205\u2013220; DOI10.1145/3721145.3725774; CC BY4.0",
+        "version": "ICS2025 conference-hosted16-page proceedings PDF; printed205\u2013220; DOI10.1145/3721145.3725774; CC BY4.0",
         "source_links": [
           "https://doi.org/10.1145/3721145.3725774",
           "https://hpcrl.github.io/ICS2025-webpage/program/Proceedings_ICS25/ics25-35.pdf"
@@ -1975,9 +1975,9 @@
         "title_verified": "FlashMem: Supporting Modern DNN Workloads on Mobile with GPU Memory Hierarchy Optimizations",
         "authors": "Zhihao Shu, Md Musfiqur Rahman Sanim, Hangyu Zheng, Kunxiong Zhu, Miao Yin, Gagan Agrawal, Wei Niu",
         "year": 2026,
-        "venue": "ASPLOS2026 archived15-page source; March22–26,2026; exact PDF hash retained",
-        "identifier": "ASPLOS2026 archived15-page source; March22–26,2026; exact PDF hash retained",
-        "version": "ASPLOS2026 archived15-page source; March22–26,2026; exact PDF hash retained",
+        "venue": "ASPLOS2026 archived15-page source; March22\u201326,2026; exact PDF hash retained",
+        "identifier": "ASPLOS2026 archived15-page source; March22\u201326,2026; exact PDF hash retained",
+        "version": "ASPLOS2026 archived15-page source; March22\u201326,2026; exact PDF hash retained",
         "source_links": [
           "https://arxiv.org/abs/2602.15379",
           "https://arxiv.org/pdf/2602.15379"
@@ -2402,7 +2402,7 @@
         "track": "A",
         "topic": "Mobile SoC / direct comparisons",
         "priority": "corpus",
-        "title_indexed": "A Survey on Heterogeneous CPU–GPU Architectures and Simulators",
+        "title_indexed": "A Survey on Heterogeneous CPU\u2013GPU Architectures and Simulators",
         "title_verified": null,
         "authors": null,
         "year": null,
@@ -3033,9 +3033,9 @@
         "title_verified": "Scaling LLM Test-Time Compute with Mobile NPU on Smartphones",
         "authors": "Zixu Hao, Jianyu Wei, Tuowei Wang, Minxing Huang, Huiqiang Jiang, Shiqi Jiang, Ting Cao, Ju Ren",
         "year": 2026,
-        "venue": "EuroSys2026 archived17-page source; April27–30,2026; exact PDF hash retained",
-        "identifier": "EuroSys2026 archived17-page source; April27–30,2026; exact PDF hash retained",
-        "version": "EuroSys2026 archived17-page source; April27–30,2026; exact PDF hash retained",
+        "venue": "EuroSys2026 archived17-page source; April27\u201330,2026; exact PDF hash retained",
+        "identifier": "EuroSys2026 archived17-page source; April27\u201330,2026; exact PDF hash retained",
+        "version": "EuroSys2026 archived17-page source; April27\u201330,2026; exact PDF hash retained",
         "source_links": [
           "https://arxiv.org/abs/2509.23324",
           "https://arxiv.org/pdf/2509.23324"
@@ -3603,7 +3603,7 @@
         "track": "A",
         "topic": "Memory / cache / contention",
         "priority": "corpus",
-        "title_indexed": "Demystifying Complex Workload–DRAM Interactions: An Experimental Study",
+        "title_indexed": "Demystifying Complex Workload\u2013DRAM Interactions: An Experimental Study",
         "title_verified": null,
         "authors": null,
         "year": null,
@@ -3851,9 +3851,9 @@
         "title_verified": "Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs",
         "authors": "Yechen Xu, Yifei Wang, Nathanael Ren, Yiran Chen, Danyang Zhuo",
         "year": 2026,
-        "venue": "OSDI2026 publisher PDF,18pages including cover; July13–15,2026 proceedings. No independent artifact/version audit.",
-        "identifier": "OSDI2026 publisher PDF,18pages including cover; July13–15,2026 proceedings. No independent artifact/version audit.",
-        "version": "OSDI2026 publisher PDF,18pages including cover; July13–15,2026 proceedings. No independent artifact/version audit.",
+        "venue": "OSDI2026 publisher PDF,18pages including cover; July13\u201315,2026 proceedings. No independent artifact/version audit.",
+        "identifier": "OSDI2026 publisher PDF,18pages including cover; July13\u201315,2026 proceedings. No independent artifact/version audit.",
+        "version": "OSDI2026 publisher PDF,18pages including cover; July13\u201315,2026 proceedings. No independent artifact/version audit.",
         "source_links": [
           "https://www.usenix.org/conference/osdi26/presentation/xu-yechen",
           "https://www.usenix.org/system/files/osdi26-xu-yechen.pdf"
@@ -3973,9 +3973,9 @@
         "title_verified": "The Framework Tax: Disparities Between Inference Efficiency in NLP Research and Deployment",
         "authors": "Jared Fernandez, Jacob Kahn, Clara Na, Yonatan Bisk, Emma Strubell",
         "year": 2023,
-        "venue": "EMNLP2023 publisher PDF,pp1588–1600",
-        "identifier": "EMNLP2023 publisher PDF,pp1588–1600",
-        "version": "EMNLP2023 publisher PDF,pp1588–1600",
+        "venue": "EMNLP2023 publisher PDF,pp1588\u20131600",
+        "identifier": "EMNLP2023 publisher PDF,pp1588\u20131600",
+        "version": "EMNLP2023 publisher PDF,pp1588\u20131600",
         "source_links": [
           "https://aclanthology.org/2023.emnlp-main.98/",
           "https://aclanthology.org/2023.emnlp-main.98.pdf"
@@ -4590,7 +4590,7 @@
         "track": "A",
         "topic": "Applications / multimedia / sensing",
         "priority": "corpus",
-        "title_indexed": "OmniLive: Super-Resolution Enhanced 360° Video Live Streaming for Mobile Devices",
+        "title_indexed": "OmniLive: Super-Resolution Enhanced 360\u00b0 Video Live Streaming for Mobile Devices",
         "title_verified": null,
         "authors": null,
         "year": null,
@@ -4801,9 +4801,9 @@
         "title_verified": "MobileNetV2: Inverted Residuals and Linear Bottlenecks",
         "authors": "Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, Liang-Chieh Chen",
         "year": 2018,
-        "venue": "CVPR2018 publisher11-page PDF, proceedings4510–4520",
-        "identifier": "CVPR2018 publisher11-page PDF, proceedings4510–4520",
-        "version": "CVPR2018 publisher11-page PDF, proceedings4510–4520",
+        "venue": "CVPR2018 publisher11-page PDF, proceedings4510\u20134520",
+        "identifier": "CVPR2018 publisher11-page PDF, proceedings4510\u20134520",
+        "version": "CVPR2018 publisher11-page PDF, proceedings4510\u20134520",
         "source_links": [
           "https://openaccess.thecvf.com/content_cvpr_2018/html/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.html",
           "https://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf"
@@ -4945,9 +4945,9 @@
         "title_verified": "Searching for MobileNetV3",
         "authors": "Andrew Howard et al.",
         "year": 2019,
-        "venue": "ICCV2019 publisher11-page PDF, proceedings1314–1324",
-        "identifier": "ICCV2019 publisher11-page PDF, proceedings1314–1324",
-        "version": "ICCV2019 publisher11-page PDF, proceedings1314–1324",
+        "venue": "ICCV2019 publisher11-page PDF, proceedings1314\u20131324",
+        "identifier": "ICCV2019 publisher11-page PDF, proceedings1314\u20131324",
+        "version": "ICCV2019 publisher11-page PDF, proceedings1314\u20131324",
         "source_links": [
           "https://openaccess.thecvf.com/content_ICCV_2019/html/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.html",
           "https://openaccess.thecvf.com/content_ICCV_2019/papers/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.pdf"
@@ -5062,9 +5062,9 @@
         "title_verified": "nnPerf: Demystifying DNN Runtime Inference Latency on Mobile Platforms",
         "authors": "Haolin Chu, Xiaolong Zheng, Liang Liu, Huadong Ma",
         "year": 2023,
-        "venue": "SenSys2023 official-project13-page PDF; November12–17,2023; DOI10.1145/3625687.3625797",
-        "identifier": "SenSys2023 official-project13-page PDF; November12–17,2023; DOI10.1145/3625687.3625797",
-        "version": "SenSys2023 official-project13-page PDF; November12–17,2023; DOI10.1145/3625687.3625797",
+        "venue": "SenSys2023 official-project13-page PDF; November12\u201317,2023; DOI10.1145/3625687.3625797",
+        "identifier": "SenSys2023 official-project13-page PDF; November12\u201317,2023; DOI10.1145/3625687.3625797",
+        "version": "SenSys2023 official-project13-page PDF; November12\u201317,2023; DOI10.1145/3625687.3625797",
         "source_links": [
           "https://doi.org/10.1145/3625687.3625797",
           "https://nnperfwins.github.io/nnPerf.pdf"
@@ -6167,9 +6167,9 @@
         "title_verified": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization",
         "authors": "Yeonhong Park, Jake Hyun, Hojoon Kim, Jae W. Lee",
         "year": 2025,
-        "venue": "OSDI2025 publisher18-page PDF including proceedings cover; paper printed803–815",
-        "identifier": "OSDI2025 publisher18-page PDF including proceedings cover; paper printed803–815",
-        "version": "OSDI2025 publisher18-page PDF including proceedings cover; paper printed803–815",
+        "venue": "OSDI2025 publisher18-page PDF including proceedings cover; paper printed803\u2013815",
+        "identifier": "OSDI2025 publisher18-page PDF including proceedings cover; paper printed803\u2013815",
+        "version": "OSDI2025 publisher18-page PDF including proceedings cover; paper printed803\u2013815",
         "source_links": [
           "https://www.usenix.org/conference/osdi25/presentation/park-yeonhong",
           "https://www.usenix.org/system/files/osdi25-park-yeonhong.pdf"
@@ -6705,7 +6705,7 @@
         "topic": "AI research methodology; identity unverified",
         "priority": "closest",
         "title_indexed": "PaperBench",
-        "title_verified": "PaperBench: Evaluating AI’s Ability to Replicate AI Research",
+        "title_verified": "PaperBench: Evaluating AI\u2019s Ability to Replicate AI Research",
         "authors": "Giulio Starace, Oliver Jaffe, Dane Sherburn, James Aung, Chan Jun Shern, Leon Maksin, Rachel Dias, Evan Mays, Benjamin Kinsella, Wyatt Thompson, Johannes Heidecke, Amelia Glaese, Tejal Patwardhan",
         "year": 2025,
         "venue": "arXiv2504.01848v3; archived preprint, publisher equivalence pending",
@@ -7031,12 +7031,12 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-10T17:41:25+00:00",
+  "updated_at": "2026-11-10T20:01:19.508796+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
-  "phase": "Phase 2 · two-session scout completed",
-  "summary": "A bounded scientific scout completed two sessions on one board with full-output checks. Mechanism analysis and the next discriminating measurement are prepared; further dispatch awaits resource admission.",
-  "tests_passed": 66,
+  "phase": "Phase 2 \u00b7 bounded follow-up studies completed",
+  "summary": "Two additional bounded GPU studies completed both sessions with full-output checks. Competing timing descriptions were tested; mechanisms and novelty remain under review.",
+  "tests_passed": 76,
   "literature_pdfs": 50,
   "literature_leads": 111,
   "hardware": {
@@ -7045,17 +7045,17 @@
     "dsp": "Correctness smoke passed",
     "npu": "Correctness smoke passed"
   },
-  "local_worker": "Rechecked; calibration and reserve gates refused generation",
+  "local_worker": "Resource/calibration gates refused generation; no local advice",
   "architecture_claims": 0,
   "controlled_ai_tasks": 0,
-  "event_count": 309,
-  "event_head": "e1993a5c0e5daf952586802229e27e65f6aa7025ef4606cc77a74df32b3b8436",
+  "event_count": 561,
+  "event_head": "203f3f03a037aa9de0ed2706ad3a9fa6ec98d335751bc3f6cfb5c23ddbfe2069",
   "tracks": [
     {
       "id": "architecture",
       "name": "Architecture papers / series",
-      "status": "Two-session scout; mechanism unresolved",
-      "detail": "Two sessions on one board; private raw evidence and competing explanations retained. No accepted novelty claim."
+      "status": "Replicated scoped observations; mechanism unresolved",
+      "detail": "Bounded studies and prospective checks completed on one board. Full evidence remains private; independent scientific review and novelty assessment are pending."
     },
     {
       "id": "methodology",
@@ -7065,18 +7065,18 @@
     }
   ],
   "now": [
-    "Two bounded scouting sessions completed with full-output validation",
-    "Phase 2 raw evidence independently archived and verified privately",
-    "Failures, anomalies and changing interpretations retained"
+    "120 scientific requests and18 admissions completed with full-output checks",
+    "Complete Phase 2 evidence independently archived and readback verified privately",
+    "Negative results, observer effects and unresolved interpretations retained"
   ],
   "next": [
-    "Admit the next measurement refinement when host resources allow",
-    "Continue path-specific validation for the remaining portfolio",
-    "Obtain independent scientific review and maintain both paper tracks"
+    "Prepare the next scoped measurement refinement within an explicit allocation",
+    "Continue path-specific validation when resource admission permits",
+    "Obtain independent scientific review; maintain both paper tracks"
   ],
   "blockers": [
-    "Resource admission for the next bounded build and optional local critic",
-    "Other engine paths and board-specific power calibration remain incomplete",
+    "Build and optional local-model resource/calibration admission",
+    "DSP/NPU scientific measurement admission remains incomplete",
     "Independent review and controlled AI comparison remain unavailable"
   ],
   "issues": [
@@ -7090,6 +7090,10 @@
     }
   ],
   "activity": [
+    {
+      "date": "2026-11-10",
+      "detail": "Additional bounded studies completed both sessions; prospective model checks and full-output validation retained. Complete private evidence archive verified."
+    },
     {
       "date": "2026-11-10",
       "detail": "Two-session scientific scout completed; private evidence archive verified. Alternative explanations remain unresolved; next discriminator prepared."
@@ -7133,12 +7137,12 @@
       "state": "active"
     },
     {
-      "name": "Scout repeated",
+      "name": "Scouts repeated",
       "state": "active"
     },
     {
-      "name": "Mechanism tests",
-      "state": "pending"
+      "name": "Mechanism unresolved",
+      "state": "active"
     },
     {
       "name": "Papers",

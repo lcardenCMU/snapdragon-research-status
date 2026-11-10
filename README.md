@@ -1,7 +1,14 @@
-# Snapdragon research status
+# Snapdragon Research
 
-[Dashboard](https://lcardencmu.github.io/snapdragon-research-status/)
+[Open the dashboard](https://lcardencmu.github.io/snapdragon-research-status/)
 
-A bounded scientific scout completed two sessions on one board with full-output checks. Mechanism analysis and the next discriminating measurement are prepared; further dispatch awaits resource admission.
+Two additional bounded GPU studies completed both sessions with full-output checks. Competing timing descriptions were tested; mechanisms and novelty remain under review.
 
-Both research tracks remain active. Raw evidence is independently archived privately. No accepted architecture novelty or controlled AI-benefit result.
+Updated: 2026-11-10T20:01:19.508796+00:00
+
+- Bounded studies and full-output checks completed.
+- Private raw evidence archived and verified.
+- Mechanisms and novelty remain under review.
+- Local generation remains unadmitted.
+
+Both architecture and AI research-methodology tracks continue. Setup, tests and request counts are excluded from AI-benefit endpoints.
