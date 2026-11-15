@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-15T01:03:05.302292+00:00",
+  "updated_at": "2026-11-15T01:08:09.622160+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase2 \u00b7 Mechanism experiments",
@@ -7148,11 +7148,11 @@
   "board_queue": {
     "state": "running",
     "queue_depth": 0,
-    "completed": 9847,
+    "completed": 9859,
     "failed": 123,
-    "utilization": 0.2536126073366442,
-    "window_seconds": 351536.3508462409,
-    "updated_at": "2026-11-15T01:02:43.764352+00:00",
+    "utilization": 0.2534489052987079,
+    "window_seconds": 351840.2894188239,
+    "updated_at": "2026-11-15T01:07:47.704825+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   }
 }
