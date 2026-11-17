@@ -7031,11 +7031,11 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-17T18:52:41.645323+00:00",
+  "updated_at": "2026-11-17T18:57:46.666790+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase2 \u00b7 Mechanism experiments",
-  "summary": "Research queue stopped; evidence and restart handoff saved. Raw evidence remains private.",
+  "summary": "Serial exploratory experiments are testing accelerator completion latency and shared-resource behavior. Raw evidence remains private.",
   "tests_passed": 76,
   "literature_pdfs": 50,
   "literature_leads": 111,
@@ -7065,8 +7065,8 @@
     }
   ],
   "now": [
-    "Board queue stopped; no active owned jobs",
-    "Exploratory evidence preserved for the next session"
+    "Serial board queue with finite deadlines and cooling-state checks",
+    "In-process completion-latency experiments; exploratory, no mechanism claim"
   ],
   "next": [
     "Distinguish initialization, waiting policy and operating-state effects",
@@ -7146,13 +7146,13 @@
     }
   ],
   "board_queue": {
-    "state": "stopped_error",
-    "queue_depth": 202,
-    "completed": 16207,
+    "state": "running",
+    "queue_depth": 201,
+    "completed": 16210,
     "failed": 175,
-    "utilization": 0.23364431235931168,
-    "window_seconds": 588412.9546298942,
-    "updated_at": "2026-11-17T18:50:41.327067+00:00",
+    "utilization": 0.23377005313401716,
+    "window_seconds": 588800.3911677008,
+    "updated_at": "2026-11-17T18:57:08.765964+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   }
 }
