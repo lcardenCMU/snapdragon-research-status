@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-21T19:37:29.963709+00:00",
+  "updated_at": "2026-11-21T19:42:33.719539+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 187,
-    "completed": 18298,
+    "queue_depth": 158,
+    "completed": 18299,
     "failed": 267,
-    "utilization": 0.2198303991282803,
-    "window_seconds": 936523.1999250306,
-    "updated_at": "2026-11-21T19:32:32.016470+00:00",
+    "utilization": 0.2200755623401086,
+    "window_seconds": 936876.4999834056,
+    "updated_at": "2026-11-21T19:38:25.318922+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7178,7 +7178,7 @@
         "title": "Map of the Oryon hardware data prefetchers",
         "gate": "Covered and uncovered access patterns separate reliably",
         "status": "running",
-        "number": "Reduced grid: +64 B stream covered after 2 accesses; 1024 B stride not covered after 32 accesses, both core types. Probe-miss probabilities separate as 0 vs 1",
+        "number": "Stride gate met on both core types: strides up to 512 B covered, 1024 B and above never; L2 reach up to 48 lines after 32 accesses. Indirect/pointer cells being rerun (v1 confounded)",
         "decision": null,
         "updated": "2026-11-21"
       },
@@ -7350,10 +7350,11 @@
         "experiment": "E9",
         "title": "Frequency-switch latency vs memory-bound phase length",
         "gate": "A useful share of time is in phases longer than a switch",
-        "status": "planned",
+        "status": "running",
         "number": null,
         "decision": null,
-        "updated": "2026-11-21"
+        "updated": "2026-11-21",
+        "note": "Two Prime runs executed at 1.01 GHz while cpufreq reported 4.32 GHz; clock-probe jobs stocked"
       },
       {
         "id": "N21",
@@ -7392,9 +7393,10 @@
         "title": "Thermal tax: which mitigation fires on which engine",
         "gate": "A mitigation is observed and costs measurable performance",
         "status": "running",
-        "number": "No mitigation observed up to 90 C in 600 s runs",
+        "number": "First mitigation observed (1 run): one Prime core at full duty reaches 103.8 C after ~170 s and is held there; throughput falls 4.6% while no sysfs cooling device engages and the reported frequency stays at 3.51 GHz",
         "decision": null,
-        "updated": "2026-11-21"
+        "updated": "2026-11-21",
+        "note": "Kernel trips only since 2026-11-21; earlier runs stopped at 90 C and saw nothing"
       }
     ]
   }
