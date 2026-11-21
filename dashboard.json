@@ -7031,11 +7031,11 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-21T19:27:22.666213+00:00",
+  "updated_at": "2026-11-21T19:32:26.113841+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
-  "summary": "One serial board queue splits its time evenly between first-pass studies of new ideas (prefetching, per-core compilation, engine handoffs) and the existing latency, coupling and thermal leads. Results are exploratory. Raw evidence remains private.",
+  "summary": "Research queue stopped; evidence and restart handoff saved. Raw evidence remains private.",
   "tests_passed": 76,
   "literature_pdfs": 50,
   "literature_leads": 111,
@@ -7065,9 +7065,8 @@
     }
   ],
   "now": [
-    "Prefetcher map of both core types (N12) running on the board",
-    "Building: cold-core burst, per-core-type workload variants, engine-handoff client",
-    "Analysing the latency, coupling and thermal runs collected on 2026-11-18"
+    "Board queue stopped; no active owned jobs",
+    "Exploratory evidence preserved for the next session"
   ],
   "next": [
     "Per-core-type compilation and handoff-coldness first passes",
@@ -7148,13 +7147,13 @@
     }
   ],
   "board_queue": {
-    "state": "running",
-    "queue_depth": 47,
-    "completed": 18285,
+    "state": "stopped",
+    "queue_depth": 186,
+    "completed": 18298,
     "failed": 267,
-    "utilization": 0.21974452904809452,
-    "window_seconds": 936203.5239195623,
-    "updated_at": "2026-11-21T19:27:12.338570+00:00",
+    "utilization": 0.21983599949111174,
+    "window_seconds": 936499.3418229374,
+    "updated_at": "2026-11-21T19:32:08.158479+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7177,8 +7176,8 @@
         "experiment": "E4",
         "title": "Map of the Oryon hardware data prefetchers",
         "gate": "Covered and uncovered access patterns separate reliably",
-        "status": "planned",
-        "number": null,
+        "status": "running",
+        "number": "Reduced grid: +64 B stream covered after 2 accesses; 1024 B stride not covered after 32 accesses, both core types. Probe-miss probabilities separate as 0 vs 1",
         "decision": null,
         "updated": "2026-11-21"
       },
@@ -7371,9 +7370,10 @@
         "title": "Waiting core sets accelerator latency (wake tax on Prime cores)",
         "gate": "Mechanism identified and confirmatory replication",
         "status": "running",
-        "number": "59-68% of calls >2 ms on cores 6/7 at a 20 ms gap vs <=0.1% on cores 0-5 (exploratory)",
+        "number": "59-68% of calls >2 ms on cores 6/7 at a 20 ms gap vs <=0.1% on cores 0-5. Device tree: vendor latency votes name CPUs 0-1 only; cluster idle exit declared at 1983 us (exploratory)",
         "decision": null,
-        "updated": "2026-11-21"
+        "updated": "2026-11-21",
+        "note": "Leading explanation: Prime cluster enters its cluster-level idle state while the waiter sleeps"
       },
       {
         "id": "L2",
