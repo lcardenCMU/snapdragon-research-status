@@ -7031,11 +7031,11 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-21T19:25:37.304517+00:00",
+  "updated_at": "2026-11-21T19:27:22.666213+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
-  "phase": "Phase2 \u00b7 Mechanism experiments",
-  "summary": "Serial exploratory experiments are testing accelerator completion latency and shared-resource behavior. Raw evidence remains private.",
+  "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
+  "summary": "One serial board queue splits its time evenly between first-pass studies of new ideas (prefetching, per-core compilation, engine handoffs) and the existing latency, coupling and thermal leads. Results are exploratory. Raw evidence remains private.",
   "tests_passed": 76,
   "literature_pdfs": 50,
   "literature_leads": 111,
@@ -7065,12 +7065,14 @@
     }
   ],
   "now": [
-    "Serial board queue with finite deadlines and cooling-state checks",
-    "In-process completion-latency experiments; exploratory, no mechanism claim"
+    "Prefetcher map of both core types (N12) running on the board",
+    "Building: cold-core burst, per-core-type workload variants, engine-handoff client",
+    "Analysing the latency, coupling and thermal runs collected on 2026-11-18"
   ],
   "next": [
-    "Distinguish initialization, waiting policy and operating-state effects",
-    "Validate shared-Hexagon configurations before timing comparisons"
+    "Per-core-type compilation and handoff-coldness first passes",
+    "Lead1 mechanism closure and confirmatory preregistration",
+    "Thermal ladder with kernel trips only, full cooldown between runs"
   ],
   "blockers": [
     "No owner action currently needed; thermal and cleanup guards remain active"
@@ -7147,12 +7149,252 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 53,
-    "completed": 18279,
+    "queue_depth": 47,
+    "completed": 18285,
     "failed": 267,
-    "utilization": 0.21973453139769097,
-    "window_seconds": 936107.0537467704,
-    "updated_at": "2026-11-21T19:25:35.867747+00:00",
+    "utilization": 0.21974452904809452,
+    "window_seconds": 936203.5239195623,
+    "updated_at": "2026-11-21T19:27:12.338570+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
+  },
+  "ideas": {
+    "schema": 1,
+    "updated": "2026-11-21",
+    "results_format": "idea,workload,configuration,metric,value,git_commit,event_id",
+    "ideas": [
+      {
+        "id": "S0",
+        "experiment": "S0",
+        "title": "Step zero: board facts",
+        "gate": "Collected",
+        "status": "done",
+        "number": "MTE absent, SPE absent, rseq absent, no cache sizes in sysfs, 122 raw PMU events",
+        "decision": "See research/ideas/board-facts.md",
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N12",
+        "experiment": "E4",
+        "title": "Map of the Oryon hardware data prefetchers",
+        "gate": "Covered and uncovered access patterns separate reliably",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N47",
+        "experiment": "E8",
+        "title": "Cold-core burst after a cross-cluster migration",
+        "gate": "Migration penalty large enough to change a placement decision",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N50",
+        "experiment": "E8",
+        "title": "Cold-core burst after idle wake-up (input for the normally-off study)",
+        "gate": "Numbers recorded regardless",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "C5",
+        "experiment": "E6",
+        "title": "Code compiled per core type: best-per-core vs best-common",
+        "gate": "Best-per-core beats best-common by more than a few percent on a meaningful share of workloads",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21",
+        "note": "No rseq on this kernel: dispatch cost measured with the alternatives"
+      },
+      {
+        "id": "C4",
+        "experiment": "E6",
+        "title": "Profile feedback collected per core type",
+        "gate": "Same gate as C5",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "C9",
+        "experiment": "E6",
+        "title": "Code layout for the smaller instruction cache",
+        "gate": "Same gate as C5",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N19",
+        "experiment": "E1",
+        "title": "Conversion tax at engine handoffs",
+        "gate": "Handoffs are at least ~10% of end-to-end time in some pipeline and a buffer pool does not remove them",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N44",
+        "experiment": "E1",
+        "title": "Handoff coldness: CPU first pass over accelerator output",
+        "gate": "Cold-cache cost is a visible share of the handoff for non-sequential consumers",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N45",
+        "experiment": "E1",
+        "title": "Rebate: prefetch from upstream indices at the handoff",
+        "gate": "Same gate as N44",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N11",
+        "experiment": "E3",
+        "title": "Where cache misses come from in phone apps",
+        "gate": "Attribution usable and app distributions differ clearly from benchmarks",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N20",
+        "experiment": "E3",
+        "title": "Miss sources during on-device LLM decode",
+        "gate": "A meaningful share of decode misses falls outside stride-friendly kernels",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N15",
+        "experiment": "E5",
+        "title": "Sereno follow-up: LLM on the GPU path and multi-accelerator pipelines",
+        "gate": "GPU path or multi-accelerator case differs from the published NPU case",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N46",
+        "experiment": "E5",
+        "title": "Software prefetching under accelerator memory pressure",
+        "gate": "Prefetching flips from helpful to harmful under pressure",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N18",
+        "experiment": "E2",
+        "title": "Event-triggered staging before first inference",
+        "gate": "Staging removes at least ~10% of launch-to-first-result time",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21",
+        "note": "No camera: synthetic trigger"
+      },
+      {
+        "id": "N34",
+        "experiment": "E2",
+        "title": "Share of first-inference latency spent loading and initializing",
+        "gate": "More than a few percent",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N43",
+        "experiment": "E2",
+        "title": "Replay of cache misses at frame boundaries",
+        "gate": "Miss stalls are a visible share of frame time and most misses recur next frame",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21",
+        "note": "No SPE on this kernel: PC-level only; address repeatability moves to an emulator"
+      },
+      {
+        "id": "N17",
+        "experiment": "E7",
+        "title": "Pipeline placement by thermal region",
+        "gate": "Best whole-pipeline placement changes between regions",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N22",
+        "experiment": "E9",
+        "title": "Frequency-switch latency vs memory-bound phase length",
+        "gate": "A useful share of time is in phases longer than a switch",
+        "status": "planned",
+        "number": null,
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "N21",
+        "experiment": "E9",
+        "title": "Memory tagging and accelerator-shared buffers",
+        "gate": "Board has MTE",
+        "status": "stopped",
+        "number": "No mte flag in CPU features",
+        "decision": "Stop: the cores do not report MTE",
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "L1",
+        "experiment": "Lead1",
+        "title": "Waiting core sets accelerator latency (wake tax on Prime cores)",
+        "gate": "Mechanism identified and confirmatory replication",
+        "status": "running",
+        "number": "59-68% of calls >2 ms on cores 6/7 at a 20 ms gap vs <=0.1% on cores 0-5 (exploratory)",
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "L2",
+        "experiment": "Lead2",
+        "title": "Shared-Hexagon DSP/NPU coupling",
+        "gate": "Coupling survives CPU-feeder control",
+        "status": "running",
+        "number": "NPU 698 us isolated vs 530 us with DSP at 4 HVX threads; CPU-only feeder gives 559-648 us (exploratory)",
+        "decision": null,
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "TH",
+        "experiment": "Thermal",
+        "title": "Thermal tax: which mitigation fires on which engine",
+        "gate": "A mitigation is observed and costs measurable performance",
+        "status": "running",
+        "number": "No mitigation observed up to 90 C in 600 s runs",
+        "decision": null,
+        "updated": "2026-11-21"
+      }
+    ]
   }
 }
