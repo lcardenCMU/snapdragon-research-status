@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-21T22:19:27.915128+00:00",
+  "updated_at": "2026-11-21T22:21:48.326550+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,16 +7149,16 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 230,
-    "completed": 18526,
+    "queue_depth": 226,
+    "completed": 18530,
     "failed": 269,
-    "utilization": 0.2253750340014603,
-    "window_seconds": 946538.7044873636,
-    "updated_at": "2026-11-21T22:19:27.539314+00:00",
+    "utilization": 0.2254373583082259,
+    "window_seconds": 946672.8290821555,
+    "updated_at": "2026-11-21T22:21:41.663918+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
-    "schema": 1,
+    "schema": 2,
     "updated": "2026-11-21",
     "results_format": "idea,workload,configuration,metric,value,git_commit,event_id",
     "ideas": [
@@ -7171,7 +7171,16 @@
         "number": "MTE absent, SPE absent, rseq absent, no cache sizes in sysfs, 122 raw PMU events",
         "decision": "See research/ideas/board-facts.md",
         "updated": "2026-11-21",
-        "prior_art": "not applicable"
+        "prior_art": "not applicable",
+        "line": "Infrastructure",
+        "paper": "P-C",
+        "readiness": 3,
+        "tier": "exploratory",
+        "job_families": [
+          "s0-facts",
+          "native-device"
+        ],
+        "blocker": "Closed; board facts feed every paper"
       },
       {
         "id": "N12",
@@ -7182,7 +7191,16 @@
         "number": "Stride: covered up to 512 B strides, never at 1024 B and above; L2 reach up to 48 lines. Temporal prefetching found on the Prime core only: a replayed random miss sequence drops from 99 to 18 ns per load (L2 misses 100% to 15%) for up to 4096 lines; shuffled-order control stays at 95 ns; Performance core shows nothing (5 runs per core)",
         "decision": "Continue: gate met. Next: trigger, capacity curve, persistence, core 6",
         "updated": "2026-11-21",
-        "prior_art": "Risk LOW. No public reverse-engineering of SM8750 data prefetchers; closest is a blog on first-generation Oryon. Spatial result differs from that blog and needs its test"
+        "prior_art": "Risk LOW. No public reverse-engineering of SM8750 data prefetchers; closest is a blog on first-generation Oryon. Spatial result differs from that blog and needs its test",
+        "line": "Memory system",
+        "paper": "P-C",
+        "readiness": 3,
+        "tier": "exploratory",
+        "job_families": [
+          "e4-",
+          "r2-e4"
+        ],
+        "blocker": "Trigger, capacity, persistence and core-6 follow-ups; then confirmatory session"
       },
       {
         "id": "N47",
@@ -7193,7 +7211,16 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "Risk MEDIUM. Textbook effect; 2014 simulation and older measurements exist. A measured recovery curve on current hardware is new"
+        "prior_art": "Risk MEDIUM. Textbook effect; 2014 simulation and older measurements exist. A measured recovery curve on current hardware is new",
+        "line": "Memory system",
+        "paper": "P-C",
+        "readiness": 2,
+        "tier": "exploratory",
+        "job_families": [
+          "e8-cold",
+          "r2-e8"
+        ],
+        "blocker": "Analyse first-pass migration burst against the gate"
       },
       {
         "id": "N50",
@@ -7204,7 +7231,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "Risk MEDIUM. Idle states here are retention states, so the answer may be exit latency only"
+        "prior_art": "Risk MEDIUM. Idle states here are retention states, so the answer may be exit latency only",
+        "line": "Memory system",
+        "paper": "P-C",
+        "readiness": 2,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Shares jobs with N47; analyse idle-wake variant (jobs counted under N47)"
       },
       {
         "id": "C5",
@@ -7216,7 +7249,16 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "No rseq on this kernel: dispatch cost measured with the alternatives",
-        "prior_art": "Risk MEDIUM (HIGH for ML kernels): Park et al. 2019 on A55/A75, SANI OSDI 2026. Nothing for general code or a same-family core pair; expect small gains"
+        "prior_art": "Risk MEDIUM (HIGH for ML kernels): Park et al. 2019 on A55/A75, SANI OSDI 2026. Nothing for general code or a same-family core pair; expect small gains",
+        "line": "Compilation",
+        "paper": "P-D",
+        "readiness": 2,
+        "tier": "exploratory",
+        "job_families": [
+          "e6-percore",
+          "r2-e6"
+        ],
+        "blocker": "Finish 8 workloads x 11 variants; analyse best-per-core vs best-common"
       },
       {
         "id": "C4",
@@ -7227,7 +7269,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "See C5"
+        "prior_art": "See C5",
+        "line": "Compilation",
+        "paper": "P-D",
+        "readiness": 1,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Profile collection per core type not yet run (jobs counted under C5)"
       },
       {
         "id": "C9",
@@ -7238,7 +7286,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "See C5"
+        "prior_art": "See C5",
+        "line": "Compilation",
+        "paper": "P-D",
+        "readiness": 1,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Layout variants built; icache-size runs pending (jobs counted under C5)"
       },
       {
         "id": "N19",
@@ -7249,7 +7303,16 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "Risk HIGH as a concept; no quantitative study of SVM/dmabuf handoff cost on phones found"
+        "prior_art": "Risk HIGH as a concept; no quantitative study of SVM/dmabuf handoff cost on phones found",
+        "line": "Engine handoff",
+        "paper": "P-F",
+        "readiness": 2,
+        "tier": "exploratory",
+        "job_families": [
+          "e1-handoff",
+          "r2-e1"
+        ],
+        "blocker": "Analyse conversion-tax first pass"
       },
       {
         "id": "N44",
@@ -7260,7 +7323,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "Risk MEDIUM. Same idea reported June 2026 on Apple M4 Pro (arXiv:2606.27098). Open: phone SoC without shared cache, NPU case, share of end-to-end time"
+        "prior_art": "Risk MEDIUM. Same idea reported June 2026 on Apple M4 Pro (arXiv:2606.27098). Open: phone SoC without shared cache, NPU case, share of end-to-end time",
+        "line": "Engine handoff",
+        "paper": "P-F",
+        "readiness": 2,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Analyse CPU first-pass coldness (jobs counted under N19)"
       },
       {
         "id": "N45",
@@ -7271,7 +7340,15 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "Risk MEDIUM. Accelerator-output prefetch exists for servers (RACER, TACO 2025); indirect prefetch expected ~1.1x on big cores (Ainsworth and Jones 2017)"
+        "prior_art": "Risk MEDIUM. Accelerator-output prefetch exists for servers (RACER, TACO 2025); indirect prefetch expected ~1.1x on big cores (Ainsworth and Jones 2017)",
+        "line": "Engine handoff",
+        "paper": "P-F",
+        "readiness": 1,
+        "tier": "exploratory",
+        "job_families": [
+          "e1-handoff-idx"
+        ],
+        "blocker": "Prefetch-from-indices variant jobs partly stocked (idx-k*)"
       },
       {
         "id": "N11",
@@ -7282,7 +7359,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "not yet reviewed"
+        "prior_art": "not yet reviewed",
+        "line": "Application misses",
+        "paper": "P-E",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs PMU miss-sampling client and open-source app set"
       },
       {
         "id": "N20",
@@ -7293,7 +7376,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "not yet reviewed"
+        "prior_art": "not yet reviewed",
+        "line": "Application misses",
+        "paper": "P-E",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs llama.cpp on the board"
       },
       {
         "id": "N15",
@@ -7304,7 +7393,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "not yet reviewed"
+        "prior_art": "not yet reviewed",
+        "line": "Pipelines",
+        "paper": "P-F",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs llama.cpp OpenCL and QNN/Genie LLM path"
       },
       {
         "id": "N46",
@@ -7315,7 +7410,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "not yet reviewed"
+        "prior_art": "not yet reviewed",
+        "line": "Application misses",
+        "paper": "P-E",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs accelerator pressure generator plus prefetch client"
       },
       {
         "id": "N18",
@@ -7327,7 +7428,13 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "No camera: synthetic trigger",
-        "prior_art": "not yet reviewed"
+        "prior_art": "not yet reviewed",
+        "line": "Application staging",
+        "paper": "P-E",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs event trigger and staging client"
       },
       {
         "id": "N34",
@@ -7338,7 +7445,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "not yet reviewed"
+        "prior_art": "not yet reviewed",
+        "line": "Application staging",
+        "paper": "P-E",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs first-inference breakdown timers in the QNN client"
       },
       {
         "id": "N43",
@@ -7350,7 +7463,13 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "No SPE on this kernel: PC-level only; address repeatability moves to an emulator",
-        "prior_art": "not yet reviewed"
+        "prior_art": "not yet reviewed",
+        "line": "Application staging",
+        "paper": "P-E",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs virtual-display frame loop (headless approximation)"
       },
       {
         "id": "N17",
@@ -7361,7 +7480,13 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "not yet reviewed"
+        "prior_art": "not yet reviewed",
+        "line": "Thermal",
+        "paper": "P-A",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs thermal tax numbers (TH) first"
       },
       {
         "id": "N22",
@@ -7373,7 +7498,16 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "Two Prime runs executed at 1.01 GHz while cpufreq reported 4.32 GHz; clock-probe jobs stocked",
-        "prior_art": "scaling_cur_freq is documented as not necessarily the delivered frequency; no published measurement on this SoC found"
+        "prior_art": "scaling_cur_freq is documented as not necessarily the delivered frequency; no published measurement on this SoC found",
+        "line": "Memory system",
+        "paper": "P-C",
+        "readiness": 2,
+        "tier": "exploratory",
+        "job_families": [
+          "e9-",
+          "r2-e9"
+        ],
+        "blocker": "Analyse switch-latency vs phase-length gate"
       },
       {
         "id": "N21",
@@ -7384,7 +7518,13 @@
         "number": "No mte flag in CPU features",
         "decision": "Stop: the cores do not report MTE",
         "updated": "2026-11-21",
-        "prior_art": "not applicable"
+        "prior_art": "not applicable",
+        "line": "Infrastructure",
+        "paper": "P-C",
+        "readiness": 3,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Closed: no MTE"
       },
       {
         "id": "L1",
@@ -7396,7 +7536,39 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "Leading explanation: Prime cluster enters its cluster-level idle state while the waiter sleeps",
-        "prior_art": "Risk HIGH for mitigations (see research/lead1/prior-art.md). No published report of two-regime wake latency; governor-predictor explanation untested"
+        "prior_art": "Risk HIGH for mitigations (see research/lead1/prior-art.md). No published report of two-regime wake latency; governor-predictor explanation untested",
+        "line": "Wake tax",
+        "paper": "P-A",
+        "readiness": 3,
+        "tier": "exploratory",
+        "job_families": [
+          "l1-",
+          "sweep1-",
+          "wait-",
+          "gap-",
+          "idle-",
+          "placement-",
+          "cross-",
+          "spinner",
+          "lpm",
+          "ipi-",
+          "cpuwake",
+          "migrate",
+          "symmetry",
+          "sibling",
+          "corectl",
+          "perfetto",
+          "readonly",
+          "duration-",
+          "steady-",
+          "replica-",
+          "blocking-",
+          "monitor-",
+          "sysmon",
+          "owned-",
+          "recovery"
+        ],
+        "blocker": "Mechanism closure (R4), then confirmatory tier; decode-like chain and QNN/FastRPC clients"
       },
       {
         "id": "L2",
@@ -7408,7 +7580,19 @@
         "decision": "Stop as a research lead. Keep as a placement fact: DSP and NPU are one engine. Possible short follow-up: QNN 1007 error rate under co-running",
         "updated": "2026-11-21",
         "prior_art": "Premise corrected: one Hexagon V79, two protection domains sharing threads, HVX contexts, HMX and clock votes. Qualcomm documents this co-running case. Risk HIGH as a discovery; only magnitudes and the failure rate are new",
-        "note": "Owner challenge 2026-11-21: both clients run on the same Hexagon, so this is contention on one engine, not coupling between two. New jobs paused pending the prior-art review"
+        "note": "Owner challenge 2026-11-21: both clients run on the same Hexagon, so this is contention on one engine, not coupling between two. New jobs paused pending the prior-art review",
+        "line": "Hexagon contention",
+        "paper": "P-A",
+        "readiness": 3,
+        "tier": "exploratory",
+        "job_families": [
+          "sweep2-",
+          "l2-",
+          "hex-",
+          "vtcm-",
+          "replica-hex"
+        ],
+        "blocker": "Closed as a lead; fold into P-A as a placement fact"
       },
       {
         "id": "TH",
@@ -7420,7 +7604,182 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "Kernel trips only since 2026-11-21; earlier runs stopped at 90 C and saw nothing",
-        "prior_art": "Risk HIGH if called a discovery: hardware capping without cooling-device changes is the documented LMh design, and scaling_cur_freq is documented as the last request. No paper reports the divergence on a Snapdragon; numbers are new"
+        "prior_art": "Risk HIGH if called a discovery: hardware capping without cooling-device changes is the documented LMh design, and scaling_cur_freq is documented as the last request. No paper reports the divergence on a Snapdragon; numbers are new",
+        "line": "Thermal",
+        "paper": "P-A",
+        "readiness": 2,
+        "tier": "exploratory",
+        "job_families": [
+          "thermal-"
+        ],
+        "blocker": "Kernel-trips-only ladder (thermal-kt) with full cooldown; latch check after each run"
+      },
+      {
+        "id": "L1c",
+        "experiment": "Lead1",
+        "title": "Wake tax: confirmatory tier (preregistered, randomized, second session)",
+        "gate": "Headline effect reproduces in a second session with full-output correctness",
+        "status": "planned",
+        "number": "",
+        "decision": "",
+        "line": "Wake tax",
+        "paper": "P-A",
+        "readiness": 0,
+        "tier": "confirmatory",
+        "job_families": [],
+        "blocker": "Needs R4 mechanism closure and preregistration card",
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "L1d",
+        "experiment": "Lead1",
+        "title": "Wake tax in a decode-like application chain, and QNN/FastRPC from cores 0/6",
+        "gate": "Tail tax survives in a multi-kernel chain",
+        "status": "planned",
+        "number": "",
+        "decision": "",
+        "line": "Wake tax",
+        "paper": "P-A",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs new multi-kernel client",
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "TH2",
+        "experiment": "Thermal",
+        "title": "Thermal-aware placement/routing keeps most of the performance",
+        "gate": "Policy retains >= 80% of unthrottled throughput at lower peak temperature",
+        "status": "planned",
+        "number": "",
+        "decision": "",
+        "line": "Thermal",
+        "paper": "P-A",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Needs thermal tax and mitigation map from TH",
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "M1",
+        "experiment": "Methods",
+        "title": "Measurement harness: serial queue, device-side supervisor, latch checks, harness lessons",
+        "gate": "Harness lessons (e.g. 10 ms polling hid the wake tax) documented with controls",
+        "status": "running",
+        "number": "Polling supervisor hid the wake tax: 0.9% vs 59.5% tails (replica-gap-c6-u20000)",
+        "decision": "Continue: methods section of P-A",
+        "line": "Infrastructure",
+        "paper": "P-A",
+        "readiness": 3,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Write-up; confirmatory replication of the polling control",
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "PROF",
+        "experiment": "Phase 1",
+        "title": "Four-engine roofline characterization of HDK8750 (CPU, GPU, DSP, NPU)",
+        "gate": "Reproducible on the MP board with source/binary hashes",
+        "status": "analysing",
+        "number": "See profiler/RESULTS.md (SAXPY, reduction, convolution, matmul rooflines); inherited from the earlier board, not yet revalidated on serial 23377736",
+        "decision": "Revalidate inherited discoveries on this MP board",
+        "line": "Characterization",
+        "paper": "P-G",
+        "readiness": 2,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Revalidation on MP board; power model pinned so no energy claims",
+        "updated": "2026-11-21"
+      },
+      {
+        "id": "PB",
+        "experiment": "Paper B",
+        "title": "AI-led research perspective (process journal, interventions, utilization)",
+        "gate": "Candid account complete; no controlled-benefit claim",
+        "status": "running",
+        "number": "Queue utilization and depth tracked on the status page",
+        "decision": "Opinion/perspective piece by owner decision 2026-11-10",
+        "line": "Process",
+        "paper": "P-B",
+        "readiness": 2,
+        "tier": "exploratory",
+        "job_families": [],
+        "blocker": "Keep process journal current; draft after P-A gates",
+        "updated": "2026-11-21"
+      }
+    ],
+    "ladder": [
+      [
+        "R0",
+        "Idea only"
+      ],
+      [
+        "R1",
+        "Clients built, jobs stocked"
+      ],
+      [
+        "R2",
+        "First-pass data collected"
+      ],
+      [
+        "R3",
+        "Gate decision recorded"
+      ],
+      [
+        "R4",
+        "Mechanism and competing explanations tested"
+      ],
+      [
+        "R5",
+        "Confirmatory (preregistered, randomized, second session, full-output correctness)"
+      ],
+      [
+        "R6",
+        "Figures and tables drafted"
+      ],
+      [
+        "R7",
+        "Paper draft"
+      ]
+    ],
+    "papers": [
+      {
+        "id": "P-A",
+        "title": "Taxes of heterogeneous on-device inference: completion/wake, contention and thermal (TaxBreak-style)",
+        "note": "Umbrella paper; strongest line is the wake tax"
+      },
+      {
+        "id": "P-B",
+        "title": "AI-led research perspective",
+        "note": "Opinion piece, not a controlled study"
+      },
+      {
+        "id": "P-C",
+        "title": "Oryon memory-system and DVFS microbenchmarks (prefetchers, cold-core burst, switch latency)",
+        "note": "Tied to prefetcher map N12"
+      },
+      {
+        "id": "P-D",
+        "title": "Per-core-type compilation on a heterogeneous mobile CPU",
+        "note": "Owner main interest"
+      },
+      {
+        "id": "P-E",
+        "title": "Application-informed prefetching and staging",
+        "note": "Owner main interest; blocked on app/LLM setup"
+      },
+      {
+        "id": "P-F",
+        "title": "Engine handoffs and multi-accelerator pipelines",
+        "note": "Handoff coldness, conversion tax, LLM pipelines"
+      },
+      {
+        "id": "P-G",
+        "title": "Four-engine characterization of the HDK8750 MP",
+        "note": "Inherited profiler results; revalidation pending"
       }
     ]
   }
