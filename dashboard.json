@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-21T19:57:44.972414+00:00",
+  "updated_at": "2026-11-21T20:02:48.348147+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 327,
-    "completed": 18310,
+    "queue_depth": 317,
+    "completed": 18320,
     "failed": 267,
-    "utilization": 0.2209139430508848,
-    "window_seconds": 938014.9296775305,
-    "updated_at": "2026-11-21T19:57:23.766415+00:00",
+    "utilization": 0.22104772127686179,
+    "window_seconds": 938314.6308416555,
+    "updated_at": "2026-11-21T20:02:23.470338+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7182,7 +7182,7 @@
         "number": "Stride gate met on both core types: strides up to 512 B covered, 1024 B and above never; L2 reach up to 48 lines after 32 accesses. Indirect/pointer cells being rerun (v1 confounded)",
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "Risk LOW. No public reverse-engineering of SM8750 data prefetchers; closest is a blog on first-generation Oryon. Spatial result differs from that blog and needs its test"
       },
       {
         "id": "N47",
@@ -7193,7 +7193,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "Risk MEDIUM. Textbook effect; 2014 simulation and older measurements exist. A measured recovery curve on current hardware is new"
       },
       {
         "id": "N50",
@@ -7204,7 +7204,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "Risk MEDIUM. Idle states here are retention states, so the answer may be exit latency only"
       },
       {
         "id": "C5",
@@ -7216,7 +7216,7 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "No rseq on this kernel: dispatch cost measured with the alternatives",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "Risk MEDIUM (HIGH for ML kernels): Park et al. 2019 on A55/A75, SANI OSDI 2026. Nothing for general code or a same-family core pair; expect small gains"
       },
       {
         "id": "C4",
@@ -7227,7 +7227,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "See C5"
       },
       {
         "id": "C9",
@@ -7238,7 +7238,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "See C5"
       },
       {
         "id": "N19",
@@ -7249,7 +7249,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "Risk HIGH as a concept; no quantitative study of SVM/dmabuf handoff cost on phones found"
       },
       {
         "id": "N44",
@@ -7260,7 +7260,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "Risk MEDIUM. Same idea reported June 2026 on Apple M4 Pro (arXiv:2606.27098). Open: phone SoC without shared cache, NPU case, share of end-to-end time"
       },
       {
         "id": "N45",
@@ -7271,7 +7271,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "Risk MEDIUM. Accelerator-output prefetch exists for servers (RACER, TACO 2025); indirect prefetch expected ~1.1x on big cores (Ainsworth and Jones 2017)"
       },
       {
         "id": "N11",
@@ -7282,7 +7282,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "not yet reviewed"
       },
       {
         "id": "N20",
@@ -7293,7 +7293,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "not yet reviewed"
       },
       {
         "id": "N15",
@@ -7304,7 +7304,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "not yet reviewed"
       },
       {
         "id": "N46",
@@ -7315,7 +7315,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "not yet reviewed"
       },
       {
         "id": "N18",
@@ -7327,7 +7327,7 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "No camera: synthetic trigger",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "not yet reviewed"
       },
       {
         "id": "N34",
@@ -7338,7 +7338,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "not yet reviewed"
       },
       {
         "id": "N43",
@@ -7350,7 +7350,7 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "No SPE on this kernel: PC-level only; address repeatability moves to an emulator",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "not yet reviewed"
       },
       {
         "id": "N17",
@@ -7361,7 +7361,7 @@
         "number": null,
         "decision": null,
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "not yet reviewed"
       },
       {
         "id": "N22",
@@ -7373,7 +7373,7 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "Two Prime runs executed at 1.01 GHz while cpufreq reported 4.32 GHz; clock-probe jobs stocked",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "scaling_cur_freq is documented as not necessarily the delivered frequency; no published measurement on this SoC found"
       },
       {
         "id": "N21",
@@ -7396,18 +7396,18 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "Leading explanation: Prime cluster enters its cluster-level idle state while the waiter sleeps",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "Risk HIGH for mitigations (see research/lead1/prior-art.md). No published report of two-regime wake latency; governor-predictor explanation untested"
       },
       {
         "id": "L2",
         "experiment": "Lead2",
         "title": "DSP and NPU clients sharing the one Hexagon processor",
         "gate": "Anything beyond expected sharing of a single processor",
-        "status": "analysing",
+        "status": "stopped",
         "number": "Sustained-mode NPU 73 us alone vs 99-388 us with an HVX client; default-mode effect depends on HVX thread build and duty; a CPU-only feeder alone gives 7-20% (exploratory)",
-        "decision": null,
+        "decision": "Stop as a research lead. Keep as a placement fact: DSP and NPU are one engine. Possible short follow-up: QNN 1007 error rate under co-running",
         "updated": "2026-11-21",
-        "prior_art": "review in progress (2026-11-21)",
+        "prior_art": "Premise corrected: one Hexagon V79, two protection domains sharing threads, HVX contexts, HMX and clock votes. Qualcomm documents this co-running case. Risk HIGH as a discovery; only magnitudes and the failure rate are new",
         "note": "Owner challenge 2026-11-21: both clients run on the same Hexagon, so this is contention on one engine, not coupling between two. New jobs paused pending the prior-art review"
       },
       {
@@ -7420,7 +7420,7 @@
         "decision": null,
         "updated": "2026-11-21",
         "note": "Kernel trips only since 2026-11-21; earlier runs stopped at 90 C and saw nothing",
-        "prior_art": "review in progress (2026-11-21)"
+        "prior_art": "Risk HIGH if called a discovery: hardware capping without cooling-device changes is the documented LMh design, and scaling_cur_freq is documented as the last request. No paper reports the divergence on a Snapdragon; numbers are new"
       }
     ]
   }
