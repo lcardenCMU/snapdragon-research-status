@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-21T20:17:59.109385+00:00",
+  "updated_at": "2026-11-21T20:23:02.573576+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 269,
-    "completed": 18368,
+    "queue_depth": 352,
+    "completed": 18382,
     "failed": 267,
-    "utilization": 0.22120382988493004,
-    "window_seconds": 939182.8992818636,
-    "updated_at": "2026-11-21T20:16:51.703809+00:00",
+    "utilization": 0.22134035275539052,
+    "window_seconds": 939550.4149106136,
+    "updated_at": "2026-11-21T20:22:59.218205+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7179,8 +7179,8 @@
         "title": "Map of the Oryon hardware data prefetchers",
         "gate": "Covered and uncovered access patterns separate reliably",
         "status": "running",
-        "number": "Stride gate met on both core types: strides up to 512 B covered, 1024 B and above never; L2 reach up to 48 lines after 32 accesses. Indirect/pointer cells being rerun (v1 confounded)",
-        "decision": null,
+        "number": "Stride: covered up to 512 B strides, never at 1024 B and above; L2 reach up to 48 lines. Temporal prefetching found on the Prime core only: a replayed random miss sequence drops from 99 to 18 ns per load (L2 misses 100% to 15%) for up to 4096 lines; shuffled-order control stays at 95 ns; Performance core shows nothing (5 runs per core)",
+        "decision": "Continue: gate met. Next: trigger, capacity curve, persistence, core 6",
         "updated": "2026-11-21",
         "prior_art": "Risk LOW. No public reverse-engineering of SM8750 data prefetchers; closest is a blog on first-generation Oryon. Spatial result differs from that blog and needs its test"
       },
