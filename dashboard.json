@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-22T02:35:11.561174+00:00",
+  "updated_at": "2026-11-22T02:40:15.621002+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 53,
-    "completed": 18744,
+    "queue_depth": 1528,
+    "completed": 18760,
     "failed": 276,
-    "utilization": 0.23443378171714205,
-    "window_seconds": 961828.0031962134,
-    "updated_at": "2026-11-22T02:34:16.917892+00:00",
+    "utilization": 0.23452179176597368,
+    "window_seconds": 962175.5250797555,
+    "updated_at": "2026-11-22T02:40:04.440046+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7374,16 +7374,18 @@
         "experiment": "E3",
         "title": "Miss sources during on-device LLM decode",
         "gate": "A meaningful share of decode misses falls outside stride-friendly kernels",
-        "status": "planned",
+        "status": "running",
         "number": null,
         "decision": "Narrowed to one census run",
         "updated": "2026-11-22",
         "prior_art": "See research/ideas/prior-art-2026-11-22.md. MEDIUM; gate likely fails (decode is a sequential weight stream)",
         "line": "Application misses",
         "paper": "P-E",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e3-llm"
+        ],
         "blocker": "llama.cpp being built"
       },
       {
@@ -7443,16 +7445,18 @@
         "experiment": "E2",
         "title": "Share of first-inference latency spent loading and initializing",
         "gate": "Per-stage table of cold first-inference time for NPU, GPU and CPU paths; a stage that staging could remove is at least 10% of cold time",
-        "status": "planned",
+        "status": "running",
         "number": null,
         "decision": "Pursue; old gate was too weak",
         "updated": "2026-11-22",
         "prior_art": "See research/ideas/prior-art-2026-11-22.md. MEDIUM (NNV12, EdgeFlow); LOW for NPU stages",
         "line": "Application staging",
         "paper": "P-E",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e2-stage"
+        ],
         "blocker": "Stage-timer clients being built"
       },
       {
@@ -7633,6 +7637,7 @@
         "readiness": 3,
         "tier": "exploratory",
         "job_families": [
+          "th-heat3",
           "thermal-"
         ],
         "blocker": "Finish kernel-trips ladder (24 pending); record delivered clock during load; replicate the GPU + Performance mix"
