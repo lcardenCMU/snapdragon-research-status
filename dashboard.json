@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-23T20:45:27.515553+00:00",
+  "updated_at": "2026-11-23T20:50:33.342143+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 930,
-    "completed": 24365,
+    "queue_depth": 916,
+    "completed": 24383,
     "failed": 361,
-    "utilization": 0.27683760810826713,
-    "window_seconds": 1113692.7330892035,
-    "updated_at": "2026-11-23T20:45:22.256656+00:00",
+    "utilization": 0.2768498433719698,
+    "window_seconds": 1113992.8494945366,
+    "updated_at": "2026-11-23T20:50:22.374602+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -8071,6 +8071,234 @@
         "tier": "exploratory",
         "job_families": [],
         "blocker": "handoff from the simulation session"
+      },
+      {
+        "id": "R1",
+        "experiment": "Tartan (doc 05)",
+        "title": "RoWild on phone-class cores (board part): DeliBot, MoveBot, FlyBot on Prime and Performance",
+        "gate": "Continue memory-side ideas for a kernel if it takes >~40% of time and is miss-bound on at least one core type",
+        "status": "blocked",
+        "number": "none",
+        "decision": "First pass (go); see doc 05 \u00a75",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r1"
+        ],
+        "blocker": "RoWild TB-2 build (infra_sim/tartan_base) not yet announced"
+      },
+      {
+        "id": "R25",
+        "experiment": "Tartan (doc 05)",
+        "title": "Offload break-even curve on a real SoC: MLP NPU (QNN) vs NEON, warm and cold, CPU cache state after",
+        "gate": "Continue if the curve is clean and break-even sits orders of magnitude above AXAR-sized functions",
+        "status": "building",
+        "number": "none",
+        "decision": "First pass (go); see doc 05 \u00a75",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r25"
+        ],
+        "blocker": "r25 client (NEON + QNN MLP)"
+      },
+      {
+        "id": "R28",
+        "experiment": "Tartan (doc 05)",
+        "title": "Anytime planner (FlyBot ARA*) under thermal throttling: Prime vs Performance vs temperature-triggered switch",
+        "gate": "Continue if the placement ranking flips with temperature or the switch beats both",
+        "status": "blocked",
+        "number": "none",
+        "decision": "First pass (go); see doc 05 \u00a75",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r28"
+        ],
+        "blocker": "RoWild FlyBot (TB-2)"
+      },
+      {
+        "id": "R16",
+        "experiment": "Tartan (doc 05)",
+        "title": "Handoff buffers between RoWild pipeline stages, same vs cross cluster (links N44/N45)",
+        "gate": "Per doc 05 \u00a75",
+        "status": "planned",
+        "number": "none",
+        "decision": "Backup; after the go items as board time allows",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r16"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "R29",
+        "experiment": "Tartan (doc 05)",
+        "title": "Map-density signal predicts frame work for core/frequency choice (links C4/C5/C9/N22)",
+        "gate": "Per doc 05 \u00a75",
+        "status": "planned",
+        "number": "none",
+        "decision": "Backup; after the go items as board time allows",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r29"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "R36",
+        "experiment": "Tartan (doc 05)",
+        "title": "Godot + Jolt + Recast kernels on Android",
+        "gate": "Per doc 05 \u00a75",
+        "status": "planned",
+        "number": "none",
+        "decision": "Backup; after the go items as board time allows",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r36"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "R37",
+        "experiment": "Tartan (doc 05)",
+        "title": "RoWild kernel tail latency under NPU load (links N15)",
+        "gate": "Per doc 05 \u00a75",
+        "status": "planned",
+        "number": "none",
+        "decision": "Backup; after the go items as board time allows",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r37"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "R38",
+        "experiment": "Tartan (doc 05)",
+        "title": "RoWild as a second composed pipeline for N19",
+        "gate": "Per doc 05 \u00a75",
+        "status": "planned",
+        "number": "none",
+        "decision": "Backup; after the go items as board time allows",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r38"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "R39",
+        "experiment": "Tartan (doc 05)",
+        "title": "Kernel census around an on-device llama.cpp agent loop (extends N20)",
+        "gate": "Per doc 05 \u00a75",
+        "status": "planned",
+        "number": "none",
+        "decision": "Backup; after the go items as board time allows",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r39"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "R15",
+        "experiment": "Tartan (doc 05)",
+        "title": "FAISS IVF scans on the board (ChampSim side in aip_compiler)",
+        "gate": "Per doc 05 \u00a75",
+        "status": "planned",
+        "number": "none",
+        "decision": "Backup; after the go items as board time allows",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r15"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "R6",
+        "experiment": "Tartan (doc 05)",
+        "title": "Hand-vectorised NEON FlyBot heuristic net (HDK part; kernel from tartan/)",
+        "gate": "Per doc 05 \u00a75",
+        "status": "planned",
+        "number": "none",
+        "decision": "Backup; after the go items as board time allows",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r6"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "R8",
+        "experiment": "Tartan (doc 05)",
+        "title": "Native software-prefetch range-hint stand-in on VLN buckets (HDK part)",
+        "gate": "Per doc 05 \u00a75",
+        "status": "planned",
+        "number": "none",
+        "decision": "Backup; after the go items as board time allows",
+        "updated": "2026-11-23",
+        "prior_art": "Pending (campaign doc 05 notes one search each)",
+        "line": "Tartan (board)",
+        "paper": "P-T",
+        "readiness": 0,
+        "tier": "exploratory",
+        "job_families": [
+          "t-r8"
+        ],
+        "blocker": ""
       }
     ],
     "ladder": [
@@ -8142,6 +8370,11 @@
         "id": "P-G",
         "title": "Four-engine characterization of the HDK8750 MP",
         "note": "Inherited profiler results; revalidation pending"
+      },
+      {
+        "id": "P-T",
+        "title": "Tartan on a phone SoC: robotics kernels, offload break-even and anytime planning (campaign doc 05, board part)",
+        "note": "Campaign IDs R*; brief campaign_hub/handoffs/to_snapdragon_2026-11-23_tartan.md"
       }
     ]
   }
