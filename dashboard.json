@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-23T22:01:47.307873+00:00",
+  "updated_at": "2026-11-23T22:06:52.841115+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 996,
-    "completed": 24565,
-    "failed": 362,
-    "utilization": 0.27749137463846174,
-    "window_seconds": 1118185.9914713278,
-    "updated_at": "2026-11-23T22:00:15.533095+00:00",
+    "queue_depth": 1182,
+    "completed": 24570,
+    "failed": 363,
+    "utilization": 0.27760667061684585,
+    "window_seconds": 1118564.490979994,
+    "updated_at": "2026-11-23T22:06:34.029351+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -8306,17 +8306,18 @@
         "experiment": "Chip-aware (round 4)",
         "title": "Noise source and noise reduction",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
-        "status": "planned",
+        "status": "running",
         "number": "none",
         "decision": "Priority A. Designed 2026-11-23 (owner: chip-aware compilation + AIP; sub-1% effects matter)",
         "updated": "2026-11-23",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
         "job_families": [
-          "e6-m2"
+          "e6-m2",
+          "e6-m2l"
         ],
         "blocker": ""
       },
@@ -8325,16 +8326,19 @@
         "experiment": "Chip-aware (round 4)",
         "title": "Blind-spot-only software prefetch against generic insertion and none",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
-        "status": "planned",
+        "status": "running",
         "number": "none",
         "decision": "Priority A. Designed 2026-11-23 (owner: chip-aware compilation + AIP; sub-1% effects matter)",
         "updated": "2026-11-23",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e6-ca1",
+          "e7-ca1"
+        ],
         "blocker": ""
       },
       {
@@ -8342,16 +8346,18 @@
         "experiment": "Chip-aware (round 4)",
         "title": "The \u22651 KiB stride blind spot and LLVM's Oryon constants",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
-        "status": "planned",
+        "status": "running",
         "number": "none",
         "decision": "Priority A. Designed 2026-11-23 (owner: chip-aware compilation + AIP; sub-1% effects matter)",
         "updated": "2026-11-23",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e7-ca2"
+        ],
         "blocker": ""
       },
       {
@@ -8359,16 +8365,19 @@
         "experiment": "Chip-aware (round 4)",
         "title": "Prefetch distance from the map, per core type and per working-set regime",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
-        "status": "planned",
+        "status": "running",
         "number": "none",
         "decision": "Priority A. Designed 2026-11-23 (owner: chip-aware compilation + AIP; sub-1% effects matter)",
         "updated": "2026-11-23",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e6-ca3",
+          "e7-ca3"
+        ],
         "blocker": ""
       },
       {
@@ -8376,16 +8385,19 @@
         "experiment": "Chip-aware (round 4)",
         "title": "Suppress software prefetch on Prime where the temporal prefetcher already covers",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
-        "status": "planned",
+        "status": "running",
         "number": "none",
         "decision": "Priority A. Designed 2026-11-23 (owner: chip-aware compilation + AIP; sub-1% effects matter)",
         "updated": "2026-11-23",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e6-ca4r",
+          "e7-ca4"
+        ],
         "blocker": ""
       },
       {
@@ -8393,16 +8405,18 @@
         "experiment": "Chip-aware (round 4)",
         "title": "Idle-aware re-warm of the temporal table, against cluster-mate keep-awake",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
-        "status": "planned",
+        "status": "running",
         "number": "none",
         "decision": "Priority A/B. Designed 2026-11-23 (owner: chip-aware compilation + AIP; sub-1% effects matter)",
         "updated": "2026-11-23",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e7-ca5"
+        ],
         "blocker": ""
       },
       {
@@ -8427,16 +8441,18 @@
         "experiment": "Chip-aware (round 4)",
         "title": "Code size, inlining and alignment per core type: the response surface",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
-        "status": "planned",
+        "status": "running",
         "number": "none",
         "decision": "Priority A. Designed 2026-11-23 (owner: chip-aware compilation + AIP; sub-1% effects matter)",
         "updated": "2026-11-23",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e6-ca7"
+        ],
         "blocker": ""
       },
       {
@@ -8444,16 +8460,18 @@
         "experiment": "Chip-aware (round 4)",
         "title": "Scheduling and tuning model per core type with today's toolchain",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
-        "status": "planned",
+        "status": "running",
         "number": "none",
         "decision": "Priority A. Designed 2026-11-23 (owner: chip-aware compilation + AIP; sub-1% effects matter)",
         "updated": "2026-11-23",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e6-ca8"
+        ],
         "blocker": ""
       },
       {
@@ -8512,16 +8530,18 @@
         "experiment": "Chip-aware (round 4)",
         "title": "The do-no-harm floor of generic prefetch insertion on cache-resident code",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
-        "status": "planned",
+        "status": "running",
         "number": "none",
         "decision": "Priority A. Designed 2026-11-23 (owner: chip-aware compilation + AIP; sub-1% effects matter)",
         "updated": "2026-11-23",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
-        "readiness": 0,
+        "readiness": 1,
         "tier": "exploratory",
-        "job_families": [],
+        "job_families": [
+          "e6-ca13"
+        ],
         "blocker": ""
       },
       {
