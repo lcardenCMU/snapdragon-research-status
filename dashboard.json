@@ -7031,11 +7031,11 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-23T19:46:01.343392+00:00",
+  "updated_at": "2026-11-23T19:51:06.204325+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
-  "summary": "One serial board queue splits its time evenly between first-pass studies of new ideas (prefetching, per-core compilation, engine handoffs) and the existing latency, coupling and thermal leads. Results are exploratory. Raw evidence remains private.",
+  "summary": "Research queue stopped; evidence and restart handoff saved. Raw evidence remains private.",
   "tests_passed": 76,
   "literature_pdfs": 50,
   "literature_leads": 111,
@@ -7065,9 +7065,8 @@
     }
   ],
   "now": [
-    "Prefetcher map of both core types (N12) running on the board",
-    "Building: cold-core burst, per-core-type workload variants, engine-handoff client",
-    "Analysing the latency, coupling and thermal runs collected on 2026-11-18"
+    "Board queue stopped; no active owned jobs",
+    "Exploratory evidence preserved for the next session"
   ],
   "next": [
     "Per-core-type compilation and handoff-coldness first passes",
@@ -7148,13 +7147,13 @@
     }
   ],
   "board_queue": {
-    "state": "running",
+    "state": "stopped_error",
     "queue_depth": 0,
     "completed": 24262,
-    "failed": 360,
-    "utilization": 0.27712661990895476,
-    "window_seconds": 1110095.6709206812,
-    "updated_at": "2026-11-23T19:45:25.192429+00:00",
+    "failed": 361,
+    "utilization": 0.27717783280742797,
+    "window_seconds": 1110188.256976264,
+    "updated_at": "2026-11-23T19:46:57.778007+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
