@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-23T21:31:17.393122+00:00",
+  "updated_at": "2026-11-23T21:36:22.493661+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 1040,
-    "completed": 24521,
+    "queue_depth": 1025,
+    "completed": 24536,
     "failed": 361,
-    "utilization": 0.2768964733340072,
-    "window_seconds": 1116444.5997901189,
-    "updated_at": "2026-11-23T21:31:14.133842+00:00",
+    "utilization": 0.2769235038200252,
+    "window_seconds": 1116718.8689777858,
+    "updated_at": "2026-11-23T21:35:48.404219+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7528,8 +7528,8 @@
         "title": "Prime core held at minimum clock while cpufreq reports maximum",
         "gate": "The state is reproduced on demand or tied to a trigger",
         "status": "running",
-        "number": "22/210 Prime runs at 1.0176 GHz on every performance-governor route (10.5%, CI 7.0-15.4%); minmax 9/60 vs predicted 0/60 (p=0.0018); firmware readback cpuinfo_cur_freq marks it 22/22 vs 0/188; same-value rewrite never frees it, a different value does 9/9 (clk.md)",
-        "decision": "Redesign: two-step max write (clk-fmin2, running); queue now tags clock_stuck from the firmware readback in every job",
+        "number": "Round 3: 22/210 stuck on every route. Round 4 (after 2026-11-23 ~19:00Z): 0/60 plain, 0/60 two-step, 0/60 with and 0/60 without the queue's immediate cpuinfo_cur_freq read; 0 of ~250 Prime runs since. In Prime percore fillers the state occurred ~10% from 2026-11-21 to 18:53Z on 11-23 and never after the USB drops at 18:57Z and 19:45Z (board not rebooted, uptime 23 days)",
+        "decision": "Readback hypothesis refuted. New reading: a latched board-level condition cleared at USB re-enumeration (power-source or PMIC state?). Keep monitoring through the queue's firmware readback in every job; if it returns, read the PMIC, charger and USB state at once",
         "updated": "2026-11-23",
         "prior_art": "Risk LOW for the lost request; HIGH for 'rewriting the same value does nothing' (mainline cpufreq returns early when target == policy->cur). To be new: loss rate per trigger, the layer that drops it, a detection rule (research/ideas/prior-art-2026-11-23.md s2)",
         "line": "Memory system",
