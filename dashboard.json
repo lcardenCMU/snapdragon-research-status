@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-24T19:15:49.060976+00:00",
+  "updated_at": "2026-11-24T19:20:54.007040+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 903,
-    "completed": 26291,
-    "failed": 406,
-    "utilization": 0.3030169060782915,
-    "window_seconds": 1194709.3297372125,
-    "updated_at": "2026-11-24T19:15:39.135830+00:00",
+    "queue_depth": 1070,
+    "completed": 26297,
+    "failed": 407,
+    "utilization": 0.3030286996644616,
+    "window_seconds": 1194988.3380169205,
+    "updated_at": "2026-11-24T19:20:18.144961+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7248,8 +7248,8 @@
         "gate": "Best-per-core beats best-common by more than a few percent on a meaningful share of workloads",
         "status": "analysing",
         "number": "Matched 3.07 GHz, 2-3 runs per cell: best-common loses more than 2% in 0 of 8 workloads (max 0.28%, inside noise); same variant wins on both core types in 7 of 8. Size-oriented code costs twice as much on Prime (lua Os +27.4% vs +12.7%). Prime at native clock unusable (minimum-clock state, in-run droop)",
-        "decision": "Reopened 2026-11-23 under the small-effect lens: menu choice worth <=0.37% (stop stands for the menu), but 35 of 64 core x variant interactions are significant, some with opposite signs; continues as CA7/CA8",
-        "updated": "2026-11-23",
+        "decision": "Reopened 2026-11-23 under the small-effect lens: menu choice worth <=0.37% (stop stands for the menu), but 35 of 64 core x variant interactions are significant, some with opposite signs; continues as CA7/CA8; relink re-test queued 2026-11-24 (c5rl: 5 layouts per arm, crypto stack-stratified); claims wait for it",
+        "updated": "2026-11-24",
         "note": "No rseq on this kernel: dispatch cost measured with the alternatives",
         "prior_art": "Risk MEDIUM (HIGH for ML kernels): Park et al. 2019 on A55/A75, SANI OSDI 2026. Nothing for general code or a same-family core pair; expect small gains",
         "line": "Compilation",
@@ -7258,7 +7258,8 @@
         "tier": "exploratory",
         "job_families": [
           "e6-percore",
-          "r2-e6"
+          "r2-e6",
+          "e6-c5rl"
         ],
         "blocker": "C4 decides P-D"
       },
@@ -7269,7 +7270,7 @@
         "gate": "Same gate as C5",
         "status": "running",
         "number": "Merged-profile PGO: Prime-Perf -12.3 pts crypto (+21.2 vs +8.9%), sqlite -0.50 (n=30), jpeg +1.2, gap -1.8; main effects -4 to -11%",
-        "decision": "Continue-narrowed: c4x high-n on missing cores. research/analysis-2026-11-24/backlog.md",
+        "decision": "Continue-narrowed: c4x high-n on missing cores. research/analysis-2026-11-24/backlog.md; relink re-test queued 2026-11-24 (c4rl: 5 layouts per arm, crypto stack-stratified); claims wait for it",
         "updated": "2026-11-24",
         "prior_art": "See C5",
         "line": "Compilation",
@@ -7279,7 +7280,8 @@
         "job_families": [
           "e6-pgo",
           "e6-c4i",
-          "e6-c4x"
+          "e6-c4x",
+          "e6-c4rl"
         ],
         "blocker": "percore-v2 pgo-use build"
       },
@@ -7801,7 +7803,7 @@
         "gate": "One counter explains >=50% of the Prime excess (lua Os +27.4% vs +12.7%)",
         "status": "running",
         "number": "Os excess lua +9.4 pts (+9.3 vs +18.6%), quickjs +6.6; FE stall explains <0 (gate not met)",
-        "decision": "Continue-narrowed: backend counters (c17be)",
+        "decision": "Continue-narrowed: backend counters (c17be); relink re-test queued 2026-11-24 (c17rl: 5 layouts per arm, crypto stack-stratified); claims wait for it",
         "updated": "2026-11-24",
         "prior_art": "Risk LOW published; HIGH that the effect is small. Front-end counters must explain a core-type difference above run spread (research/ideas/prior-art-2026-11-23.md s8)",
         "line": "Compilation",
@@ -7810,7 +7812,8 @@
         "tier": "exploratory",
         "job_families": [
           "e6-inl",
-          "e6-c17be"
+          "e6-c17be",
+          "e6-c17rl"
         ],
         "blocker": "percore-v2 build"
       },
@@ -7821,7 +7824,7 @@
         "gate": ">2% either way in >=2 workloads",
         "status": "running",
         "number": "oryon-1 >2% in 2-3 workloads (crypto +2.3, lua Prime +2.5, quickjs Prime -1.9); lua interaction +3.9 pts",
-        "decision": "Continue: FE counters (c18fe); relinks before claims",
+        "decision": "Continue: FE counters (c18fe); relinks before claims; relink re-test queued 2026-11-24 (c18rl: 5 layouts per arm, crypto stack-stratified); claims wait for it",
         "updated": "2026-11-24",
         "prior_art": "LLVM AArch64SchedOryon.td: one model ('Oryon CPU 001'), no Prime/Performance split (research/ideas/prior-art-2026-11-23.md s8)",
         "line": "Compilation",
@@ -7830,7 +7833,8 @@
         "tier": "exploratory",
         "job_families": [
           "e6-oryon",
-          "e6-c18fe"
+          "e6-c18fe",
+          "e6-c18rl"
         ],
         "blocker": "NDK r28+ toolchain volume"
       },
