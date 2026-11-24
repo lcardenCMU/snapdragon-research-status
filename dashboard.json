@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-24T19:20:54.007040+00:00",
+  "updated_at": "2026-11-24T19:25:59.385103+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7148,13 +7148,13 @@
     }
   ],
   "board_queue": {
-    "state": "running",
-    "queue_depth": 1070,
-    "completed": 26297,
-    "failed": 407,
-    "utilization": 0.3030286996644616,
-    "window_seconds": 1194988.3380169205,
-    "updated_at": "2026-11-24T19:20:18.144961+00:00",
+    "state": "idle",
+    "queue_depth": 1113,
+    "completed": 26301,
+    "failed": 409,
+    "utilization": 0.3030907335036999,
+    "window_seconds": 1195317.1956096704,
+    "updated_at": "2026-11-24T19:25:47.003559+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -8383,6 +8383,27 @@
           "e6-ca20c",
           "e6-ca20s",
           "e6-ca20p"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "CA21",
+        "experiment": "Chip-aware (round 4)",
+        "title": "Prime placement sensitivity: alignment sweep, text pads, fetch-alignment microbenchmark",
+        "gate": "Continue if an alignment/pad arm moves Prime by more than 3x its measured process sd while Performance stays within noise, and fetchalign shows a periodic cost vs start address on Prime only",
+        "status": "running",
+        "number": "none yet (ps7/fa/ca13ps queued)",
+        "decision": "Designed 2026-11-24 from CA13 (+4.29% from 72 B), CA8 (-mtune padding) and m2lx; percore-v7 built and verified (73/73); research/analysis-2026-11-24/ca21.md",
+        "updated": "2026-11-24",
+        "prior_art": "Plausibly open: 2016 GCC AArch64 alignment patch cites big.LITTLE consistency without per-core data; Mytkowicz ASPLOS09/Stabilizer ASPLOS13 treat alignment as bias; no measured per-core-type alignment sensitivity found (short search; longer search before any claim)",
+        "line": "Chip-aware compilation and AIP",
+        "paper": "P-D",
+        "readiness": 1,
+        "tier": "exploratory",
+        "job_families": [
+          "e6-ps7",
+          "e6-fa",
+          "e6-ca13ps"
         ],
         "blocker": ""
       },
