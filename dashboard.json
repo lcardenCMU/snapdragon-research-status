@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-24T23:19:56.031809+00:00",
+  "updated_at": "2026-11-24T23:25:01.220185+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 939,
-    "completed": 26764,
+    "queue_depth": 995,
+    "completed": 26768,
     "failed": 468,
-    "utilization": 0.3039062121605197,
-    "window_seconds": 1209360.2639585845,
-    "updated_at": "2026-11-24T23:19:50.100405+00:00",
+    "utilization": 0.30394022980089486,
+    "window_seconds": 1209658.5610892936,
+    "updated_at": "2026-11-24T23:24:48.397023+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -8122,7 +8122,7 @@
         "gate": "Continue if the curve is clean and break-even sits orders of magnitude above AXAR-sized functions",
         "status": "running",
         "number": "Batch 1. Default vote: NPU/NEON 14,000x (FlyBot) to 7.8x (22M), floor 0.7 ms, 1.8-2.4x DCVS step-up (bimodal). Sustained vote: floor 67 us; residual step 7-14% (steady/early 1.00 Perf host to 22M, 1.07-1.14 Prime host and at 51-55M); steady NPU/NEON 1,300x FlyBot, 220-430x HomeBot, 4.6-7.6x PatrolBot, 1.14-1.61x at 22M, 1.03-1.05x (Perf) / 1.39-1.40x (Prime) at 51-55M; before the step the NPU beats a Performance core at 51-55M (0.92-0.93x). Batch 64 big22m 0.85 ms = batch 1 (smoke, 1 job). DRAM-bound reading unverified (bw check queued). Audited 2026-11-24: medians reproduce; check covers first/last call only",
-        "decision": "Gate pass at batch 1 with and without the vote (break-even >5 orders above FlyBot; not reached vs Prime). Continue: R25d batch 1/4/16/64 x 5 nets (r25_mlp v2 --batch), NPU sustained + default arm, NEON 4-row kernels; then GPU path and a STREAM check of the DRAM-bound reading. Earlier repo NPU numbers without --perf-mode sustained are default-vote figures. research/analysis-2026-11-24/r25.md, r25bc.md",
+        "decision": "Gate pass at batch 1 with and without the vote (break-even >5 orders above FlyBot; not reached vs Prime). Continue: R25d batch 1/4/16/64 x 5 nets (r25_mlp v2 --batch), NPU sustained + default arm, NEON 4-row kernels; then GPU path and a STREAM check of the DRAM-bound reading. Earlier repo NPU numbers without --perf-mode sustained are default-vote figures. research/analysis-2026-11-24/r25.md, r25bc.md; R25e (audit follow-up) queued: r25_mlp v4 --vary 4 checks every call with rotating inputs, repeating the headline cells (18 jobs)",
         "updated": "2026-11-24",
         "prior_art": "Pending (campaign doc 05 notes one search each)",
         "line": "Tartan (board)",
@@ -8133,7 +8133,8 @@
           "t-r25",
           "t-r25b",
           "t-r25c",
-          "t-r25d"
+          "t-r25d",
+          "t-r25e"
         ],
         "blocker": ""
       },
@@ -8333,7 +8334,7 @@
         "title": "Noise source and noise reduction",
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
         "status": "running",
-        "number": "default sd_p 0.08-0.84%; crypto 1.2% ASLR layout modes (ASLR off sd 0.018%); gap/xz THP lottery (THP never sd 0.06-0.10%, +2.9-3.9% slower); m2lx: sqlite layout effects core-type specific (Prime layout sd 0.37%, Perf 0.10%, cross-core r -0.44 (p=0.24 with the 9 layouts as unit; core x layout interaction p=6e-9 with jobs as unit)), Perf-best layout costs Prime 1.08%; lua lay1 best on both (0.9/1.3%); lua does variable work per run (instructions vary 1.7-3.8%, r=0.84 with time), which inflates lua layout/compile effects; normalize lua by instructions (audit research/audit-2026-11-24/layout.md)",
+        "number": "default sd_p 0.08-0.84%; crypto 1.2% ASLR layout modes (ASLR off sd 0.018%); gap/xz THP lottery (THP never sd 0.06-0.10%, +2.9-3.9% slower); m2lx: sqlite layout effects core-type specific (Prime layout sd 0.37%, Perf 0.10%, cross-core r -0.44 (p=0.24 with the 9 layouts as unit; core x layout interaction p=6e-9 with jobs as unit)), Perf-best layout costs Prime 1.08%; lua 'lay1 best on both' was a work artifact; per instruction lua layout effects are core-specific (F=7.0, p 9e-5); lua does variable work per run (instructions vary 1.7-3.8%, r=0.84 with time), which inflates lua layout/compile effects; normalize lua by instructions (audit research/audit-2026-11-24/layout.md)",
         "decision": "Gate as written fails (each collapse pins a cause and moves the median 0.4-3.9%). Keep ASLR+THP on; n per arm 120 for 0.3% on crypto/gap/xz, 29 lua, 2 sqlite. M2b stocked (which layout bit). research/analysis-2026-11-24/m2.md; M2b: crypto modes = initial sp offset mod 64 (0/16/32/48 -> 1456/1440/1440/1451 ms), not heap (m2b.md); m2h holdout + m2rl relinked O2-vs-O3 (crypto stack-stratified) stocked; research/analysis-2026-11-24/m2lx.md",
         "updated": "2026-11-24",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
@@ -8357,7 +8358,7 @@
         "gate": "All processes reach the fast THP mode: median gain >= 3x robust sd_p and sd_p halved on gap/xz",
         "status": "running",
         "number": "gap c7 -3.92% simple (-4.00% as mean 100*ln ratio; sd 0.41, n=3 jobs x 10 processes/arm), sd_p 0.81->0.084%; xz c7 -0.63%; vs 4 KiB-offset control gap -3.5%, xz -0.9% (control not exactly layout-matched: libc after the wrapper shifts 32 B, string routines 64 B in xz/lua/sqlite); xz mechanism unverified: aligned build has MORE DTLB walks (65.8k vs 30.4k) yet is faster (audit research/audit-2026-11-24/layout.md)",
-        "decision": "Continue: gap gain robust; xz small and its THP mechanism unsupported by counters; gate was redefined after xz missed it (disclosed). CA19b stocked; ca19.md",
+        "decision": "Continue: gap gain robust; xz small and its THP mechanism unsupported by counters; gate was redefined after xz missed it (disclosed). CA19b stocked; ca19.md; job-level tests gap p 0.004, xz p 0.006; CA19c (run-time offset wrapper, identical code layout across arms, TLB counters) queued",
         "updated": "2026-11-24",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
@@ -8366,7 +8367,8 @@
         "tier": "exploratory",
         "job_families": [
           "e6-ca19",
-          "e6-ca19b"
+          "e6-ca19b",
+          "e6-ca19c"
         ],
         "blocker": ""
       },
@@ -8410,6 +8412,26 @@
           "e6-ps7",
           "e6-fa",
           "e6-ca13ps"
+        ],
+        "blocker": ""
+      },
+      {
+        "id": "CA22",
+        "experiment": "Chip-aware (round 4)",
+        "title": "Profile-guided layout per core type (hot-first symbol ordering from Prime vs Performance profiles)",
+        "gate": "Continue if a profile-guided layout beats the median random relink on its own core by more than the job-level CI on >=2 workloads, and the other core's profile costs measurably more",
+        "status": "running",
+        "number": "Stage 1 (20/20 runs): per-core profiles share hot functions (top-20 overlap 14-19/20) but differ in cycle split, TVD 0.063-0.123 across cores vs 0.002-0.018 run-to-run (5-30x); Prime spends more in scudo HybridMutex::tryLock (lua 6.6%, quickjs 2.6%), cause untested",
+        "decision": "Stage 2 queued: 13 layouts per workload (natural, 8 random relinks, Perf- and Prime-profile hot-first orders, each +/-64 B hot alignment), every layout on both core types, crypto stack-stratified, lua per instruction; BOLT skipped (no branch records on this board); ca22.md",
+        "updated": "2026-11-24",
+        "prior_art": "Profile-guided function ordering is standard (Pettis-Hansen, BOLT, Propeller); per-core-type ordering on a heterogeneous phone CPU not found (short search)",
+        "line": "Chip-aware compilation and AIP",
+        "paper": "P-D",
+        "readiness": 1,
+        "tier": "exploratory",
+        "job_families": [
+          "e6-ca22p",
+          "e6-ca22"
         ],
         "blocker": ""
       },
