@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-24T23:04:41.864256+00:00",
+  "updated_at": "2026-11-24T23:09:46.585719+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7148,13 +7148,13 @@
     }
   ],
   "board_queue": {
-    "state": "paused",
-    "queue_depth": 955,
-    "completed": 26746,
+    "state": "running",
+    "queue_depth": 952,
+    "completed": 26751,
     "failed": 468,
-    "utilization": 0.303812415746613,
-    "window_seconds": 1208451.1946592515,
-    "updated_at": "2026-11-24T23:04:41.053238+00:00",
+    "utilization": 0.3038077324577164,
+    "window_seconds": 1208696.2997323766,
+    "updated_at": "2026-11-24T23:08:46.159830+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7664,14 +7664,15 @@
         "gate": "Headline effect reproduces in a second session with full-output correctness",
         "status": "running",
         "number": "",
-        "decision": "Preregistered (research/lead1/prereg-l1c-2026-11-24.md); sessions A (priority 2) and B (priority 8), 2x80 jobs",
+        "decision": "Preregistered (prereg-l1c-2026-11-24.md) + amendment before any L1c analysis (prereg-l1c-amend-2026-11-24.md, sha256 a15bb5e1...): H4 kthreads+IRQ arm, Holm over 4 contrasts; session A (80/80 done) gets a concurrent supplementary block AK (20 kt67irq6 + 20 sham), session B gets 20 kt67irq6 interleaved; all confirmatory tier",
         "line": "Wake tax",
         "paper": "P-A",
         "readiness": 0,
         "tier": "confirmatory",
         "job_families": [
           "l1c-A",
-          "l1c-B"
+          "l1c-B",
+          "l1c-AK"
         ],
         "blocker": "Needs R4 mechanism closure and preregistration card",
         "updated": "2026-11-24"
@@ -7682,8 +7683,8 @@
         "title": "Wake tax in a decode-like application chain, and QNN/FastRPC from cores 0/6",
         "gate": "Tail tax survives in a multi-kernel chain",
         "status": "running",
-        "number": "Real llama.cpp OpenCL decode (Qwen2.5-1.5B Q4_0, ~20.6 ms/token; PPL 10.12 vs CPU 10.14, -0.14%, v4 build same commit/patch): no wake tax at 50 ms token gap (sham - fix -0.015 ms, CI -0.054..+0.023); at 20 ms CI +-0.7 ms does not exclude ~0.5 ms; gap 0 is not a test (cluster barely idles). Per-token times alternate 19.8/21.5 ms within runs. FLAG: 47/54 decode runs report a low core-6 clock (audit), not yet explained",
-        "decision": "Tax not visible in decode at 50 ms; scope P-A to sparse completions. Before use: explain or drop the low-clock runs; tighten the 20 ms gap (more runs). l1d-chain and l1d-npu size the sparse case",
+        "number": "Real llama.cpp OpenCL decode (Qwen2.5-1.5B Q4_0, ~20.6 ms/token; PPL 10.12 vs CPU 10.14, -0.14%, v4 build same commit/patch): no wake tax at 50 ms token gap (sham - fix -0.015 ms, CI -0.054..+0.023); at 20 ms CI +-0.7 ms does not exclude ~0.5 ms; gap 0 is not a test (cluster barely idles). Per-token times alternate 19.8/21.5 ms within runs. FLAG: 45-47/54 decode runs print clock_check=low because the check compares with 4.32 GHz while walt caps core 6 at 3.51 GHz (delivered 2.2-3.5 GHz; not the 1.02 GHz stuck state; r=0.04 with token time); flagged and kept",
+        "decision": "Tax not visible in decode at 50 ms (tight); 20 ms weak; gap 0 not a test; 'decode keeps the path warm' is tentative. dec4 queued: gaps 10/20 ms x sham/off01/kt67-irq6 x 20 runs, 128 tokens, performance governor, prespecified clock gate. l1d-chain and l1d-npu size the sparse case",
         "line": "Wake tax",
         "paper": "P-A",
         "readiness": 0,
@@ -7692,7 +7693,8 @@
           "l1d-npu",
           "l1d-chain",
           "l1d-decode",
-          "l1d-ocl"
+          "l1d-ocl",
+          "l1d-dec4"
         ],
         "blocker": "Needs new multi-kernel client",
         "updated": "2026-11-24"
@@ -7868,7 +7870,7 @@
         "gate": "Any probe/control <0.8 for pointer-valued arrays means a DMP exists",
         "status": "stopped",
         "number": "ptr/field ratio 0.993-1.007 (deref control 0.13-0.17 shows the latency readout works, not that the probe would trigger a DMP) (audit research/audit-2026-11-24/backlog.md)",
-        "decision": "Stop for this construction: no data-dependent prefetch triggered by pointer-valued arrays in this probe; not a general 'no DMP on Oryon' claim (into CAL with that scope)",
+        "decision": "Stop for this construction: no evidence of data-dependent prefetch for streamed in-bounds pointer/field arrays on cores 2/6/7; no hardware positive control possible on this SoC; a pfmap6 with Augury/GoFetch-style trigger patterns and a PRFM readout control is recorded in backlog.md",
         "updated": "2026-11-24",
         "prior_art": "Risk LOW. Augury (S&P 2022), GoFetch (USENIX Sec 2024). Test to the Augury standard: pointers stored never loaded, fresh permutations, latency readout, DIT on/off (research/ideas/prior-art-2026-11-23.md s10)",
         "line": "Application prefetching",
@@ -8418,7 +8420,7 @@
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
         "status": "running",
         "number": "hashprobe blind vs all -2.74% Perf, +4.16% Prime (n=30 processes, 3 jobs); each PF_MODE is a separately compiled loop, so layout is NOT controlled; on Prime 'all' (= blind + one redundant PRFM) is 4.2% faster, which coverage cannot explain; at blind's best D16 the Prime gap is +1.1% (audit research/audit-2026-11-24/backlog.md)",
-        "decision": "Continue-narrowed: needs relinked arms before any coverage reading (ca1h)",
+        "decision": "Per-core flip withdrawn pending relinks (PF_MODE arms were one layout; D16 shrinks the Prime gap to +1.1%); ca1hrl queued (percore-rl4 hashprobe_pfs, noinline per mode, 5 relinks)",
         "updated": "2026-11-24",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
@@ -8428,7 +8430,7 @@
         "job_families": [
           "e6-ca1",
           "e7-ca1",
-          "e6-ca1h"
+          "e6-ca1hrl"
         ],
         "blocker": ""
       },
