@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-24T19:25:59.385103+00:00",
+  "updated_at": "2026-11-24T19:31:04.146550+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7148,13 +7148,13 @@
     }
   ],
   "board_queue": {
-    "state": "idle",
-    "queue_depth": 1113,
-    "completed": 26301,
+    "state": "running",
+    "queue_depth": 1105,
+    "completed": 26309,
     "failed": 409,
-    "utilization": 0.3030907335036999,
-    "window_seconds": 1195317.1956096704,
-    "updated_at": "2026-11-24T19:25:47.003559+00:00",
+    "utilization": 0.303121361091902,
+    "window_seconds": 1195621.5878511295,
+    "updated_at": "2026-11-24T19:30:51.396732+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7568,8 +7568,8 @@
         "title": "Waiting core sets accelerator latency (wake tax on Prime cores)",
         "gate": "Mechanism identified and confirmatory replication",
         "status": "running",
-        "number": "l1-e3: 0/60 tail runs with Performance-cluster idle blocked (off01/off05/off07/spin1/spin4) vs 7/12 sham; pd0 entries AUC 1.00; P(slow given cluster woke for the completion) 0.76 vs 0.03 (5976 traced calls); tax ~1.73 ms; IRQ 365 (hfi) steering to CPU 6/7 leaves the tail (completion kthreads gmu_f2h/kgsl_hwsched/kgsl-events are SCHED_FIFO 50 on CPU 0); regime switches 7-13 per 18 min",
-        "decision": "Mechanism supported: Performance-cluster power-up on the RT kthread completion path. Continue, narrowed (l1-e5 trace/single/gap/long). Next lever: per-job kthread affinity (needs a restore hook). research/analysis-2026-11-24/lead.md",
+        "number": "Completion kthreads gmu_f2h/kgsl_hwsched/kgsl-events (SCHED_FIFO 50, mask ff, placed on CPU 0) pinned to Prime: 0/20 tail runs vs 4/8 sham (pooled one-sided Fisher p~0.003, preliminary: 34/84 runs; off01 0/6); in 3 kthread+IRQ runs the Performance cluster powered down 428-442 times with 0.0% slow calls; IRQ steering alone fails. l1-e3: 0/60 tail runs with cluster idle blocked vs 7/12 sham; P(slow | cluster woke for the completion) 0.76-0.81 vs 0.03-0.05; tax ~1.73 ms",
+        "decision": "Mechanism identified (preliminary): the scheduler places the RT completion kthreads on the Performance cluster; lever = kthread affinity (no extra wakeups). Continue: l1-e6 traces, L1c confirmatory tier with a kt67-irq6 arm, decode-chain impact (l1d-chain). research/analysis-2026-11-24/lead.md",
         "updated": "2026-11-24",
         "note": "Leading explanation: Prime cluster enters its cluster-level idle state while the waiter sleeps",
         "prior_art": "Risk MEDIUM (HIGH if sold as a new mechanism). The cluster exit latency (1983 us) is in the SM8750 idle-state patch (LKML 2025-02). To be new: time each hop (IRQ, gmu kthread, retire, IPI, waiter), name which cluster's exit is paid, and test IRQ steering / QoS levers with their cost (research/ideas/prior-art-2026-11-23.md s1)",
@@ -7606,7 +7606,8 @@
           "smoke-l1",
           "inv-irq",
           "l1-e5",
-          "l1-e3-irq"
+          "l1-e3-irq",
+          "l1-e6"
         ],
         "blocker": "l1-e3 results; gpu_wait_v4 for the long run"
       },
@@ -7682,13 +7683,14 @@
         "gate": "Tail tax survives in a multi-kernel chain",
         "status": "running",
         "number": "",
-        "decision": "NPU waiter cells stocked: host core 0/6 x vote x sham/off01 (l1d-npu, 48)",
+        "decision": "llama.cpp v1.0.0 (b1b770d, newest tag; Adreno kernels on) aborts with CL -54 in prompt eval for Q4_K_M and Q4_0 (Qwen2.5-1.5B), all knobs ruled out; per-kernel work-group diagnosis in progress; decode-like GPU chain approximation queued (l1d-chain, 108) plus l1d-npu (48)",
         "line": "Wake tax",
         "paper": "P-A",
         "readiness": 0,
         "tier": "exploratory",
         "job_families": [
-          "l1d-npu"
+          "l1d-npu",
+          "l1d-chain"
         ],
         "blocker": "Needs new multi-kernel client",
         "updated": "2026-11-24"
