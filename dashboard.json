@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-24T19:36:10.460746+00:00",
+  "updated_at": "2026-11-24T19:41:16.160128+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 1099,
-    "completed": 26317,
+    "queue_depth": 1148,
+    "completed": 26324,
     "failed": 409,
-    "utilization": 0.3031457611068562,
-    "window_seconds": 1195931.6757261294,
-    "updated_at": "2026-11-24T19:36:01.482430+00:00",
+    "utilization": 0.3031751365822282,
+    "window_seconds": 1196220.5324566294,
+    "updated_at": "2026-11-24T19:40:50.339802+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7682,15 +7682,17 @@
         "title": "Wake tax in a decode-like application chain, and QNN/FastRPC from cores 0/6",
         "gate": "Tail tax survives in a multi-kernel chain",
         "status": "running",
-        "number": "",
-        "decision": "llama.cpp v1.0.0 (b1b770d, newest tag; Adreno kernels on) aborts with CL -54 in prompt eval for Q4_K_M and Q4_0 (Qwen2.5-1.5B), all knobs ruled out; per-kernel work-group diagnosis in progress; decode-like GPU chain approximation queued (l1d-chain, 108) plus l1d-npu (48)",
+        "number": "Real llama.cpp GPU decode runs: Qwen2.5-1.5B Q4_0, 21.3 ms/token (48.4 tok/s) on Adreno 830 vs 53.3 tok/s CPU (2 Prime threads); CL -54 was kernel_gemv_noshuffle_q6_K_f32_tiled asking 256 > per-kernel limit 192 (avoided with GGML_OPENCL_Q6K_GEMV_TILED=0)",
+        "decision": "decode3 queued (54 jobs: sham/off01/kt67-irq6 x token gap 0/20/50 ms, per-run GPU token-hash determinism check); correctness = GPU vs CPU perplexity (pending); l1d-chain and l1d-npu also queued",
         "line": "Wake tax",
         "paper": "P-A",
         "readiness": 0,
         "tier": "exploratory",
         "job_families": [
           "l1d-npu",
-          "l1d-chain"
+          "l1d-chain",
+          "l1d-decode",
+          "l1d-ocl"
         ],
         "blocker": "Needs new multi-kernel client",
         "updated": "2026-11-24"
