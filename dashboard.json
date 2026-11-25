@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-25T17:39:46.628413+00:00",
+  "updated_at": "2026-11-25T17:44:52.259086+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7148,13 +7148,13 @@
     }
   ],
   "board_queue": {
-    "state": "running",
-    "queue_depth": 276,
-    "completed": 27485,
+    "state": "cooling",
+    "queue_depth": 272,
+    "completed": 27489,
     "failed": 484,
-    "utilization": 0.3235504153054294,
-    "window_seconds": 1275340.2031320846,
-    "updated_at": "2026-11-25T17:39:30.321037+00:00",
+    "utilization": 0.3236333998444142,
+    "window_seconds": 1275656.6330868346,
+    "updated_at": "2026-11-25T17:44:46.752115+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7366,9 +7366,9 @@
         "title": "Where cache misses come from in phone apps",
         "gate": "Attribution usable and app distributions differ clearly from benchmarks",
         "status": "running",
-        "number": "Gate met marginally: gap c2 mem-stall 10.5% in one job (30 c4i processes: median 10.25%); 90% of L1D misses in 42-680 PCs (audit research/audit-2026-11-24/backlog.md)",
+        "number": "Gate met marginally: gap c2 mem-stall 10.5% in one job (30 c4i processes: median 10.25%); 90% of L1D misses in 42-680 PCs (audit research/audit-2026-11-24/backlog.md) FLAG 2026-11-25: the stall share comes from STALL_BACKEND_MEM (0x4005), which R1 found reads 0.000 on hashprobe (26-28 L2 refills/kilo-instruction); unvalidated on Oryon, counter validation queued",
         "decision": "Continue: export labels",
-        "updated": "2026-11-24",
+        "updated": "2026-11-25",
         "prior_art": "See research/ideas/prior-art-2026-11-22.md. MEDIUM (Gutierrez IISWC 2011, Boroumand ASPLOS 2018)",
         "line": "Application misses",
         "paper": "P-E",
@@ -7384,10 +7384,10 @@
         "experiment": "E3",
         "title": "Miss sources during on-device LLM decode",
         "gate": "A meaningful share of decode misses falls outside stride-friendly kernels",
-        "status": "stopped",
-        "number": "Decode L2 demand misses 1.24-1.32k/token Prime, 2.78-3.02k Performance, 52-71% in the two gemv kernels; memory-bound stalls <0.3% (stages-llm.md)",
-        "decision": "Stop: no miss problem for prefetching in decode",
-        "updated": "2026-11-23",
+        "status": "analysing",
+        "number": "Decode L2 demand misses 1.24-1.32k/token Prime, 2.78-3.02k Performance, 52-71% in the two gemv kernels; memory-bound stalls <0.3% (stages-llm.md) FLAG 2026-11-25: the stall share comes from STALL_BACKEND_MEM (0x4005), which R1 found reads 0.000 on hashprobe (26-28 L2 refills/kilo-instruction); unvalidated on Oryon, counter validation queued",
+        "decision": "Stop basis invalid until 0x4005 is validated (miss counts stand: 1.24-3.02k L2 demand misses/token); re-decide after the counter calibration",
+        "updated": "2026-11-25",
         "prior_art": "See research/ideas/prior-art-2026-11-22.md. MEDIUM; gate likely fails (decode is a sequential weight stream)",
         "line": "Application misses",
         "paper": "P-E",
@@ -7511,7 +7511,7 @@
         "gate": "A useful share of time is in phases longer than a switch",
         "status": "done",
         "number": "Prime down 17-24 us, up 79-171 us (grows with step); Performance down 52-67 us, up 85-204 us; 5 ms dwell gives 61-62 us Performance up (n22.md). 40 'failed' runs were a client restore race; data usable",
-        "decision": "Stop collecting; write up. Phase-length side (C8) not pursued: memory-bound stalls are small in the workloads measured",
+        "decision": "Stop collecting; write up. Phase-length side (C8) not pursued: memory-bound stalls are small in the workloads measured (FLAG 2026-11-25: that reading used STALL_BACKEND_MEM 0x4005, unvalidated on Oryon; revisit after the counter calibration)",
         "updated": "2026-11-23",
         "note": "Two Prime runs executed at 1.01 GHz while cpufreq reported 4.32 GHz; clock-probe jobs stocked",
         "prior_art": "Risk LOW-MEDIUM. Mazouz et al. CSRD 2014 (FTaLaT, Intel). Report the full from-to matrix vs the declared 30 us (research/ideas/prior-art-2026-11-23.md s3)",
@@ -8101,10 +8101,10 @@
         "experiment": "Tartan (doc 05)",
         "title": "RoWild on phone-class cores (board part): DeliBot, MoveBot, FlyBot on Prime and Performance",
         "gate": "Continue memory-side ideas for a kernel if it takes >~40% of time and is miss-bound on at least one core type",
-        "status": "blocked",
-        "number": "Pre-built tartan-v1: 12 binaries (DeliBot/MoveBot/FlyBot x legacy, 2 relinks, rw) reproduce TB-2's macOS outputs; 66 jobs (~1.1 board-h) designed",
-        "decision": "Design research/tartan/r1_r28_design.md; launch (research_ops/stock_round5d) on the TB-2 announcement; gate U = time share x STALL_BACKEND_MEM share",
-        "updated": "2026-11-24",
+        "status": "stopped",
+        "number": "Dominant kernel share 0.38-0.74; L2 refills <=0.02/kilo-instruction; memory-stall bound (refill rates x calibrated latencies) <=0.17 (MoveBot NNS on Perf: L2 hits from its smaller L1D; 0.004 on Prime); Prime/Perf 1.52-1.76x at the same 3.072 GHz (IPC 4.5-5.5 vs 2.8-3.1), 2.2-2.5x under walt; relinks within +-1.5%; DeliBot per-call timers inflate its ROI 3.3-4.2x",
+        "decision": "Gate stop for all three kernels: the phone core already removes Tartan's misses (12 MB L2), itself a result per doc 05. STALL_BACKEND_MEM (0x4005) is unreliable on Oryon, so the gate used a refill x latency bound. research/analysis-2026-11-24/r1.md",
+        "updated": "2026-11-25",
         "prior_art": "Open: RoWild measured Cortex-A57, Xeon, GPUs; nobody on Prime vs Performance phone cores (search 2026-11-24, r1_r28_design.md)",
         "line": "Tartan (board)",
         "paper": "P-T",
@@ -8113,7 +8113,7 @@
         "job_families": [
           "t-r1"
         ],
-        "blocker": "TB-2 not announced in infra_ready.md (binaries pre-built and verified)"
+        "blocker": ""
       },
       {
         "id": "R25",
@@ -8143,10 +8143,10 @@
         "experiment": "Tartan (doc 05)",
         "title": "Anytime planner (FlyBot ARA*) under thermal throttling: Prime vs Performance vs temperature-triggered switch",
         "gate": "Continue if the placement ranking flips with temperature or the switch beats both",
-        "status": "blocked",
-        "number": "ARA* optimal in 0.08 ms on freiburg; TB-2 weight-4 path within 0.08% of optimal; predicted Perf/Prime 0.86 alone, 1.09 native clocks + core 6 heated",
-        "decision": "Metric = deadline-met rate and weight reached (path quality barely moves); 4 calibration + 12 thermal jobs (~9 board-h) designed; likely stop except native+heated cell",
-        "updated": "2026-11-24",
+        "status": "running",
+        "number": "Calibration: TB-2 plan() 17.6 (Prime native) / 19.8 (Prime walt) / 29.3 (Perf native) / 43.0 ms (Perf walt); ARA* optimal in 0.07-0.17 ms; on-board verify = host checksum",
+        "decision": "12 thermal jobs queued, deadlines 23/41/77/142/185 ms (r28cal.json); analyse with r28.py",
+        "updated": "2026-11-25",
         "prior_art": "Open: no work combines anytime planning, core-type placement and measured throttling; closest arXiv 2610.35231 (simulated YOLO routing)",
         "line": "Tartan (board)",
         "paper": "P-T",
@@ -8155,7 +8155,7 @@
         "job_families": [
           "t-r28"
         ],
-        "blocker": "TB-2 not announced (r28_anytime pre-built, links artifact flybot.cpp unchanged)"
+        "blocker": ""
       },
       {
         "id": "R16",
