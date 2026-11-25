@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-25T23:00:34.691988+00:00",
+  "updated_at": "2026-11-25T23:05:40.513665+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7148,13 +7148,13 @@
     }
   ],
   "board_queue": {
-    "state": "cooling",
-    "queue_depth": 61,
-    "completed": 27716,
+    "state": "running",
+    "queue_depth": 56,
+    "completed": 27721,
     "failed": 491,
-    "utilization": 0.3304071737166382,
-    "window_seconds": 1294601.9845094595,
-    "updated_at": "2026-11-25T23:00:32.211629+00:00",
+    "utilization": 0.3304488121241125,
+    "window_seconds": 1294857.2055066265,
+    "updated_at": "2026-11-25T23:04:47.447391+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
