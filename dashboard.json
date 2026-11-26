@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-26T23:20:48.609390+00:00",
+  "updated_at": "2026-11-26T23:25:53.337818+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,12 +7149,12 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 211,
-    "completed": 30468,
+    "queue_depth": 1046,
+    "completed": 30482,
     "failed": 496,
-    "utilization": 0.3493773942218279,
-    "window_seconds": 1382195.7712295435,
-    "updated_at": "2026-11-26T23:20:26.407211+00:00",
+    "utilization": 0.349400088075407,
+    "window_seconds": 1382520.0205098344,
+    "updated_at": "2026-11-26T23:25:50.659082+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
@@ -7250,7 +7250,7 @@
         "number": "Matched 3.07 GHz, 2-3 runs per cell: best-common loses more than 2% in 0 of 8 workloads (max 0.28%, inside noise); same variant wins on both core types in 7 of 8. Size-oriented code costs twice as much on Prime (lua Os +27.4% vs +12.7%). Prime at native clock unusable (minimum-clock state, in-run droop)",
         "decision": "2026-11-26 (unconfirmed, relink.md): the 0.28% best-common vs best-per-core gap does NOT survive relinks (unroll-aggr best on both cores; core contrast +0.10 [-0.05,+0.26]). Menu gap withdrawn. Stack stratum moves C5 effects -0.6 to -2.9%: next, more layouts (lay5-9) stratified by stack offset.",
         "updated": "2026-11-26",
-        "note": "No rseq on this kernel: dispatch cost measured with the alternatives",
+        "note": "No rseq on this kernel: dispatch cost measured with the alternatives | AUDIT 2026-11-26 CONFIRMED: nm confirms the relinks move hot AES/SHA functions to different 64 B offsets.",
         "prior_art": "Risk MEDIUM (HIGH for ML kernels): Park et al. 2019 on A55/A75, SANI OSDI 2026. Nothing for general code or a same-family core pair; expect small gains",
         "line": "Compilation",
         "paper": "P-D",
@@ -7291,7 +7291,7 @@
           "e6-c4rl"
         ],
         "blocker": "percore-v2 pgo-use build",
-        "note": " | 2026-11-26 (unconfirmed, relink.md): PGO survives relinks: crypto c2 +20.42% [20.38,20.47], c7 +8.87; Prime-Perf -9.60 [-9.65,-9.55] (first pass -12.3); sqlite Prime-Perf -0.66 [-0.85,-0.48]. Open: rl1 relink sd only 0.01-0.16% - check the relinks move hot functions."
+        "note": " | 2026-11-26 (unconfirmed, relink.md): PGO survives relinks: crypto c2 +20.42% [20.38,20.47], c7 +8.87; Prime-Perf -9.60 [-9.65,-9.55] (first pass -12.3); sqlite Prime-Perf -0.66 [-0.85,-0.48]. Open: rl1 relink sd only 0.01-0.16% - check the relinks move hot functions. | AUDIT 2026-11-26 CONFIRMED-WITH-CAVEAT: -9.60 is a ratio of ratios; on the first-pass scale (difference of %) it is -11.56 vs -12.31, so \"smaller\" overstates the shrinkage."
       },
       {
         "id": "C9",
@@ -7394,7 +7394,7 @@
         "title": "Miss sources during on-device LLM decode",
         "gate": "A meaningful share of decode misses falls outside stride-friendly kernels",
         "status": "running",
-        "number": "CORRECTED 2026-11-26 (unconfirmed): memory stall NOT measured; <=~16% of cycles is the only counter bound (STALL_BACKEND+STALL_FRONTEND: Prime 15.8-16.1%, Perf 16.2-16.5%; not memory-specific). SUPERSEDED: \"<=1.2%/3.2%, <=7.5% with all refills\" (11-25) and \"<0.3%\" (11-23): the demand-miss bound reads below planted stall on the stallcal KAT and refill counters miss 99.9% of prefetched lines. Sources: analysis-2026-11-26/stall2.md, stops.md; campaign auditor 2026-11-26.",
+        "number": "CORRECTED 2026-11-26 (unconfirmed): memory stall NOT measured; whole-cycle stall share ~16% (not an upper bound on memory time cost: partly-issuing cycles unseen) (STALL_BACKEND+STALL_FRONTEND: Prime 15.8-16.1%, Perf 16.2-16.5%; not memory-specific). SUPERSEDED: \"<=1.2%/3.2%, <=7.5% with all refills\" (11-25) and \"<0.3%\" (11-23): the demand-miss bound reads below planted stall on the stallcal KAT and refill counters miss 99.9% of prefetched lines. Sources: analysis-2026-11-26/stall2.md, stops.md; campaign auditor 2026-11-26.",
         "decision": "Continue-narrowed (protocol 2026-11-26 section 2; CAMPAIGN_RULES 1a reason for not pursuing prefetch: the misses sit in stride-friendly streams that HW stride/stream prefetchers already cover). Next: sequential-stream KAT in stallcal v2, frequency-sensitivity test, then decode with prefetchers partly defeated.",
         "updated": "2026-11-26",
         "prior_art": "See research/ideas/prior-art-2026-11-22.md. MEDIUM; gate likely fails (decode is a sequential weight stream)",
@@ -7417,7 +7417,8 @@
             "field": "decision",
             "old": "Stop (basis corrected 2026-11-25): no miss problem for prefetching in decode at the bound; gate (misses outside stride-friendly kernels) not met"
           }
-        ]
+        ],
+        "note": " | AUDIT 2026-11-26 CONFIRMED-WITH-CAVEAT: the ~16% bounds only whole no-issue cycles; memory can cost partly-issuing cycles, so it is NOT an upper bound on memory time cost either. Wording: memory stall unmeasured; whole-cycle stall share ~16%."
       },
       {
         "id": "N15",
@@ -7598,8 +7599,8 @@
         "status": "running",
         "number": "Lever = completion kthreads (gmu_f2h/kgsl_hwsched/kgsl-events, SCHED_FIFO 50 on CPU 0) AND hfi IRQ 365 on Prime: 0/36 tail-or-switch runs vs 6/12 sham (Fisher p=7.5e-5; tail-only 0/36 vs 3/12, p=0.013; audited: 0/34 gives 9.9e-5, the earlier 8.6e-5 was a miscount); kthreads alone 11/24 tail runs (do not prevent the tail regime, but remove the 2-4% low-regime slow calls: 0.0% in 13/13 quiet runs vs sham 2.3-4.3%), IRQ alone likewise; with both moved the cluster still powers down in 20 runs with 0 slow calls (0/20 vs 6/6 sham, p=4e-6). l1-e3: 0/60 vs 7/12 sham (per cell p=0.0046); P(slow | cluster woke <500 us before IRQ) 0.709-0.764 vs 0.020-0.081 across trace sets (round 3: 2470/3231 vs 77/2745); tax 1.72-1.75 ms per isolated completion. Thresholds 750-2000 us give the same result",
         "decision": "Mechanism identified (exploratory tier; confirmatory L1c pending) and audited (research/audit-2026-11-24/l1.md). Confirmatory L1c lacks a kthreads+IRQ arm: preregistered amendment adds it before its data. Continue: l1d-chain sizes the tax for sparse completions. lead.md",
-        "updated": "2026-11-24",
-        "note": "Leading explanation: Prime cluster enters its cluster-level idle state while the waiter sleeps",
+        "updated": "2026-11-26",
+        "note": "Leading explanation: Prime cluster enters its cluster-level idle state while the waiter sleeps | 2026-11-26 (exploratory, unconfirmed; l1c.md): IRQ 365 alone does not remove the tail regime (l1-e3b 6/24 vs sham 6/12, p 0.16; one 15-min tail window hit every arm); tax in tail runs unchanged (2.06 vs 2.10 ms). Lever = kthreads AND IRQ together. l1-e7 stock queued.",
         "prior_art": "Risk MEDIUM (HIGH if sold as a new mechanism). The cluster exit latency (1983 us) is in the SM8750 idle-state patch (LKML 2025-02). To be new: time each hop (IRQ, gmu kthread, retire, IPI, waiter), name which cluster's exit is paid, and test IRQ steering / QoS levers with their cost (research/ideas/prior-art-2026-11-23.md s1)",
         "line": "Wake tax",
         "paper": "P-A",
@@ -7690,9 +7691,9 @@
         "experiment": "Lead1",
         "title": "Wake tax: confirmatory tier (preregistered, randomized, second session)",
         "gate": "Headline effect reproduces in a second session with full-output correctness",
-        "status": "running",
-        "number": "",
-        "decision": "Preregistered (prereg-l1c-2026-11-24.md) + amendment before any L1c analysis (prereg-l1c-amend-2026-11-24.md, sha256 a15bb5e1...): H4 kthreads+IRQ arm, Holm over 4 contrasts; session A (80/80 done) gets a concurrent supplementary block AK (20 kt67irq6 + 20 sham), session B gets 20 kt67irq6 interleaved; all confirmatory tier",
+        "status": "done",
+        "number": "CONFIRMATORY (prereg-l1c-2026-11-24 + amendment, hashes match): H1 off01, H2 spin4, H3 c2sham, H4 kt67irq6 each < sham in slow-call share, Holm-adjusted one-sided Mann-Whitney p <= 2e-8 in both sessions (A, B); complete separation U=0 in 8/8 contrasts; effect -36.8 to -50.2 points; tail runs 0/20 per arm vs 10-14/20 sham. 220/220 jobs passed, 0 excluded. Contrary: 4/35 sham tail runs below the predicted 60-85% slow; sham pd0 counts down to 83 vs predicted >300. analysis-2026-11-26/l1c.md (unaudited script implements prereg text literally; no prereg script existed).",
+        "decision": "Confirmed. Next: l1-e7 families (same-block 2x2, which kthread, other waiters, gap sweep, traces, long runs) queued 2026-11-26.",
         "line": "Wake tax",
         "paper": "P-A",
         "readiness": 0,
@@ -7703,7 +7704,14 @@
           "l1c-AK"
         ],
         "blocker": "Needs R4 mechanism closure and preregistration card",
-        "updated": "2026-11-24"
+        "updated": "2026-11-26",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "status",
+            "old": "running"
+          }
+        ]
       },
       {
         "id": "L1d",
@@ -7861,7 +7869,8 @@
             "field": "decision",
             "old": "Continue-narrowed: backend counters (c17be); relink re-test queued 2026-11-24 (c17rl: 5 layouts per arm, crypto stack-stratified); claims wait for it"
           }
-        ]
+        ],
+        "note": " | AUDIT 2026-11-26 CONFIRMED (lua rows; quickjs not audited). Scale note: +8.96 relinked vs +9.81 on the first-pass scale."
       },
       {
         "id": "C18",
@@ -7889,7 +7898,8 @@
             "field": "decision",
             "old": "Continue: FE counters (c18fe); relinks before claims; relink re-test queued 2026-11-24 (c18rl: 5 layouts per arm, crypto stack-stratified); claims wait for it"
           }
-        ]
+        ],
+        "note": " | AUDIT 2026-11-26 CONFIRMED-WITH-CAVEAT: crypto interaction +0.05 [+0.03,+0.07] is resolved nonzero (tiny), not ~0; interval likely narrow because layouts barely differ."
       },
       {
         "id": "N39b",
@@ -8197,7 +8207,8 @@
             "field": "decision",
             "old": "Gate pass at batch 1 with and without the vote (break-even >5 orders above FlyBot; not reached vs Prime). Continue: R25d batch 1/4/16/64 x 5 nets (r25_mlp v2 --batch), NPU sustained + default arm, NEON 4-row kernels; then GPU path and a STREAM check of the DRAM-bound reading. Earlier repo NPU numbers without --perf-mode sustained are default-vote figures. research/analysis-2026-11-24/r25.md, r25bc.md; R25e (audit follow-up) queued: r25_mlp v4 --vary 4 checks every call with rotating inputs, repeating the headline cells (18 jobs)"
           }
-        ]
+        ],
+        "note": " | AUDIT 2026-11-26 CONFIRMED-WITH-CAVEAT: batch 1 = \"never beats outright\" (51M Perf parity 0.85-1.21); baseline is ONE NEON core, single thread: a multi-core CPU baseline is needed (protocol 3.5), likely moves the crossover up; NPU-side corruption test never exercised on board."
       },
       {
         "id": "R28",
@@ -8223,7 +8234,8 @@
             "field": "decision",
             "old": "12 thermal jobs queued, deadlines 23/41/77/142/185 ms (r28cal.json); analyse with r28.py"
           }
-        ]
+        ],
+        "note": " | AUDIT 2026-11-26 CONFIRMED-WITH-CAVEAT: the Prime lead comes from the 23/41 ms (and 77 ms default) deadlines only; both placements hit 100% at looser deadlines; n=1 per cell; heat6-native margin +0.021 vs floor 0.020."
       },
       {
         "id": "R16",
@@ -8387,7 +8399,8 @@
             "field": "decision",
             "old": "HDK part started 2026-11-24: tartan tools/r6 harness (59e7b09) cross-built (research_ops/build_r6.py), KAT passes off-device; 12 jobs, cores 2/5/6/7; gate ~70% of the paper's 2.7x"
           }
-        ]
+        ],
+        "note": " | AUDIT 2026-11-26 CONFIRMED-WITH-CAVEAT: S compares NEON MLP vs the slow trig-heavy closed-form heuristic, not the paper hardware unit."
       },
       {
         "id": "R8",
@@ -8553,7 +8566,8 @@
             "field": "decision",
             "old": "Per-core flip withdrawn pending relinks (PF_MODE arms were one layout; D16 shrinks the Prime gap to +1.1%); ca1hrl queued (percore-rl4 hashprobe_pfs, noinline per mode, 5 relinks)"
           }
-        ]
+        ],
+        "note": " | AUDIT 2026-11-26 CONFIRMED-WITH-CAVEAT: Perf 4 layouts; the first-pass +4.16 used a different binary, so \"flip contradicted\" mixes code change with layout."
       },
       {
         "id": "CA2",
@@ -8733,7 +8747,8 @@
             "field": "decision",
             "old": "Continue: pfp arms (TDL|SSL list-ahead) vs none/blind/blind3/all, per-core distance (64/128) and cross arm, 5 layouts, scales 20/18/15 (percore-rl3 gap_pfp); research/analysis-2026-11-24/backlog.md"
           }
-        ]
+        ],
+        "note": " | AUDIT 2026-11-26 CONFIRMED-WITH-CAVEAT: labels profiled on the same deterministic graphs (s20 gain is in-sample); s18 a partial hold-out (-6.98/-4.00). Next: true hold-out graphs."
       },
       {
         "id": "CA12",
