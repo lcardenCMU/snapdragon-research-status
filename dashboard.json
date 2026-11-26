@@ -7031,7 +7031,7 @@
     }
   },
   "schema_version": 2,
-  "updated_at": "2026-11-26T23:00:30.498758+00:00",
+  "updated_at": "2026-11-26T23:05:34.984790+00:00",
   "project": "Snapdragon Research",
   "platform": "HDK8750 MP",
   "phase": "Phase 2 \u00b7 Mechanism experiments and first-pass idea gates",
@@ -7149,17 +7149,17 @@
   ],
   "board_queue": {
     "state": "running",
-    "queue_depth": 66,
-    "completed": 30447,
+    "queue_depth": 220,
+    "completed": 30459,
     "failed": 496,
-    "utilization": 0.3489972993615608,
-    "window_seconds": 1380995.4275736264,
-    "updated_at": "2026-11-26T23:00:26.049961+00:00",
+    "utilization": 0.3490306567471414,
+    "window_seconds": 1381292.4902405846,
+    "updated_at": "2026-11-26T23:05:23.114428+00:00",
     "definition": "owned job wall time / daemon wall time; not accelerator active utilization"
   },
   "ideas": {
     "schema": 2,
-    "updated": "2026-11-24",
+    "updated": "2026-11-26",
     "results_format": "idea,workload,configuration,metric,value,git_commit,event_id",
     "ideas": [
       {
@@ -7248,8 +7248,8 @@
         "gate": "Best-per-core beats best-common by more than a few percent on a meaningful share of workloads",
         "status": "analysing",
         "number": "Matched 3.07 GHz, 2-3 runs per cell: best-common loses more than 2% in 0 of 8 workloads (max 0.28%, inside noise); same variant wins on both core types in 7 of 8. Size-oriented code costs twice as much on Prime (lua Os +27.4% vs +12.7%). Prime at native clock unusable (minimum-clock state, in-run droop)",
-        "decision": "Reopened 2026-11-23 under the small-effect lens: menu choice worth <=0.37% (stop stands for the menu), but 35 of 64 core x variant interactions are significant, some with opposite signs; continues as CA7/CA8; relink re-test queued 2026-11-24 (c5rl: 5 layouts per arm, crypto stack-stratified); claims wait for it",
-        "updated": "2026-11-24",
+        "decision": "2026-11-26 (unconfirmed, relink.md): the 0.28% best-common vs best-per-core gap does NOT survive relinks (unroll-aggr best on both cores; core contrast +0.10 [-0.05,+0.26]). Menu gap withdrawn. Stack stratum moves C5 effects -0.6 to -2.9%: next, more layouts (lay5-9) stratified by stack offset.",
+        "updated": "2026-11-26",
         "note": "No rseq on this kernel: dispatch cost measured with the alternatives",
         "prior_art": "Risk MEDIUM (HIGH for ML kernels): Park et al. 2019 on A55/A75, SANI OSDI 2026. Nothing for general code or a same-family core pair; expect small gains",
         "line": "Compilation",
@@ -7261,7 +7261,14 @@
           "r2-e6",
           "e6-c5rl"
         ],
-        "blocker": "C4 decides P-D"
+        "blocker": "C4 decides P-D",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Reopened 2026-11-23 under the small-effect lens: menu choice worth <=0.37% (stop stands for the menu), but 35 of 64 core x variant interactions are significant, some with opposite signs; continues as CA7/CA8; relink re-test queued 2026-11-24 (c5rl: 5 layouts per arm, crypto stack-stratified); claims wait for it"
+          }
+        ]
       },
       {
         "id": "C4",
@@ -7271,7 +7278,7 @@
         "status": "running",
         "number": "Merged-profile PGO: Prime-Perf -12.3 pts crypto (+21.2 vs +8.9%), sqlite -0.50 (n=30), jpeg +1.2, gap -1.8; main effects -4 to -11%; relinked sqlite c2 PGO -10.98% [-11.17, -10.79] over 5+5 layouts (single-layout c4i -11.00%; layout sd 0.12/0.16%)",
         "decision": "Continue-narrowed: c4x high-n on missing cores. research/analysis-2026-11-24/backlog.md; relink re-test queued 2026-11-24 (c4rl: 5 layouts per arm, crypto stack-stratified); claims wait for it",
-        "updated": "2026-11-24",
+        "updated": "2026-11-26",
         "prior_art": "See C5",
         "line": "Compilation",
         "paper": "P-D",
@@ -7283,7 +7290,8 @@
           "e6-c4x",
           "e6-c4rl"
         ],
-        "blocker": "percore-v2 pgo-use build"
+        "blocker": "percore-v2 pgo-use build",
+        "note": " | 2026-11-26 (unconfirmed, relink.md): PGO survives relinks: crypto c2 +20.42% [20.38,20.47], c7 +8.87; Prime-Perf -9.60 [-9.65,-9.55] (first pass -12.3); sqlite Prime-Perf -0.66 [-0.85,-0.48]. Open: rl1 relink sd only 0.01-0.16% - check the relinks move hot functions."
       },
       {
         "id": "C9",
@@ -7368,7 +7376,7 @@
         "status": "running",
         "number": "Data-miss stall: STALL_BACKEND_MEM (0x4005) is a dependent-chain-only lower bound on Oryon (stallcal: DRAM chase 95%, independent DRAM gather 0%); gap c2 >=10.25% (median of 30, 9.85-11.12), so the gate is met as a lower bound; gap c7 1.6% not comparable (Prime books independent-load stalls as frontend); sqlite 5.0/2.5%, others <=0.8%; 90% of L1D misses in 42-680 PCs (counter calibration research/analysis-2026-11-25/stall_counters.md)",
         "decision": "Continue: export labels",
-        "updated": "2026-11-25",
+        "updated": "2026-11-26",
         "prior_art": "See research/ideas/prior-art-2026-11-22.md. MEDIUM (Gutierrez IISWC 2011, Boroumand ASPLOS 2018)",
         "line": "Application misses",
         "paper": "P-E",
@@ -7377,17 +7385,18 @@
         "job_families": [
           "e6-n11"
         ],
-        "blocker": "percore-v2 unstripped builds"
+        "blocker": "percore-v2 unstripped builds",
+        "note": " | 2026-11-26 (stall2.md): gap c2 per-job medians 10.20/10.24/10.25% (27/30 processes >=10%); a weak lower bound even on chains (L2-hit chase reads 55% vs ~88% implied). results.csv N11 mem_stall_pct_cycles row superseded by metric stall_backend_mem_0x4005_pct_cycles_lower_bound_chains."
       },
       {
         "id": "N20",
         "experiment": "E3",
         "title": "Miss sources during on-device LLM decode",
         "gate": "A meaningful share of decode misses falls outside stride-friendly kernels",
-        "status": "stopped",
-        "number": "Decode L2 demand misses 1.24-1.32k/token Prime, 2.78-3.02k Performance, 52-71% in the two gemv kernels; memory stall <=1.2% Prime / <=3.2% Perf (demand-miss x latency bound; <=7.5% with all refills); the earlier 0x4005 '<0.3%' is invalid for streaming code (counter calibration research/analysis-2026-11-25/stall_counters.md)",
-        "decision": "Stop (basis corrected 2026-11-25): no miss problem for prefetching in decode at the bound; gate (misses outside stride-friendly kernels) not met",
-        "updated": "2026-11-25",
+        "status": "running",
+        "number": "CORRECTED 2026-11-26 (unconfirmed): memory stall NOT measured; <=~16% of cycles is the only counter bound (STALL_BACKEND+STALL_FRONTEND: Prime 15.8-16.1%, Perf 16.2-16.5%; not memory-specific). SUPERSEDED: \"<=1.2%/3.2%, <=7.5% with all refills\" (11-25) and \"<0.3%\" (11-23): the demand-miss bound reads below planted stall on the stallcal KAT and refill counters miss 99.9% of prefetched lines. Sources: analysis-2026-11-26/stall2.md, stops.md; campaign auditor 2026-11-26.",
+        "decision": "Continue-narrowed (protocol 2026-11-26 section 2; CAMPAIGN_RULES 1a reason for not pursuing prefetch: the misses sit in stride-friendly streams that HW stride/stream prefetchers already cover). Next: sequential-stream KAT in stallcal v2, frequency-sensitivity test, then decode with prefetchers partly defeated.",
+        "updated": "2026-11-26",
         "prior_art": "See research/ideas/prior-art-2026-11-22.md. MEDIUM; gate likely fails (decode is a sequential weight stream)",
         "line": "Application misses",
         "paper": "P-E",
@@ -7396,7 +7405,19 @@
         "job_families": [
           "e3-llm"
         ],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "number",
+            "old": "Decode L2 demand misses 1.24-1.32k/token Prime, 2.78-3.02k Performance, 52-71% in the two gemv kernels; memory stall <=1.2% Prime / <=3.2% Perf (demand-miss x latency bound; <=7.5% with all refills); the earlier 0x4005 '<0.3%' is invalid for streaming code (counter calibration research/analysis-2026-11-25/stall_counters.md)"
+          },
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Stop (basis corrected 2026-11-25): no miss problem for prefetching in decode at the bound; gate (misses outside stride-friendly kernels) not met"
+          }
+        ]
       },
       {
         "id": "N15",
@@ -7509,10 +7530,10 @@
         "experiment": "E9",
         "title": "Frequency-switch latency vs memory-bound phase length",
         "gate": "A useful share of time is in phases longer than a switch",
-        "status": "done",
+        "status": "running",
         "number": "Prime down 17-24 us, up 79-171 us (grows with step); Performance down 52-67 us, up 85-204 us; 5 ms dwell gives 61-62 us Performance up (n22.md). 40 'failed' runs were a client restore race; data usable",
-        "decision": "Stop collecting; write up. Phase-length side (C8) not pursued: memory-bound stalls are small in the workloads measured (2026-11-25: that reading used 0x4005, a dependent-chain-only lower bound; for independent-load code it under-counts (counter calibration research/analysis-2026-11-25/stall_counters.md))",
-        "updated": "2026-11-25",
+        "decision": "2026-11-26: C8 \"memory-bound stalls are small\" basis WITHDRAWN (rested on 0x4005). Continue-narrowed: frequency-sensitivity check first (analysis-2026-11-26/stall2.md).",
+        "updated": "2026-11-26",
         "note": "Two Prime runs executed at 1.01 GHz while cpufreq reported 4.32 GHz; clock-probe jobs stocked",
         "prior_art": "Risk LOW-MEDIUM. Mazouz et al. CSRD 2014 (FTaLaT, Intel). Report the full from-to matrix vs the declared 30 us (research/ideas/prior-art-2026-11-23.md s3)",
         "line": "Memory system",
@@ -7523,7 +7544,14 @@
           "e9-",
           "r2-e9"
         ],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Stop collecting; write up. Phase-length side (C8) not pursued: memory-bound stalls are small in the workloads measured (2026-11-25: that reading used 0x4005, a dependent-chain-only lower bound; for independent-load code it under-counts (counter calibration research/analysis-2026-11-25/stall_counters.md))"
+          }
+        ]
       },
       {
         "id": "CLK",
@@ -7808,9 +7836,9 @@
         "title": "Why size-oriented code costs twice as much on the Prime core",
         "gate": "One counter explains >=50% of the Prime excess (lua Os +27.4% vs +12.7%)",
         "status": "running",
-        "number": "Os excess lua +9.4 pts (+9.3 vs +18.6%), quickjs +6.6; FE stall explains <0 (gate not met); CAUTION: Prime books independent-load memory stalls as STALL_FRONTEND (94% on a DRAM gather), so front-end stall shares are not comparable across core types until the IMPDEF split is checked (counter calibration research/analysis-2026-11-25/stall_counters.md)",
-        "decision": "Continue-narrowed: backend counters (c17be); relink re-test queued 2026-11-24 (c17rl: 5 layouts per arm, crypto stack-stratified); claims wait for it",
-        "updated": "2026-11-25",
+        "number": "2026-11-26 (unconfirmed, c17rl 5 layouts/arm, within core type): Os cycles lua +9.64% [9.05,10.24] Perf, +19.47% [18.90,20.04] Prime; quickjs +10.83 Perf, +17.69 Prime; 53-95% of the increase is in non-whole-cycle-stall cycles (+5.4/+8.2% instructions). WITHDRAWN: \"FE stall explains <0\" and cross-core FE share 22.9 vs 2.5% (Prime books MLP stalls as frontend). Relinks: Prime excess lua +8.96 [8.33,9.58], quickjs +6.18 [4.76,7.62] (relink.md).",
+        "decision": "Continue: slot counters (0x3D/0x3E/0x3F) with the c17rl design; gate cannot be tested with FE/BE buckets across core types.",
+        "updated": "2026-11-26",
         "prior_art": "Risk LOW published; HIGH that the effect is small. Front-end counters must explain a core-type difference above run spread (research/ideas/prior-art-2026-11-23.md s8)",
         "line": "Compilation",
         "paper": "P-D",
@@ -7821,7 +7849,19 @@
           "e6-c17be",
           "e6-c17rl"
         ],
-        "blocker": "percore-v2 build"
+        "blocker": "percore-v2 build",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "number",
+            "old": "Os excess lua +9.4 pts (+9.3 vs +18.6%), quickjs +6.6; FE stall explains <0 (gate not met); CAUTION: Prime books independent-load memory stalls as STALL_FRONTEND (94% on a DRAM gather), so front-end stall shares are not comparable across core types until the IMPDEF split is checked (counter calibration research/analysis-2026-11-25/stall_counters.md)"
+          },
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Continue-narrowed: backend counters (c17be); relink re-test queued 2026-11-24 (c17rl: 5 layouts per arm, crypto stack-stratified); claims wait for it"
+          }
+        ]
       },
       {
         "id": "C18",
@@ -7830,8 +7870,8 @@
         "gate": ">2% either way in >=2 workloads",
         "status": "running",
         "number": "oryon-1 >2% in 1-2 workloads (crypto +2.3, lua Prime +2.5; quickjs Prime -1.9 is below 2%); lua interaction +3.9 pts (lua work varies per run, see M2) (audit research/audit-2026-11-24/backlog.md)",
-        "decision": "Continue: FE counters (c18fe); relinks before claims; relink re-test queued 2026-11-24 (c18rl: 5 layouts per arm, crypto stack-stratified); claims wait for it",
-        "updated": "2026-11-24",
+        "decision": "2026-11-26 (unconfirmed, relink.md): crypto interaction first-pass -0.62 contradicted (+0.05 [+0.03,+0.07]; oryon-1 slower on both, +1.9%); lua Prime-Perf +1.95 [+1.13,+2.78] kept at about half the first pass. Next: lay5-9 relinks, stack-stratified.",
+        "updated": "2026-11-26",
         "prior_art": "LLVM AArch64SchedOryon.td: one model ('Oryon CPU 001'), no Prime/Performance split (research/ideas/prior-art-2026-11-23.md s8)",
         "line": "Compilation",
         "paper": "P-D",
@@ -7842,7 +7882,14 @@
           "e6-c18fe",
           "e6-c18rl"
         ],
-        "blocker": "NDK r28+ toolchain volume"
+        "blocker": "NDK r28+ toolchain volume",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Continue: FE counters (c18fe); relinks before claims; relink re-test queued 2026-11-24 (c18rl: 5 layouts per arm, crypto stack-stratified); claims wait for it"
+          }
+        ]
       },
       {
         "id": "N39b",
@@ -8101,10 +8148,10 @@
         "experiment": "Tartan (doc 05)",
         "title": "RoWild on phone-class cores (board part): DeliBot, MoveBot, FlyBot on Prime and Performance",
         "gate": "Continue memory-side ideas for a kernel if it takes >~40% of time and is miss-bound on at least one core type",
-        "status": "stopped",
+        "status": "running",
         "number": "Dominant kernel share 0.38-0.74; L2 refills <=0.02/kilo-instruction; memory-stall bound (refill rates x calibrated latencies) <=0.17 (MoveBot NNS on Perf: L2 hits from its smaller L1D; 0.004 on Prime); Prime/Perf 1.52-1.76x at the same 3.072 GHz (IPC 4.5-5.5 vs 2.8-3.1), 2.2-2.5x under walt; relinks within +-1.5%; DeliBot per-call timers inflate its ROI 3.3-4.2x",
-        "decision": "Gate stop for all three kernels: the phone core already removes Tartan's misses (12 MB L2), itself a result per doc 05. STALL_BACKEND_MEM (0x4005) counts dependent-chain memory stalls only (0 on independent loads), so the gate used a refill x latency bound (counter calibration research/analysis-2026-11-25/stall_counters.md). research/analysis-2026-11-24/r1.md",
-        "updated": "2026-11-25",
+        "decision": "2026-11-26 re-review (stops.md, auditor): stop basis was the doc-05 threshold M>=0.20 and IS affected by the instrument: with the stallcal L2 cost (17.5-23.7 cyc) MoveBot NNS on Perf is 0.145-0.197, near the gate. Stop holds on Prime (0.004), DeliBot, FlyBot (Prime larger L1D/L2 removes the misses). Continue-narrowed for MoveBot NNS on Perf: flat-array NNS, inputs > 12 MB L2, L1-resident ceiling, TB-2 legacy binaries.",
+        "updated": "2026-11-26",
         "prior_art": "Open: RoWild measured Cortex-A57, Xeon, GPUs; nobody on Prime vs Performance phone cores (search 2026-11-24, r1_r28_design.md)",
         "line": "Tartan (board)",
         "paper": "P-T",
@@ -8113,7 +8160,14 @@
         "job_families": [
           "t-r1"
         ],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Gate stop for all three kernels: the phone core already removes Tartan's misses (12 MB L2), itself a result per doc 05. STALL_BACKEND_MEM (0x4005) counts dependent-chain memory stalls only (0 on independent loads), so the gate used a refill x latency bound (counter calibration research/analysis-2026-11-25/stall_counters.md). research/analysis-2026-11-24/r1.md"
+          }
+        ]
       },
       {
         "id": "R25",
@@ -8122,8 +8176,8 @@
         "gate": "Continue if the curve is clean and break-even sits orders of magnitude above AXAR-sized functions",
         "status": "running",
         "number": "Batch 1. Default vote: NPU/NEON 14,000x (FlyBot) to 7.8x (22M), floor 0.7 ms, 1.8-2.4x DCVS step-up (bimodal). Sustained vote: floor 67 us; residual step 7-14% (steady/early 1.00 Perf host to 22M, 1.07-1.14 Prime host and at 51-55M); steady NPU/NEON 1,300x FlyBot, 220-430x HomeBot, 4.6-7.6x PatrolBot, 1.14-1.61x at 22M, 1.03-1.05x (Perf) / 1.39-1.40x (Prime) at 51-55M; before the step the NPU beats a Performance core at 51-55M (0.92-0.93x). Batch 64 big22m 0.85 ms = batch 1 (smoke, 1 job). DRAM-bound reading unverified (bw check queued). Audited 2026-11-24: medians reproduce; check covers first/last call only",
-        "decision": "Gate pass at batch 1 with and without the vote (break-even >5 orders above FlyBot; not reached vs Prime). Continue: R25d batch 1/4/16/64 x 5 nets (r25_mlp v2 --batch), NPU sustained + default arm, NEON 4-row kernels; then GPU path and a STREAM check of the DRAM-bound reading. Earlier repo NPU numbers without --perf-mode sustained are default-vote figures. research/analysis-2026-11-24/r25.md, r25bc.md; R25e (audit follow-up) queued: r25_mlp v4 --vary 4 checks every call with rotating inputs, repeating the headline cells (18 jobs)",
-        "updated": "2026-11-24",
+        "decision": "2026-11-26 (unconfirmed, r25d.md): batch 1 no NPU win even with the vote; with the sustained vote the NPU wins from batch 4 at >=5.8M MACs on Perf (0.59) and >=22M on Prime (0.77), every net >= PatrolBot from batch 16; NPU time flat batch 1-64; r25e every-call check 0/19,920 failures, timings unchanged; floors 66-68 us sustained vs 690-740 us default; bw 63.65/72.4 GB/s. FlyBot 1,300x is a lower bound. Default-vote labels needed on N34, R25 v1, Lead1/Lead2 default-only families. Next: GPU path, vote vs call gap, fine batch crossing. Replication t-r25dr queued.",
+        "updated": "2026-11-26",
         "prior_art": "Pending (campaign doc 05 notes one search each)",
         "line": "Tartan (board)",
         "paper": "P-T",
@@ -8136,7 +8190,14 @@
           "t-r25d",
           "t-r25e"
         ],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Gate pass at batch 1 with and without the vote (break-even >5 orders above FlyBot; not reached vs Prime). Continue: R25d batch 1/4/16/64 x 5 nets (r25_mlp v2 --batch), NPU sustained + default arm, NEON 4-row kernels; then GPU path and a STREAM check of the DRAM-bound reading. Earlier repo NPU numbers without --perf-mode sustained are default-vote figures. research/analysis-2026-11-24/r25.md, r25bc.md; R25e (audit follow-up) queued: r25_mlp v4 --vary 4 checks every call with rotating inputs, repeating the headline cells (18 jobs)"
+          }
+        ]
       },
       {
         "id": "R28",
@@ -8145,8 +8206,8 @@
         "gate": "Continue if the placement ranking flips with temperature or the switch beats both",
         "status": "running",
         "number": "Calibration: TB-2 plan() 17.6 (Prime native) / 19.8 (Prime walt) / 29.3 (Perf native) / 43.0 ms (Perf walt); ARA* optimal in 0.07-0.17 ms; on-board verify = host checksum",
-        "decision": "12 thermal jobs queued, deadlines 23/41/77/142/185 ms (r28cal.json); analyse with r28.py",
-        "updated": "2026-11-25",
+        "decision": "2026-11-26 (unconfirmed, n=1 per cell, r28.md): no placement flip; Prime ahead in every bin of all 4 cells; the temperature switch thrashes (3942 switches) and is never better; Prime 1/1.49 the cycles and plan time follows clock; throttled to 2.45-3.31 GHz with no cooling device active; latch 12/12 pass. Next: r2/r3 replication (16 jobs), heat6+gpu512 flip test, wide-hysteresis switch.",
+        "updated": "2026-11-26",
         "prior_art": "Open: no work combines anytime planning, core-type placement and measured throttling; closest arXiv 2610.35231 (simulated YOLO routing)",
         "line": "Tartan (board)",
         "paper": "P-T",
@@ -8155,7 +8216,14 @@
         "job_families": [
           "t-r28"
         ],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "12 thermal jobs queued, deadlines 23/41/77/142/185 ms (r28cal.json); analyse with r28.py"
+          }
+        ]
       },
       {
         "id": "R16",
@@ -8296,9 +8364,9 @@
         "title": "Hand-vectorised NEON FlyBot heuristic net (HDK part; kernel from tartan/)",
         "gate": "Per doc 05 \u00a75",
         "status": "running",
-        "number": "none yet (board run queued)",
-        "decision": "HDK part started 2026-11-24: tartan tools/r6 harness (59e7b09) cross-built (research_ops/build_r6.py), KAT passes off-device; 12 jobs, cores 2/5/6/7; gate ~70% of the paper's 2.7x",
-        "updated": "2026-11-24",
+        "number": "2026-11-26 (unconfirmed, r6.md, 3 jobs/core): S neon_1 relu 16.9 (Perf) / 15.9 (Prime), sigmoid 7.6 / 8.6 vs gate 1.89; passes 24/24 job x activation cells; caveat: artifact heuristic is closed-form.",
+        "decision": "Continue: larger HomeBot/PatrolBot nets (tartan r6mlp_gen), cross-check vs R25 NEON.",
+        "updated": "2026-11-26",
         "prior_art": "Pending (campaign doc 05 notes one search each)",
         "line": "Tartan (board)",
         "paper": "P-T",
@@ -8307,7 +8375,19 @@
         "job_families": [
           "t-r6"
         ],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "number",
+            "old": "none yet (board run queued)"
+          },
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "HDK part started 2026-11-24: tartan tools/r6 harness (59e7b09) cross-built (research_ops/build_r6.py), KAT passes off-device; 12 jobs, cores 2/5/6/7; gate ~70% of the paper's 2.7x"
+          }
+        ]
       },
       {
         "id": "R8",
@@ -8336,7 +8416,7 @@
         "status": "running",
         "number": "default sd_p 0.08-0.84%; crypto 1.2% ASLR layout modes (ASLR off sd 0.018%); gap/xz THP lottery (THP never sd 0.06-0.10%, +2.9-3.9% slower); m2lx: sqlite layout effects core-type specific (Prime layout sd 0.37%, Perf 0.10%, cross-core r -0.44 (p=0.24 with the 9 layouts as unit; core x layout interaction p=6e-9 with jobs as unit)), Perf-best layout costs Prime 1.08%; lua 'lay1 best on both' was a work artifact; per instruction lua layout effects are core-specific (F=7.0, p 9e-5); lua does variable work per run (instructions vary 1.7-3.8%, r=0.84 with time), which inflates lua layout/compile effects; normalize lua by instructions (audit research/audit-2026-11-24/layout.md)",
         "decision": "Gate as written fails (each collapse pins a cause and moves the median 0.4-3.9%). Keep ASLR+THP on; n per arm 120 for 0.3% on crypto/gap/xz, 29 lua, 2 sqlite. M2b stocked (which layout bit). research/analysis-2026-11-24/m2.md; M2b: crypto modes = initial sp offset mod 64 (0/16/32/48 -> 1456/1440/1440/1451 ms), not heap (m2b.md); m2h holdout + m2rl relinked O2-vs-O3 (crypto stack-stratified) stocked; research/analysis-2026-11-24/m2lx.md",
-        "updated": "2026-11-24",
+        "updated": "2026-11-26",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
@@ -8349,7 +8429,8 @@
           "e6-m2h",
           "e6-m2rl"
         ],
-        "blocker": ""
+        "blocker": "",
+        "note": " | 2026-11-26 (unconfirmed, relink.md): m2h holdout: Prime-only layout sensitivity confirmed (sqlite F(4,16)=111); \"best for Prime is worst for Perf\" not reproduced; both-core gate not met. Stack stratum flips the crypto O3 effect (pad64 -0.84 vs +0.34..+1.03)."
       },
       {
         "id": "CA19",
@@ -8357,9 +8438,9 @@
         "title": "2 MB-aligned large allocations (deterministic THP coverage)",
         "gate": "All processes reach the fast THP mode: median gain >= 3x robust sd_p and sd_p halved on gap/xz",
         "status": "running",
-        "number": "gap c7 -3.92% simple (-4.00% as mean 100*ln ratio; sd 0.41, n=3 jobs x 10 processes/arm), sd_p 0.81->0.084%; xz c7 -0.63%; vs 4 KiB-offset control gap -3.5%, xz -0.9% (control not exactly layout-matched: libc after the wrapper shifts 32 B, string routines 64 B in xz/lua/sqlite); xz mechanism unverified: aligned build has MORE DTLB walks (65.8k vs 30.4k) yet is faster (audit research/audit-2026-11-24/layout.md)",
-        "decision": "Continue: gap gain robust; xz small and its THP mechanism unsupported by counters; gate was redefined after xz missed it (disclosed). CA19b stocked; ca19.md; job-level tests gap p 0.004, xz p 0.006; CA19c (run-time offset wrapper, identical code layout across arms, TLB counters) queued",
-        "updated": "2026-11-24",
+        "number": "2026-11-26 (UNCONFIRMED, one session; ca19bc.md): headline is the identical-layout CA19c contrast aligned vs pass, mean of per-job % over 3 jobs, 95% t CI: gap c2 -4.54 [-4.66,-4.42], gap c7 -2.87 [-4.17,-1.56], jpeg -1.23/-1.06, xz -0.97/-0.58, zstd c2 -1.01, zstd c7 +0.20 (null). quickjs: wrapper costs +0.9-1.3% (no >=1 MiB blocks). SUPERSEDED as headline: gap c7 -3.92% vs layout-unmatched O2 and the handoff \"3.6%\" (pooled median). Mechanism: DTLB walk counts do not carry it; 0x4005 argument withdrawn.",
+        "decision": "Continue: gain holds under identical layout, larger on Perf. Second session e6-ca19r/e6-ca19cr queued (python3 research/analysis-2026-11-26/ca19bc.py e6-ca19r- e6-ca19cr-); CA19t (THP never/madvise) queued; builds needed: counter KAT for 0x5/0x34, in-mapping offset wrapper, percore-ha2 sqlite/lua/crypto.",
+        "updated": "2026-11-26",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
@@ -8368,9 +8449,19 @@
         "job_families": [
           "e6-ca19",
           "e6-ca19b",
-          "e6-ca19c"
+          "e6-ca19c",
+          "e6-ca19cr",
+          "e6-ca19r",
+          "e6-ca19t"
         ],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "number",
+            "old": "gap c7 -3.92% simple (-4.00% as mean 100*ln ratio; sd 0.41, n=3 jobs x 10 processes/arm), sd_p 0.81->0.084%; xz c7 -0.63%; vs 4 KiB-offset control gap -3.5%, xz -0.9% (control not exactly layout-matched: libc after the wrapper shifts 32 B, string routines 64 B in xz/lua/sqlite); xz mechanism unverified: aligned build has MORE DTLB walks (65.8k vs 30.4k) yet is faster (audit research/audit-2026-11-24/layout.md)"
+          }
+        ]
       },
       {
         "id": "CA20",
@@ -8423,7 +8514,7 @@
         "status": "running",
         "number": "Stage 1 (20/20 runs): per-core profiles share hot functions (top-20 overlap 14-19/20) but differ in cycle split, TVD 0.063-0.123 across cores vs 0.002-0.018 run-to-run (5-30x); Prime spends more in scudo HybridMutex::tryLock (lua 6.6%, quickjs 2.6%), cause untested",
         "decision": "Stage 2 queued: 13 layouts per workload (natural, 8 random relinks, Perf- and Prime-profile hot-first orders, each +/-64 B hot alignment), every layout on both core types, crypto stack-stratified, lua per instruction; BOLT skipped (no branch records on this board); ca22.md",
-        "updated": "2026-11-24",
+        "updated": "2026-11-26",
         "prior_art": "Profile-guided function ordering is standard (Pettis-Hansen, BOLT, Propeller); per-core-type ordering on a heterogeneous phone CPU not found (short search)",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
@@ -8433,7 +8524,8 @@
           "e6-ca22p",
           "e6-ca22"
         ],
-        "blocker": ""
+        "blocker": "",
+        "note": " | 2026-11-26 (unconfirmed, relink.md): profile-guided orders beat the random-layout median by 0.3-0.6% on quickjs (both) and jpeg c7; sqlite/crypto ~0; using the other core profile costs <=0.16%."
       },
       {
         "id": "CA1",
@@ -8442,8 +8534,8 @@
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
         "status": "running",
         "number": "hashprobe blind vs all -2.74% Perf, +4.16% Prime (n=30 processes, 3 jobs); each PF_MODE is a separately compiled loop, so layout is NOT controlled; on Prime 'all' (= blind + one redundant PRFM) is 4.2% faster, which coverage cannot explain; at blind's best D16 the Prime gap is +1.1% (audit research/audit-2026-11-24/backlog.md)",
-        "decision": "Per-core flip withdrawn pending relinks (PF_MODE arms were one layout; D16 shrinks the Prime gap to +1.1%); ca1hrl queued (percore-rl4 hashprobe_pfs, noinline per mode, 5 relinks)",
-        "updated": "2026-11-24",
+        "decision": "2026-11-26 (unconfirmed, relink.md ca1hrl): per-core sign flip CONTRADICTED (blind faster on every layout of every core: Perf -4.83 [-4.96,-4.69], Prime c7 -3.56); a smaller core interaction survives, +1.31 [+1.16,+1.46] pts at D64, +2.15 at D16. Next: retry ca1hrl c2-l0 (failed, never retried) and the stuck Prime native cells.",
+        "updated": "2026-11-26",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
@@ -8454,7 +8546,14 @@
           "e7-ca1",
           "e6-ca1hrl"
         ],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Per-core flip withdrawn pending relinks (PF_MODE arms were one layout; D16 shrinks the Prime gap to +1.1%); ca1hrl queued (percore-rl4 hashprobe_pfs, noinline per mode, 5 relinks)"
+          }
+        ]
       },
       {
         "id": "CA2",
@@ -8616,8 +8715,8 @@
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
         "status": "running",
         "number": "N11 L2 labels (gap s20): SSSP 23-27%, BFS 10-11%, PR 0.2% (its L1D 35-38%); label sets agree across core types within 4 pts; DRAM misses at neighbour-list heads of frontier/queue vertices (static blind rule never prefetches there)",
-        "decision": "Continue: pfp arms (TDL|SSL list-ahead) vs none/blind/blind3/all, per-core distance (64/128) and cross arm, 5 layouts, scales 20/18/15 (percore-rl3 gap_pfp); research/analysis-2026-11-24/backlog.md",
-        "updated": "2026-11-24",
+        "decision": "2026-11-26 (unconfirmed, relink.md pfp): gate met in 5 cells (ca10 vs none s20 -11.27/-8.63%, s18 -6.98/-4.00, s20 native c2 -12.62); all benefit from the SSSP list-head site; per-core distance unsupported; at scale 15 ca10 costs +2.0/+3.1% (label rule needs an absolute miss-rate threshold). Replication e6-pfpr queued 11-26.",
+        "updated": "2026-11-26",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
@@ -8627,7 +8726,14 @@
           "e6-pfp",
           "e6-pfprof"
         ],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Continue: pfp arms (TDL|SSL list-ahead) vs none/blind/blind3/all, per-core distance (64/128) and cross arm, 5 layouts, scales 20/18/15 (percore-rl3 gap_pfp); research/analysis-2026-11-24/backlog.md"
+          }
+        ]
       },
       {
         "id": "CA12",
@@ -8674,15 +8780,22 @@
         "gate": "Effect relative to measured process-to-process noise; see research/ideas/brainstorm-2026-11-23-chipaware.md",
         "status": "running",
         "number": "Merged C4 profile: weight rule selects PRG|BUG|SSG (PR 72% of iterations), trip rule selects none: PGO weight points at the kernel the miss labels clear",
-        "decision": "Measured inside the pfp arms (blind3 / none)",
-        "updated": "2026-11-24",
+        "decision": "2026-11-26 (unconfirmed, relink.md): the weight rule (= blind3) costs +17 to +30%. Next: absolute-miss-rate gating rule.",
+        "updated": "2026-11-26",
         "prior_art": "See research/ideas/brainstorm-2026-11-23-chipaware.md and research/ideas/prior-art-2026-11-23.md",
         "line": "Chip-aware compilation and AIP",
         "paper": "P-D",
         "readiness": 0,
         "tier": "exploratory",
         "job_families": [],
-        "blocker": ""
+        "blocker": "",
+        "history": [
+          {
+            "date": "2026-11-26",
+            "field": "decision",
+            "old": "Measured inside the pfp arms (blind3 / none)"
+          }
+        ]
       },
       {
         "id": "CA15",
